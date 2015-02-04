@@ -1,0 +1,3890 @@
+Changelog -----------------------------------
+version:1.264
+
+Raindrops Theme Yeaｒs last update !
+
+All users of everyone who adopted the Raindrops theme,
+and thank you everyone of reviewers who have contributed to maintaining the quality of the theme
+
+Overview of Changes
+
+	TinyMCE visual editor focus update.
+
+		In visual mode, I have to improve the display performance of content
+
+		Dinamic Content Width
+			Customizer page width set in (theme options), change the display width of the side bar, I will reflect on the visual editor.
+		Dinamic Color Type
+			Dark, light, color type, such as minimal, I will reflect automatically in the visual editor.
+		Google Fonts at Entry Content
+			Google font that you specified in the CSS class, to reflect the visual editor
+
+		Style setting of many other Rain Drops is now reflected in the visual editor.
+
+
+Files Modified
+
+
+	modified:   childs/boots/inc.php
+	modified:   editor-style.css
+	modified:   functions.php
+	modified:   lib/alias_functions.php
+	modified:   lib/csscolor.css.php
+	modified:   lib/hooks.php
+	modified:   lib/option-panel.php
+	modified:   lib/validate.php
+	modified:   style.css
+
+Description of Code Changes
+
+	childs/boots/inc.php line:621-635,
+	editor-style.css line:9-10,25,83-84,89-90,92-432
+	functions.php line:5001-5009,5123-5131,8261-8255,8340-8344,8547,8569,8579-8580,8597-8672
+	lib/alias_functions.php line:23,86,135,
+	lib/csscolor.css.php line:342-345,623-624,940-941,1401-1402
+	lib/hooks.php line:30-35,272-275
+	lib/option-panel.php line:318-328
+	lib/validate.php line:2-9
+	style.css line:272-278
+----------------------------------------------
+Changelog -----------------------------------
+version:1.263
+
+Overview of Changes
+
+	Bug Fixed
+		area-hidden="true" attribute shows display
+
+Files Modified
+
+	functions.php
+
+Description of Code Changes
+
+functions.php line:7083,7709
+----------------------------------------------
+Changelog -----------------------------------
+version:1.262
+
+Overview of Changes
+
+	Support Google Fonts at Entry Content.
+		@see Section Description of Code Changes 'Google Fonts'
+
+		Note:
+
+			Raindrops meybe support approximately 92% of the current Google fonts
+
+			How to use google font
+
+				Write the name of the class to the element, that there is no need to do anything else
+
+				Entry Content ( Text Mode )
+
+					<h2 class="google-font-open-sans">Font Family Open Sand Text</h2>
+
+					Font Name: Open Sans
+					Class Name:google-font-(prefix) + open-sans( chenge space from ' ' to '-', Font Name change to lower case )
+
+				Support font weight and italic
+
+					For example Lato
+					<h2 class="google-font-lato700i">Font Family Lato Font Weight 700</h2>
+
+				Supoort font effect
+
+					<h2 class="google-font-oswald font-effect-brick-sign">Font Family Oswald and Effect</h2>
+
+					@see:https://developers.google.com/fonts/docs/getting_started
+
+		One Important Notice
+
+			And since when use too will affect the performance, please note
+
+			The unsupported fonts
+
+				Not Support Fonts( 49items ) [Not Support:font name has 2 space and more]
+				Source Sans Pro,PT Sans Narrow,The Girl Next Door,Cherry Cream Soda,Black Ops One,Just Me Again Down Here,Covered By Your Grace
+				Shadows Into Light Two,Waiting for the Sunrise,Goudy Bookletter 1911,Gentium Book Basic,Nothing You Could Do,Sorts Mill Goudy
+				PT Serif Caption,Love Ya Like A Sister,Mountains of Christmas,Loved by the King,Fredericka the Great,Give You Glory,
+				Annie Use Your Telescope,Sue Ellen Francisco,Petit Formal Script,Racing Sans One,La Belle Aurore,IM Fell English SC,
+				IM Fell DW Pica SC,Dawning of a New Day,Delius Swash Caps,Swanky and Moo Moo,Over the Rainbow,IM Fell French Canon SC,
+				Press Start 2P,IM Fell Double Pica,Oleo Script Swash Caps,Patrick Hand SC,IM Fell Double Pica SC,Averia Sans Libre
+				Text Me One,Elsie Swash Caps,Averia Serif Libre,Jacques Francois Shadow,Monsieur La Doulaise,Share Tech Mono,Mrs Saint Delafield,
+				Stint Ultra Expanded,Macondo Swash Caps,Odor Mean Chey,Averia Gruesa Libre,Herr Von Muellerhoff
+
+	Support XHTML1.0 media type 'application/xhtml+xml'
+		default 'text/html'
+		if you need 'application/xhtml+xml' then need config at functions.php line:16 $raindrops_xhtml_media_type
+		@see Section Description of Code Changes 'Media Type'
+
+	Misc
+		Customizer label name change from Accessibility Setting to Force Unique Link Text
+		Modify function raindrops_the_pagenation ( add get_the_posts_pagenation() for WordPress 4.1 )
+		Add id at body_element
+			@see Section Description of Code Changes 'Misc'
+
+Files Modified
+
+	modified:   functions.php
+	modified:   header-xhtml.php
+	modified:   header.php
+	modified:   languages/ja.mo
+	modified:   languages/ja.po
+	modified:   lib/hooks.php
+	modified:   lib/option-panel.php
+	modified:   plugins/plugins-presentation.php
+	modified:   raindrops-config-example.php
+	modified:   style.css
+
+Description of Code Changes
+
+functions.php line:2491-2509,2565-2588,2598-2603,8457-8557[Google Fonts]
+functions.php line:5002,5550-5572,6847-6849,7080-7082,7705-7707,7771,7964,8366-8369,8379,8382,8392,8397[Misc]
+functions.php line:8403-8452[Media Type]
+header-xhtml.php line:40,43-47,52-54[Media Type]
+header.php line:line:5,15[Misc]
+languages/ja.po line:6 emty translation modify
+lib/hooks.php line:272-276[Media Type]
+plugins/plugins-presentation.php line:75,260[Misc]
+raindrops-config-example.php line:235-242[Media Type]
+style.css line:3533-3539[Misc]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.260
+
+Overview of Changes
+
+	Updates for the preparation of WordPress 4.1
+		Add register_default_headers()
+		@see Section Description of Code Changes 'Next Version'
+	Change Custom Header Image Size from 950x198 to 1280x266
+		@see Section Description of Code Changes 'Header Image'
+	Modify
+		Remove old functions and relate modify
+		@see Section Description of Code Changes 'Removed'
+	Misc
+		@see Section Description of Code Changes 'Misc'
+
+Files Modified
+
+	modified:   functions.php
+	modified:   lib/csscolor.css.php
+	modified:   lib/hooks.php
+
+Description of Code Changes
+
+	functions.php line:14-25,4486-4656,4829-5068,8626[Removed]
+	functions.php line:469,471[Header Image]
+	functions.php line:476-484 493-497[Next Version]
+	functions.php line:3608,3611,3745,5258,5308-5309,5359-5360,5824-5842,6467,5483-6486,8418,8460,8472,[Misc]
+	fallback.css line:1-4,[Misc]
+	lib/csscolor.css.php line:1438[Misc]
+    lib/hooks.php line:271[Removed]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.259
+Overview of Changes
+
+	Fixed No prefixed function
+		Change from add_raindrops_stylesheet to raindrops_add_stylesheet
+		Change from fallback_user_interface_view to raindrops_fallback_user_interface_view
+	Modify CSS
+
+Files Modified
+
+	modified:   functions.php
+	modified:   lib/csscolor.css.php
+	modified:   style.css
+
+Description of Code Changes
+
+	functions.php line:460, 1885, 1887, 4428, 4430, 4467 [Fix function name]
+	lib/csscolor.css.php line:593,860,1385,[Modify CSS]
+	style.css line:53[Modify CSS]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.257
+Overview of Changes
+
+	Fixed dinamic CSS
+		> changed &lt;
+		Style Broken
+		add $css = str_replace( array("&gt;",'raindrops_color_ja'),array('>',''),$css);
+			functions.php line:8675
+	Change for Child Theme relation
+		@see Section Description of Code Changes 'Child Theme'
+	Customizeable for Footer Text
+		@see Section Description of Code Changes 'Footer Text'
+			new function raindrops_footer_text() functions.php line:8712-8755
+	Tabindex for xhml 1.0
+		When using xhtml1.0 remove tabindex=-1
+		@see Section Description of Code Changes 'Tabindex'
+	Modified fot HTML source
+		@see Section Description of Code Changes 'HTML Source'
+	Unique Entry Title
+		@see Section Description of Code Changes 'Accessibility'
+			new function raindrops_unique_entry_title() functions.php line:8692-8711
+	Modification of the translation
+		@see Section Description of Code Changes 'I18n'
+	Other fixes
+		@see Section Description of Code Changes 'Misc'
+Files Modified
+	modified:   childs/boots/inc.php
+	modified:   childs/boots/style.css
+	modified:   fonts.css
+	modified:   footer.php
+	modified:   functions.php
+	modified:   header-front.php
+	modified:   header-xhtml.php
+	modified:   header.php
+	modified:   index.php
+	modified:   languages/ja.mo
+	modified:   languages/ja.po
+	modified:   lib/alias_functions.php
+	modified:   lib/widgets.php
+	modified:   loop.php
+	modified:   style.css
+
+Description of Code Changes
+	childs/boots/functions.php line:37,53,64,73,78-115,117-140[Child Theme]
+	childs/boots/inc.php line:7-24,34-36,155[Child Theme]
+	footer.php [Footer Text]
+	functions.php line:1031,1042,1052,1062,1072[Tabindex]
+	functions.php line3109,3112,5807,5809,5817,5831,58375917,8249[HTML Source]
+	functions.php line:3858-3860,5122-5123,5817-5831[Misc]
+	header-front.php line:26-34,42,44-55,58-68,70-114,[HTML Source]
+	header-xhtml.php line-56-75[HTML Source]
+	header.php line:15-47[HTML Source]
+	index.php line:28-55[HTML Source]
+	languages/ja.po line:2700[I18n]
+	lib/widgets.php line:268-269[Misc]
+	loop.php line:32,36-38,73-89,95-96,100-107[HTML Source]
+	style.css line:3529-3531[Misc]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.256
+Overview of Changes
+
+	javascript and CSS move from embed inline style, inline script to external link
+		add new function raindrops_load_small_device_helper() functions.php line:4627
+		add new file raindrops-helper.js
+		@see Section Description of Code Changes 'Change External'
+
+	$raindrops_fallback_human_interface_show relate changes
+		In internal changes towards the future, it does not affect the theme of behavior
+		@see Section Description of Code Changes 'fallback_human_interface'
+
+	Fixed
+		paragraph element apply improperly
+				editor text mode source
+				<div class="line">
+				<div class="unit size1of2 gradient3">1/2</div>
+				<div class="unit size1of2 gradient2">1/2</div>
+				</div>
+			bad result
+				<div class="line">
+				<div class="unit size1of2 gradient3">
+				<p>1/2</p>
+				<br />
+				</p>
+				</div>
+				<div class="unit size1of2 gradient2">
+				<p>1/2</p>
+				<br />
+				</p>
+				</div>
+				</div>
+			fixed
+				<div class="line">
+				<div class="unit size1of2 gradient3">
+				<p>1/2</p>
+				</div>
+				<div class="unit size1of2 gradient2">
+				<p>1/2</p>
+				</div>
+				</div>
+			@see Section Description of Code Changes 'p element issue'
+
+		class oembed-container  add class clearfix
+			I allows adjustment of subsequent text margin,
+			CSS modify
+			@see Section Description of Code Changes 'Misc'
+
+		Layout display improperly when default sidebar right 300px + extra sidebar 33%
+			@see Section Description of Code Changes 'Layout issue'
+
+		get_post($post->ID) has non object error
+			@see Section Description of Code Changes 'Misc'
+
+		Theme option page has error
+			A non-existent image file I was using in-line style
+				wp-content/themes/raindrops/images/none
+			remove inline style.
+			@see Section Description of Code Changes 'no exits image'
+
+		Add the processing in the case that the value of the access key does not exist
+			When prepared access key does not exist, it does not display the access key attribute
+			@see Section Description of Code Changes 'Accesskey'
+
+Files Modified
+	modified:   fallback.css
+	modified:   functions.php
+	modified:   plugins/plugins-presentation.php
+	modified:   style.css
+	new file:	raindrops-helper.js
+
+Description of Code Changes
+	fallback.css all changes[fallback_human_interface]
+	functions.php line:14-24[Change External]
+	functions.php line:523[Change External]
+	functions.php line:2447[Change External]
+	functions.php line:2449-2459[Change External]
+	functions.php line:2523,2542,2544[Change External]
+	functions.php line:4327-4328[fallback_human_interface]
+	functions.php line:4460-4461,4463,4465-4475,4481[Change External]
+	functions.php line:4627-4787[Change External]
+	functions.php line:5165-5175[Change External]
+	functions.php line:5181-5187[Change External]
+	functions.php line:6765-6768[Change External]
+	functions.php line:8283[p element issue]
+	functions.php line:8572[MIsc]
+	functions.php line:8580-8637[Change External]
+	plugins/plugins-presentation.php line:142,146,150,160-165[Misc]
+	plugins/plugins-presentation.php line:184-191[Misc]
+	plugins/plugins-presentation.php line:323-328,484-490,507,643-648[Misc]
+	style.css line:292-294[Misc]
+	style.css line:1154,2952-2953[Layout issue]
+	functions.php line:4712-4716[Misc]
+	lib/option-panel.php line:795-800[no exits image]
+	lib/option-panel.php line:894-899[Accesskey]
+	functions.php line:4267-4282[Change External]
+	functions.php line:8606[Change External]
+	functions.php line:8637-8647[Change External]
+	functions.php line:8658-8659,8662-8663,8666[Change External]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.253
+Overview of Changes
+
+	Quick Cache Plugin add translation file for ja
+		@see Section Description of Code Changes 'Quick Cache'
+
+	keyboard accessibility desable why menu structure issue when wp_nav_menu using fallback_cb
+		@see Section Description of Code Changes 'wp_nav_menu'
+
+	Loop pages post-thumbnail style change vartical align value from text-bottom to middle
+		@see Section Description of Code Changes 'post-thumbnail'
+
+	style modify when language Japanese
+		@see Section Description of Code Changes 'lang ja'
+
+	style modify for slider plugin wrapper elements add class cleafix
+		@see Section Description of Code Changes 'Meta Slider'
+
+Files Modified
+	modified:   languages/css/ja.css
+	modified:   plugins/plugins-presentation.php
+	modified:   style.css
+	modified:   functions.php
+	new file:   languages/plugins/quick-cache/quick-cache-ja.po
+	new file:   languages/plugins/quick-cache/quick-cache-ja.mo
+Description of Code Changes
+	functions.php line:432-438[wp_nav_menu]
+	functions.php line:5576[post-thumbnail]
+	languages/css/ja.css line:14-28[lang ja]
+	languages/css/ja.css line:38-40[lang ja]
+	languages/css/ja.css line:122-124[lang ja]
+	plugins/pluins-presentation.php line:390[Meta Slider]
+	plugins/pluins-presentation.php line:573-576[Meta Slider]
+	plugins/pluins-presentation.php line:613-614[Meta Slider]
+	plugins/pluins-presentation.php line:613-614[Meta Slider]
+	plugins/pluins-presentation.php line:623-642[Quick Cache]
+	style.css line:61,65,1468,1524,1529,1535-1536,1541-1543,1551-1553[wp_nav_menu]
+	style.css line:2068[Misc]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.252
+Overview of Changes
+	enable japanese translation
+
+Files Modified
+	modified:   languages/plugins/the-events-calendar/tribe-events-calendar-ja.mo
+	modified:   languages/plugins/the-events-calendar/tribe-events-calendar-ja.po
+	modified:   plugins/plugins-presentation.php
+	modified:   style.css
+
+Description of Code Changes
+	lib/pluins-presentation.php
+	line:523 enable filter load_textdomain_mofile
+
+	languages/plugins/the-events-calendar/tribe-events-calendar-ja.po
+	line:1332,1336,1352,49
+----------------------------------------------
+Changelog -----------------------------------
+version:1.251
+Overview of Changes
+	Created
+		Theme adapted for implementation of design and configuration, the automatic display function in place of the Template Editing
+
+		Note:Important
+			Theme, for the active plug-ins before that will be installed, and does nothing.
+			If the functionality is required, activating at once, please reactivate
+
+		Meta Slider Plugin
+			https://wordpress.org/plugins/ml-slider/
+			@see Section Description of Code Changes 'Meta Slider'
+		The Events Calendar
+			https://wordpress.org/plugins/the-events-calendar/
+			@see Section Description of Code Changes 'The Events Calendar'
+		bbPress
+			https://wordpress.org/plugins/bbpress/
+			@see Section Description of Code Changes 'bbPress'
+		Theme Customizer option
+			raindrops_disable_keyboard_focus
+			@see Section Description of Code Changes 'keyboard_focus'
+	Modified
+			@see Section Description of Code Changes 'Misc'
+
+	Fixed
+		wp_nav_menu() displayed improperly.
+			and fallback option add keyboard_focus
+		404.php error
+			add global $rsidebar_show, $raindrops_document_type;
+
+Files Modified
+	modified:   childs/boots/inc.php
+	modified:   childs/boots/style.css
+	modified:   functions.php
+	modified:   header-front.php
+	modified:   lib/csscolor.css.php
+	modified:   lib/hooks.php
+	modified:   lib/option-panel.php
+	modified:   lib/validate.php
+	modified:   lib/widgets.php
+	modified:   plugins/tgm-config.php
+	modified:   style.css
+Files Added
+	new file:   languages/plugins/the-events-calendar/tribe-events-calendar-ja.mo
+	new file:   languages/plugins/the-events-calendar/tribe-events-calendar-ja.po
+	new file:   plugins/plugins-presentation.php
+Description of Code Changes
+	childs/boots/style.css line:33-36 add style[The Events Calendar]
+	functions.php move code from line:158-191 to line:366-408 [Misc]
+	functions.php line:416-432 [keyboard_focus]
+	functions.php line:1460-1470 [Misc]
+	functions.php line:2565-2569 [Misc]
+	functions.php line:5049-5058 [Meta Slider][The Events Calendar]
+	functions.php line:5107-5112 [keyboard_focus]
+	functions.php line:5133-5142 [keyboard_focus]
+	functions.php line:5211-5228 [Meta Slider][The Events Calendar]
+	functions.php line:5645-5649 [Misc]
+	functions.php line:6204-6207 [Misc]
+	functions.php line:6389-6392 [Misc]
+	functions.php line:7061-7064 [Misc]
+	functions.php line:8286-8543 move to plugins/plugins-presentation.php
+	header-front.php cleaning [Misc]
+	lib/csscolor.css.php Add margin-bottom:-1px!important;[Misc]
+	lib/option-panel line:285-317 [Meta Slider][The Events Calendar][keyboard_focus]
+	lib/validate.php line:2-31 [Meta Slider][The Events Calendar][keyboard_focus]
+	lib/widgets.php cleaning [Misc]
+	plugins/tgm-config.php line:40-49 [Meta Slider][The Events Calendar]
+	style.css line:3712-3725,3727-3733,3735-3787 [bbPress]
+----------------------------------------------
+
+Changelog -----------------------------------
+version:1.250
+Overview of Changes
+	Created
+		Add New Plugin installer
+			TGM-Plugin-Activation
+				@see Section Description of Code Changes 'TGM_Plugin_Activation'
+			relate changes
+				create function raindrops_bcn_setup()
+				create function raindrops_bcn_nav_menu()
+				create function raindrops_bcn_css()
+				create function raindrops_template_tags_change_date()
+			translation
+				language/ja.po
+			 new ver $raindrops_recommend_plugins
+
+			Note:This functionality for only single site.
+
+	Modified
+		front-page.php template
+
+		Change style strong, em, b, i
+				@see Section Description of Code Changes 'element styling'
+		Customizable Post Thumbnail
+			Add raindrops_title_thumbnail
+				@see Section Description of Code Changes 'post thumbnail'
+
+		Misc
+			Change pluggable function  raindrops_oembed_filter
+			Oembed Twitter Card style
+
+				@see Section Description of Code Changes 'misc'
+
+
+	Fixed
+		Theme option image upload validate function issue
+			validate.php
+			raindrops_heading_image_validate()
+			raindrops_footer_image_validate()
+			raindrops_header_image_validate()
+
+		nav menu primary display improperly.
+			@see Section Description of Code Changes 'nav menu bug'
+
+Files Modified
+	changelog.txt
+	css3.css
+	editor-style.css
+	functions.php
+	languages/css/ja.css
+	languages/ja.mo
+	languages/ja.po
+	lib/jetpack.php
+	lib/validate.php
+	raindrops-config-example.php
+	readme.txt
+Files Added
+	plugins/tgm-config.php
+	plugins/class-tgm-plugin-activation.php
+	style.css
+Description of Code Changes
+	css3.css line:10	[element styling]
+	editor-style.css line:82-91 [element styling]
+	functions.php line:147-180 [TGM_Plugin_Activation]
+		file_include and register
+	functions.php line:5458-5461, line:5490, line:5492	[post thumbnail]
+	functions.php line:8220-8340	[misc]
+	languages/css/ja.css line:101-107  [element styling]
+	languages/ja.po
+		line:3,5-6,18,56,100-101,107,193,198,203,228,237,242,247,252,258,264,270,275,280,286,291,295,300,307,312,318,324,329,334,339,345-6,350,355,362,367,372-374,379,383,388,393,398,402,405,411,416,421,426,431,435,439,443,,447,451,455,459,464,468,478,483,492,502,506,510,514,518,522,526,531,636,540,544,550-553,556,564,575,580,586,592,597,603,616,621,626,631,636,642,644-647,654,660,664,668,673,677,681,685,689,693,697,701,705,709,713,717,722,727,733,738,743,747,751,755,760,764,768-769,774,779,783,787,791-792,796-797,802,807,812,817,822-828,832-836,840-842,846,856,861--862,866-867,871,876,881,887,892,897,898,927,932,939-943,949,953,958-960,965,969,973,980,984-995,997-1003,1008,1013,1018,1022-1037,1039,1146,1151,1156,1163,1173,1178,11871192,1201,1206,1213,1218,1228,1232,1236,1240,1245,1250,1260,1265,1270,1275,1280,1286,1290,1294,1298,1303,1308,1315,1320,1328,1335,1339,1343,1347,1351,1355,1359,1361,1363,1364-1366,1371-1377,1382-1399,1403,1408,1413,1422,1428,1434,1439,1445,1450,1455-1460,1465-1470,1475,1480,1485,1490,1495,1500,1506,1511,1516,1521,1526,1531,1537,1542,1548,1553,1558,1564,1569,1574,1580-1581,1586,1592,1598,1603,1607,1611,1615,1619,1623,1628,1633,1638,1643,1649,1652,1659,1665,1670,1675,1680,1685,1690,1695,1700,1705,1710,1715,1720,1725,1730,1735,1740,1745,1750,1755,1760,1765,1770,1775,1780,1785,1790,1795,1800,1805,1810.1815,1820,1825,1830,1835,1840,1845,1850,1855,1860,1865,1870,1875,1880,1885,1890,1895,1900,1905,1910,1915,1920,1925,1930,1935,1940,1945,1950,1955,1960,1965,1970,1975,1980,1985,1990,1995,2000,2005,2010,2015,2020,2025,2030,2035,2040,2045,2050,2055,2060,2065,2070,2075,2080,2085,2090,2095,2100,2105,2110,2115,2120,2125,2130,2135,2140,2145,2150,2155,2160,2165,2170,2175,2180,2185,2190,2195,2200,2205,2210,2215,2220,2225,2230,2235,2240,2245,2250,2255,2260,2265,2270,2275,2280,2286,2290,2295,2300,2305,2310,2315,2320,2325,2330,2335,2340,2345,2350,2355,2360,2365,2370,2375,2380,2411,2415,2419,2423,2429,2434,2438,2442,2447,2452,2456-2868	 [TGM_Plugin_Activation] mainly
+	lib/jetpack.php line:11,14-31	[misc]
+	raindrops-config-example.php line:224-234	[TGM_Plugin_Activation]
+	style.css line:178-187 [element styling]
+	style.css line:1504-1538	[nav menu bug]
+	childs/boots/inc.php line:565-586 [TGM_Plugin_Activation]
+	functions.php line:157-166 [TGM_Plugin_Activation]
+	functions.php line:4988,5015-5026,5136-5156,8285-8316, 8420 [TGM_Plugin_Activation]
+	language/ja.po line:1411-1425,2863-2875,and etc
+	lib/option-panel.php line:263-284 	[TGM_Plugin_Activation]
+	lib/validate.php line:2-17		[TGM_Plugin_Activation]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.247
+Overview of Changes
+	Added
+		front-page.php, full-width.php add new prezentation.
+		If you set the front page template the template above, you can from the post meta box, to be added to the page top posts
+			@see Section Description of Code Changes 'Template'
+	Fixed
+		If you use the widget of jet pack plug-in, solve problems that do not fit in the block on which the image is placed
+
+			@see Section Description of Code Changes 'jetpack'
+	Modified
+		Change position post thumbnail image
+				@see Section Description of Code Changes 'post thumbnail'
+Files Modified
+	childs/boots/style.css
+	functions.php
+	header-front.php
+	header-xhtml.php
+	lib/csscolor.css.php
+	media.css
+	page-templates/front-page.php
+	page-templates/full-width.php
+	page.php
+	responsiveness.css
+	style.css
+	widget-sticky.php
+Files Added
+	lib/jetpack.php
+	part-additional.php
+Description of Code Changes
+	childs/boots/style.css line:23-32 [Template]
+		Child theme support
+	functions.php line:224-237[jetpack]
+		lib/jetpacck.php include script
+	functions.php line:5443[Template]
+	+	if ( !is_singular() || is_page_template( 'page-templates/list-of-post.php' ) || ( is_page_template( 'page-templates/full-width.php' ) && is_front_page()  ) || ( is_page_template( 'page-templates/front-page.php' ) && is_front_page()  ) ) {
+	functions.php line:6715
+		Change Image size wp_get_attachment_image_src() from none to medium
+	functions.php line:7541 change element for title from span to h2
+		For correct html structure
+	functions.php line:7586-7599 modify funtion raindrops_tile() [Template]
+	header-xhtml.php line:57,
+	header-front.php line:60 bugfix
+		add class before space
+	header-front.php line:103 bugfix
+	media.css line:291 line:294 line:298
+		typo classname
+	header-front.php line:126 modify[Template]
+		add inline style width:100%
+	lib/csscolor.css.php line:395, line:465, line:680, line:1228, line:1260, add .raindrops-toc-front li[Template]
+
+	line:1262,1276 add IE gradient for color_type light background bugfix
+	page-templates/front-page.php line:20-87 [Template]
+	page-templates/full-width.php line:21-115[Template]
+	page.php line:66 Change post thumbnail position[post thumbnail]
+	responsiveness.css line:304, line:307,line:310,line:320-326,line:342-353 [Template]
+	style.css line:1658 [post thumbnail]
+	style.css line:2910-2913,line:2920-2969 [Template]
+	style.css line:2993-2998 add class
+	style.css line:3108 change class to id
+	style.css line:3114 change em to %
+	style.css line:3396-3401 modify display blank-front.php
+	style.css line:3771-3725 modify smaily
+	widget-sticky.php line:1 modify is_home() to is_front_page()[Template]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.246
+Overview of Changes
+	Added
+		Responsiveness Support where Oembed media
+		tested Animote-YouTube,mixcloud,isuu,YouTube,TED,collegehumor,Slideshare,Twitter card
+		Change Oembed Media width from content width to full width
+			@see Section Description of Code Changes 'Oembed'
+	Fixed
+		blank-front.php template shows oembed url
+			replace oembed urls to string cloud
+			html code:<span class="oembed-content-icon youtu-be">Cloud</span>
+			You can use CSS classes for customize.
+			@see Section Description of Code Changes 'brnank-front'
+		Entry content, the adjustment of the margin in the case of inserting the full-sized image
+			@see Section Description of Code Changes 'Attachment'
+		Add callback function for Customizer (typo)
+			@see Section Description of Code Changes 'Customizer'
+	Modify
+		blank-front.php add Transient API
+			@see Section Description of Code Changes 'Transient'
+		Child Theme boots setting for Customize
+			@see Section Description of Code Changes 'Child Theme'
+		Shows Raindrops same header style when remove a boots/header.php
+
+Files Modified
+	childs/boots/functions.php
+	childs/boots/inc.php
+	functions.php
+	lib/hooks.php
+	style.css
+
+Description of Code Changes
+
+	childs/boots/functions.php line:35 [Child Theme]
+		if ( file_exists( get_stylesheet_directory().'/header.php' ) ) {
++		// if not exists child themes header.php then display raindrops same. (boxed header)
++			add_filter( 'raindrops_header_image_contents', 'boots_custom_header_image_content' );
++		}
+	childs/boots/inc.php line:319-356 $raindrops_child_base_setting_args
+		relate parent theme updete
+
+	functions.php line:4958 [Customizer]
++		$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_entry_content_is_category]',
+			'sanitize_callback' => 'raindrops_entry_content_is_category_validate' ) );
++		$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_entry_content_is_search]',
+			'sanitize_callback' => 'raindrops_entry_content_is_search_validate' ) );
+
+	functions.php line:5555 Add function raindrops_link_get() [brnank-front]
+	functions.php line:5572 Add function raindrops_replace_oembed_link_to_icon() [brnank-front]
+	functions.php line:5615 Add function raindrops_transient_update() [brnank-front][Transient]
+	functions.php line:5630 Add function raindrops_recent_posts() [brnank-front][Transient]
+		old raindrops_recent_posts was renamed raindrops_get_recent_posts line:5723
+	functions.php line:5660 Add function raindrops_category_posts() [brnank-front][Transient]
+		old raindrops_category_posts was renamed raindrops_get_category_posts line:5892[brnank-front][Transient]
+	functions.php line:5692 Add function raindrops_tag_posts() [brnank-front][Transient]
+		old raindrops_tag_posts was renamed raindrops_get_tag_posts line:6083[brnank-front][Transient]
+	functions.php line:8143 Add function raindrops_oembed_filter() [Oembed]
+	lib/hooks.php line:268 Add filter add_filter( 'embed_oembed_html', 'raindrops_oembed_filter', 99, 4 ); [Oembed]
+	lib/hooks.php line:269 Add action add_action( 'save_post', 'raindrops__transient_update' );[Transient]
+	lib/hooks.php line:270 Add action add_action( 'edit_term', 'raindrops__transient_update' );[Transient]
+	style.css 	  line:245-285 Add style rules [Oembed]
+	style.css 	  line:993 Add style rules [Attachment]
+	style.css     line:1302 Add style rules[Oembed]
+	style.css     line:2342 Add style rules format-link style For PressThis
+	style.css     line:2712 Add style rules for margin-top ajast
+    style.css	  line:3651-3659 Add style rules [Oembed]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.245
+Overview of Changes
+
+	the license for the images used in the screenshot
+		@see Section Description of Code Changes 'screenshot'
+	Theme Check Plugin ( Stable tag: 20140929.1 ) required issues.
+		@see Section Description of Code Changes 'Fixed'
+	Firefox mobile menu works improperly.
+		@see Section Description of Code Changes 'Another Fixed'
+	Theme option Footer color not works
+		@see Section Description of Code Changes 'Another Fixed'
+	Header Image issue
+		@see Section Description of Code Changes 'Another Fixed'
+	Add bundle images
+		@see Section Description of Code Changes 'screenshot'
+
+Files Modified
+
+	changelog.txt
+	fonts.css
+	functions.php
+	header-front.php
+	lib/option-panel.php
+	lib/validate.php
+	responsiveness.css
+	screenshot.png
+	style.css
+
+New files
+
+	images/dummy.jpg
+	images/screenshot-image1.jpg
+	images/screenshot-image2.jpg
+
+Description of Code Changes
+
+	Screenshot.png [screenshot]
+		Require the license for the images used in the screenshot
+		Renewal screenshot
+			readme.txt line:18 added
+				ver1.245 add image
+				images/screenshot-image1.png , images/screenshot-image2.png , images/dummy.jpg
+			readme.txt line:99 added
+				ver 1.245
+			    Note:Information on how to set the layout of the screen shot...
+			images/ add new bundle images
+	Theme Check [Fixed]
+		lib/option-panel.php line:400 removed duplicated function screen_icon()
+		functions.php Customizer Add sanitize_callback
+			$wp_customize->add_setting( 'raindrops_theme_settings[...]',
+			array(    'sanitize_callback' => 'raindrops_fluid_max_width_validate',... ) );
+		functions.php remove $wp_customize->add_control( new Raindrops_Customize_Navigation_Control(...
+		functions.php remove add_section
+			$wp_customize->add_section( 'raindrops_navigation_setting',
+			array( 'title' => esc_html__( 'Another Settings link', 'Raindrops' ), 'priority' => 120, ) );
+		functions.php remove function
+			function raindrops_options_default_value(...
+
+		header-front.php remove ie conditional tag
+			Raindrops IE8 or older browser is shows Document Type XHTML
+			<!--[if IE]>
+               <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+		ver 1.244 Testing Code add is removed.
+
+		lib/option-panel.php $raindrops_base_setting_args value change
+				'option_name'  => "raindrops_default_fonts_color",
+					-        'option_value' => "",
+					+        'option_value' => "none",
+				'option_name'  => "raindrops_footer_color",
+					-        'option_value' => "",
+					+        'option_value' => "none",
+				'option_name'  => "raindrops_hyperlink_color",
+					-        'option_value' => "",
+					+        'option_value' => "none",
+		 lib/validate.php	change validate simple
+			line:518 remove functions raindrops_options_default_value( __FUNCTION__ )
+			all validate functions change from raindrops_options_default_value( __FUNCTION__ )  to string value
+
+	[Another Fixed ] Firefox mobile menu works improperly.
+		style.css line:60 Fixed Firefox mobile menu works improperly.
+
+			.enable-keyboard .hfeed .raindrops-mobile-menu a:focus{
+	   			position:absolute;
+			}
+			.enable-keyboard #access:target li:hover > ul > li > a{
+	   			border:none;
+			}
+		functions.php code change function raindrops_small_device_helper() line:4673
+
+			} else if ( userAgent.indexOf( 'firefox' ) != -1 ) {
+
+     			jQuery( 'body' ).addClass( 'firefox' );
+			}...
+	[Another Fixed ] Theme option Footer color not works
+		functions.php line:2136 add dynamic style
+			$css .= "\n#ft{color:". raindrops_warehouse( 'raindrops_footer_color' ). ';}';
+	[Another Fixed ] Header Image issue
+		functions.php line:3830  function raindrops_header_image() add conditional
+			if ( $display_header_image_file == 'hide' && is_singular() ) {...
+
+	style.css line:3534 add style for pinup entry widget
+			+.raindrops-pinup-entries p img{
+			+    width:auto;
+			+    max-width:100%;
+			+    height:auto;
+			+    margin-top:-.75em;
+			+}
+----------------------------------------------
+Changelog -----------------------------------
+version:1.244
+Overview of Changes
+	Playlist Presentation Override
+		@see Section Description of Code Changes 'Playlist'
+	Complementary Color
+		If specify a link to the chromatic color,
+		entry title link to add features that use the complementary color
+			@see Section Description of Code Changes 'Complementary Color'
+	Fixed
+		header header image height issue
+			@see Section Description of Code Changes 'header image height'
+		customizer priveiw
+			does not reflect changes in the preview
+			@see Section Description of Code Changes 'customizer priveiw'
+	Testing Code add
+		Add sanitize_callback at $wp_customize->add_setting
+			@see Section Description of Code Changes 'Testing Code'
+	language file update
+			@see Section Description of Code Changes 'language'
+	Changes file, code cleaning
+
+Files Modified
+	changelog.txt
+	style.css
+	functions.php
+	lib/alias_functions.php
+	lib/validate.php
+	childs/boots/inc.php
+	lib/option-panel.php
+
+Description of Code Changes
+
+style.css	[Playlist]
+	default: wp-mediaelement.css border-bottom: 1px solid #ccc;
+	override:
+	line:3543
+		.wp-playlist-tracks .wp-playlist-item {
+    		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+
+	.raindrops-pinup-entries img is override ( raindrops stylerule )
+
+	.raindrops-pinup-entries .wp-playlist img{
+		margin-top:0;
+	}
+
+lib/alias_functions.php line:741	[Complementary Color]
+	Add function raindrops_hex2rgb_array_clone
+		input hex color #369, #336699
+		return array(51,102,153)
+
+functions.php line:7885	[Complementary Color]
+	Add function raindrops_complementary_color( $hex_color = '#444' )
+		input hex color
+		return hex complementary_color;
+functions.php line:7973	[Complementary Color]
+	Add action add_action( 'wp_enqueue_scripts', 'raindrops_add_complementary_color' );
+
+functions.php line:7977	[Complementary Color]
+	Add function raindrops_add_complementary_color()
+
+lib/validate.php line:8	[Complementary Color]
+	Add function raindrops_complementary_color_for_title_link_validate()
+
+childs/boots/inc.php line553 lib/option-panel line252
+	array( 'option_id'    => 21,
+       'blog_id'      => 0,
+       'option_name'  => "raindrops_entry_content_is_category",
+       'option_value' => "content",
+       'autoload'     => 'yes',
+       'title'        => esc_html__( "Category Archive Content Type", 'Raindrops' ),
+       'excerpt1'     => '',
+       'excerpt2'     => esc_html__( "value content, excerpt, none", 'Raindrops' ),
+       'validate'     => 'raindrops_entry_content_is_category_validate',
+        'list'         => 20
+   ),
+
+	 array( 'option_id'    => 23,....list=>10 typo
+		change from list=>10 to change list=>22
+
+lib/option-panel.php option_id 23 option value change from '' to 'none'
+
+childs/boots/inc.php line:553	[Complementary Color],
+lib/option-panel.php Add option_id 24 	[Complementary Color]
+	array( 'option_id'    => 24,
+        'blog_id'      => 0,
+        'option_name'  => "raindrops_complementary_color_for_title_link",
+        'option_value' => "none",
+        'autoload'     => 'yes',
+        'title'        => esc_html__( 'Complementary Color For Entry Title Link ', 'Raindrops' ),
+        'excerpt1'     => '',
+        'excerpt2'     => esc_html__( 'If you need to set footer Special link color.', 'Raindrops' ),
+        'validate'     => 'raindrops_complementary_color_for_title_link_validate',
+        'list'         => 23
+
+functions.php line4952
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_complementary_color_for_title_link]'...);
+functions.php line5034
+	$wp_customize->add_control( 'raindrops_complementary_color_for_title_link2'...);
+functions line5045
+	$wp_customize->add_control( 'raindrops_complementary_linkcolor_for_title_link'...);
+functions.php line:751	[customizer priveiw]
+	if ( !isset( $raindrops_where_excerpts ) ) {...}
+		move to function raindrops_detect_excerpt_condition()
+		line809 - 828
+functions.php line:780-799	[customizer priveiw]
+	if ( !isset( $raindrops_where_display_none ) ) {...}
+		move to line 761 raindrops_detect_display_none_condition() line 765-784
+
+functions.php [Testing Code]
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_style_type]', 'sanitize_callback' => 'raindrops_style_type_validate' ) );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_page_width]', 'sanitize_callback' => 'raindrops_page_width_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_base_color]', 'sanitize_callback' => 'raindrops_base_color_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_show_right_sidebar]', 'sanitize_callback' => 'raindrops_show_right_sidebar_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_col_width]', 'sanitize_callback' => 'raindrops_col_width_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_show_menu_primary]', 'sanitize_callback' => 'raindrops_show_menu_primary') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_default_fonts_color]', 'sanitize_callback' => 'raindrops_default_fonts_color_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_hyperlink_color]', 'sanitize_callback' => 'raindrops_hyperlink_color_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_complementary_color_for_title_link]', 'sanitize_callback' => 'raindrops_complementary_color_for_title_link_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_doc_type_settings]', 'sanitize_callback' => 'raindrops_doc_type_settings_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_footer_color]', 'sanitize_callback' => 'raindrops_footer_color_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_accessibility_settings]', 'capability' => 'edit_theme_options', 'sanitize_callback' => 'raindrops_accessibility_settings_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_entry_content_is_home]', 'sanitize_callback' => 'raindrops_entry_content_is_home_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_entry_content_is_category]', 'sanitize_callback' => 'raindrops_entry_content_is_category_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_entry_content_is_search]', 'sanitize_callback' => 'raindrops_entry_content_is_search_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_footer_link_color]', 'sanitize_callback' => 'raindrops_footer_link_color_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_basefont_settings]', 'sanitize_callback' => 'raindrops_basefont_settings_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_right_sidebar_width_percent]', 'sanitize_callback' => 'raindrops_right_sidebar_width_percent_validate') );
+	$wp_customize->add_setting( 'raindrops_theme_settings[raindrops_fluid_max_width]', 'sanitize_callback' => 'raindrops_fluid_max_width_validate') );
+functions.php line:4531 Add is_singular() conditional tag	[header image height]
+	if ( !empty( $display_header_image_file ) && $display_header_image_file !== 'default' && is_singular() ) {...
+
+languages/pl_PL.po and compiled pl_PL.mo	[language]
+
+line:6		"PO-Revision-Date: 2014-09-10 17:00+0100\n"
+line:13		"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 &&(n""%100<10||n%100 >= 20)? 1 : 2);\n"
+line:221	'Sticky Widget' translate from "Sticky Widget" to "Stały Widget"
+line:640	msgid "% Comments" translate from "% Komentarzy" to "% komentarzy"
+line:1660	Add translate msgid "permalink" msgstr "Link permanentny"
+line:1664	Add translate msgid "More Galleries" msgstr "Więcej galerii"
+line:1668	Add translate
+			msgid "<span>Newer posts <span class=\"meta-nav\">&rarr;</span></span>"
+			msgstr "<span>Nowsze posty <span class=\"meta-nav\">&rarr;</span></span>"
+line:1673	Add translate
+			"Please choose width on the page.\n"
+			"    Please choose from four kinds of inside of 750px centerd 950px centerd "
+			"fluid 974px."
+			msgstr ""
+			"Proszę wybierz szerokość strony.\n"
+			"    Proszę wybierz jedną z czterech opcji 750px wycentrowany  950px "
+			"wycentrowany  płynny 974px."
+line:1683	Add translate
+			"When display extra sidebar is set to show, it is necessary to specify it. It "
+			"can decide to divide the width of which place of extra sidebar and to give "
+			"it. Please select it from among 25% 33% 50% 66% 75%. "
+			msgstr ""
+			"Kiedy wybrane jest pokazywanie dodatkowego panelu bocznego, konieczne jest "
+			"określenie jego parametrów . Należy podjąć decyzję o przydzieleniu "
+			"odpowiedniej szerokośćdodatkowego panelu bocznego. Proszę wybrać jedną z "
+			"dostępnych alternatyw 25% 33% 50% 66% 75%. "
+line:1693	Add translate
+			msgid "Continue&nbsp;reading&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+			msgstr "Kontynuuj&nbsp;czytanie&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+line:1701	Add translate
+			msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+			msgstr "Nowsze komentarze <span class=\"meta-nav\">&rarr;</span>"
+line:1705	Add translate
+			msgid "Entries <span>(RSS)</span>"
+			msgstr "Wpisy <span>(RSS)</span>"
+line:1693	Add translate
+			msgid "%s <span class=\"says\">says:</span>"
+			msgstr "%s <span class=\"says\">says:</span>"
+line:1709	Add translate
+			msgid ""
+			"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+			"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+			msgstr ""
+			"Ten wpis był wstawiony w %1$s i oznaczony %2$s. Dodaj do zakładek <a href="
+			"\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+line:1714	Add translate
+			msgid ""
+			"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+			"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+			msgstr ""
+			"Ten wpis był wstawiony w %1$s. Dodaj do zakładek <a href=\"%3$s\" title="
+			"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+line:1730	Add translate
+			msgid ""
+			"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+			"\">permalink</a>."
+			msgstr ""
+			"Dodaj do zakładek <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+			"\">permalink</a>."
+line:1693	Add translate
+			msgid ""
+			"<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</"
+			"span> %3$s %4$s"
+			msgstr ""
+			"<span class=\"%1$s\">Opublikowany na </span> %2$s <span class=\"meta-sep"
+			"\">by</span> %3$s %4$s"
+line:1738	Add translate
+			msgid "Settings with Live preview "
+			msgstr "Ustawienia z podglądem na żywo"
+line:1749	Add translate
+			#~ msgid "Description"
+			#~ msgstr "pozycja:"
+line:1753	Add translate
+			#~ msgid "raindrops infomation"
+			#~ msgstr "Ustawienia Raindrops"
+line:1753	Add translate
+			#~ msgid "Page %s"
+			#~ msgstr "Strona %s"
+line:1761	Add translate
+			#~ msgid "Category Blog Widget"
+			#~ msgstr "Widget w stopce"
+line:1765	Add translate
+			#~ msgid "This entry has no title"
+			#~ msgstr "Ten wpis był dodany w kategorii"
+line:1769	Add translate
+			#~ msgid "Bookmark the "
+			#~ msgstr "Zakładki"
+line:1773	Add translate
+			#~ msgid "This entry was posted in "
+			#~ msgstr "Ten wpis był dodany w kategorii"
+line:1777	Add translate
+			#~ msgid "Text Color "
+			#~ msgstr "Kolor czcionki "
+line:1781	Add translate
+			#~ msgid "Comments <span>(RSS)</span>"
+			#~ msgstr "Komentarze RSS"
+line:1785	Add translate
+			#~ msgid "(Edit)"
+			#~ msgstr "Edycja "
+----------------------------------------------
+Changelog -----------------------------------
+version:1.242
+Overview of Changes
+	Added
+		responsive style for page template blank-front.php
+		Polish language file update
+	Fixed
+		Child Theme boots display improperly
+
+Files Modified
+	modified:   languages/pl_PL.mo
+	modified:   languages/pl_PL.po
+	modified:   style.css
+	modified:	childs/boots/style.css
+
+Description of Code Changes
+	childs/boots/style.css
+		line 16 	add style selector rd-type-boots #ft
+			Fixed Raindrops theme, so no longer use the footer.png by default,
+			eliminating the problem of font color and background color of the child theme is the same
+
+	style.css
+		line 7		Change version from 1.241 to 1.242
+		line 3296-3332
+			modify style add for template blank-front.php
+
+	languages/pl_PL.po
+		line 6		Change PO-Revision-Date from 2014-09-02 15:33+0900 to 2014-09-03 08:22+0100
+		line 7		Change Last-Translator from Akio Tenman to Kornel
+		line 9		Change Language from Polish to pl
+		line 24 	Change X-Generator from Poedit 1.5.7 to 1.6.9
+		line 127	Change msgstr[1]  from %1$s odpowiedzi na to %2$s to %1$s odpowiedzi na %2$s
+		line 128	Change msgstr[2]  from %1$s odpowiedzi na to %2$s to %1$s odpowiedzi na %2$s
+		line 334	Change msgstr[2]  from Komentarze to Komentarzy
+		line 428	Change msgstr  from @ Raindropsprzykład kodu: Proszę przejdź do modułu edytora HTML to przykład kodu:proszę przejdź do trybu edytora HTML
+
+modify version:1.241 changelog below
+
+version:1.241
+
+Overview of Changes
+	Note
+		Polish Language file not works, Now waiting langage contributers update.
+		Please use English version
+		WordPress 4.0 language settiongs is
+		Dashboard / Settings / Genelral /
+			select Site Language at page bottom
+                        @see Section Description of Code Changes 'language'
+	Modified
+		deprecated 4.0.0 function change from get_all_category_ids() to get_terms( 'category', 'fields=ids' )
+                info    @see http://codex.wordpress.org/Function_Reference/get_all_category_ids
+                    @see Section Description of Code Changes 'deprecated'
+	Fixed
+		Header Image display improperly.
+			when using child theme with loop pages.
+                        @see Section Description of Code Changes 'Header Image display improperly'
+		Theme customizer and theme option.
+			post excerpt setting works improperly.
+			when show excerpt shows the content.
+                        @see Section Description of Code Changes 'Theme customizer and theme option'
+		Playlist dark works improperly.
+			It is core CSS bug. add theme patch style.
+                        @see Section Description of Code Changes 'Playlist dark works improperly'
+
+                Another BUG Fixed @see Section Description of Code Changes 'Fixed'
+	Modified
+		When theme option color type dark apply[playlist style="dark"]
+		Another color type [playlist style="light"]
+		attribute change automaticaly.( using shortcode_atts_playlist filter )
+                        @see Section Description of Code Changes 'Playlist dark works improperly'
+Files Modified
+
+        childs/boots/functions.php
+	modified:   childs/boots/inc.php
+	modified:   functions.php
+	modified:   languages/pl_PL.mo
+	modified:   languages/pl_PL.po
+	modified:   lib/option-panel.php
+	modified:   lib/validate.php
+	modified:   lib/widgets.php
+	modified:   style.css
+
+Description of Code Changes
+
+        childs/boots/functions.php
+            Remove of meaningless space line2, line124, line125
+
+        childs/boots/inc.php
+            Change array values [Fixed]
+                $raindrops_child_base_setting_args
+
+                    line 353 change from  'option_value' => "header.png"
+                                    to 'option_value' => "none",
+                    line 365 change from 'option_value' => "footer.png"
+                                    to 'option_value' => "none",
+                    line 514 change from 'title'  => esc_html__( "Category Archive Content Type", 'Raindrops' )
+                                    to 'title'        => esc_html__( "Home Entry Content Type", 'Raindrops' )
+
+                    This Change Raindrops 1.239 NEXT VERSION INFO
+                    Raindrops header image ( site title background image ) and footer background image is removed
+                    This change was to work properly with child theme ( boots )
+                    line 514 is Modify the title wrong
+        functions.php
+            line 753 Change value $raindrops_excerpt_pages
+
+                    This variable is used to define for any page, you can either display a summary
+                    Change from is_front_page() to is_home() for The detection of the top page
+
+            line 785 Change value $raindrops_display_none_pages
+
+                    This variable is used to define for any page, you can either entry_content display none
+                    Change from is_front_page() to is_home() for The detection of the top page
+
+            line 3834 raindrops_header_image() conditional if add && is_sigular()
+            [Header Image display improperly]
+
+                    issue a possible header image display improperly when child theme
+
+            line 4956 raindrops_customize_register() add conditional if ( RAINDROPS_USE_LIST_EXCERPT !== false ) and
+            line 5018 raindrops_customize_register() add conditional if ( RAINDROPS_USE_LIST_EXCERPT !== false )
+            [Theme customizer and theme option]
+
+                    RAINDROPS_USE_LIST_EXCERPT is false then Not showing Post Content Types.
+
+            line 7846 add filter add_filter( 'shortcode_atts_playlist', 'raindrops_play_list_add_atts', 10, 3 );
+            line 7847 add new function raindrops_play_list_add_atts( $out, $pairs, $atts )
+
+        languages/pl_PL.po  [language]
+            This file is language contributer donated (GPL)
+            Now waiting update
+            this file has error, error has been fixed tentatively
+            Changes
+                ///////////////////////////////////////////////////////////////
+                [error]
+                #. Raindrops
+                #: raindrops/comments.php:35
+                #, php-format
+                msgid "One Response to %2$s"
+                msgid_plural "%1$s Responses to %2$s"
+                msgstr[0] "Jedna odpowiedź na %2$s"
+                msgstr[1] "%1$s odpowiedzi na to %2$s"
+
+                [works]
+                #. Raindrops
+                #: raindrops/comments.php:35
+                #, php-format
+                msgid "One Response to %2$s"
+                msgid_plural "%1$s Responses to %2$s"
+                msgstr[0] "Jedna odpowiedź na %2$s"
+                msgstr[1] "%1$s odpowiedzi na to %2$s"
+                msgstr[2] "%1$s odpowiedzi na to %2$s"
+                //////////////////////////////////////////////////////////////
+                [error]
+                #. @ Raindrops
+                #: raindrops/footer.php:39
+                msgid "and"
+                msgstr "&\n"
+                [works]
+                #. @ Raindrops
+                #: raindrops/footer.php:39
+                msgid "and"
+                msgstr "&"
+                //////////////////////////////////////////////////////////////
+                [error]
+                #. @ Raindrops
+                #: raindrops/functions.php:1089
+                #: raindrops/functions.php:5907
+                msgid "Comment"
+                msgid_plural "Comments"
+                msgstr[0] "Komentarz"
+                msgstr[1] "Komentarze"
+                [works]
+                #. @ Raindrops
+                #: raindrops/functions.php:1089 raindrops/functions.php:5907
+                msgid "Comment"
+                msgid_plural "Comments"
+                msgstr[0] "Komentarz"
+                msgstr[1] "Komentarze"
+                msgstr[2] "Komentarze"
+                //////////////////////////////////////////////////////////////
+                [error]
+                #. @ Raindrops
+                #: raindrops/functions.php:1254
+                #: raindrops/functions.php:1273
+                msgid "code example:please HTML editor mode"
+                msgstr ""
+                "@ Raindrops\n"
+                "\n"
+                "przykład kodu: Proszę przejdź do modułu edytora HTML\n"
+                "\n"
+
+                [works]
+                #. @ Raindrops
+                #: raindrops/functions.php:1254 raindrops/functions.php:1273
+                msgid "code example:please HTML editor mode"
+                msgstr "@ Raindropsprzykład kodu: Proszę przejdź do modułu edytora HTML"
+                ///////////////////////////////////////////////////////////////
+
+                po file changes and create mo with Poedit
+
+        lib/option-panel.php
+            line212 Change value $raindrops_base_setting_args
+                Change from sc_html__( "Category Archive Content Type", 'Raindrops' ) to esc_html__( "Home Entry Content Type", 'Raindrops' )
+
+                    wrong text
+            line 704-715 conditional code commentout
+
+                    fixed child theme menu not shown
+                    For the old code, side effects has not occurred in other parts, commented for examination is continuously
+
+        lib/option-panel.php
+            line 34 raindrops_entry_content_is_search_validate() return value change from no to none
+            line 50 raindrops_entry_content_is_tag_validate() return value change from no to none
+            line 66 raindrops_entry_content_is_category_validate() return value change from no to none
+            line 82 raindrops_entry_content_is_home_validate()  return value change from no to none
+
+                    bug fixed
+        lib/widget.php [deprecated]
+            line 191 change function from get_all_category_ids() to get_terms( 'category', 'fields=ids' )
+        lib/style.css  Playlist dark works improperly
+            line 2908 selector .rsidebar .mejs-container, .lsidebar .mejs-container
+            [Playlist dark works improperly]
+
+                    playlist apply style
+
+            line 3496 selector .raindrops-pinup-entries iframe
+
+                    for pinup widget style
+
+            line 3502 selector .widget .wp-playlist-dark,.entry-content .wp-playlist-dark
+            [Playlist dark works improperly]
+
+                    playlist apply style
+            line 3507 selector .wp-playlist-dark .wp-playlist-item .wp-playlist-caption
+            [Playlist dark works improperly]
+
+                    patch style
+                    @see https://core.trac.wordpress.org/ticket/29530
+----------------------------------------------
+Changelog -----------------------------------
+version:1.241
+	Note
+		Polish Language file not works, Now waiting langage contributers update.
+		Please use English version
+		WordPress 4.0 language settiongs is
+		Dashboard / Settings / Genelral /
+			select Site Language at page bottom
+	Modify
+		duplicated function change from get_all_category_ids() to get_terms( 'category', 'fields=ids' )
+	Fixed
+		Header Image display improperly.
+			when using child theme with loop pages.
+		Theme customizer and theme option.
+			post excerpt setting works improperly.
+			when show excerpt shows the content.
+		Playlist dark works improperly.
+			It is core CSS bug. add theme patch style.
+	Modified
+		When theme option color type dark apply[playlist style="dark"]
+		Another color type [playlist style="light"]
+		attribute change automaticaly.( using shortcode_atts_playlist filter )
+----------------------------------------------
+Changelog -----------------------------------
+version:1.240
+----------------------------------------------
+Changelog -----------------------------------
+version:1.239
+
+NEXT VERSION INFO
+
+    Raindrops Theme option page default hide.
+
+    If you need Raindrops Theme Option Page.
+
+        Add functions.php below variable
+
+        $raindrops_show_theme_option = true;
+
+        Raindrops header image ( site title background image ) and footer background image is removed
+
+        if you need header , footer images
+
+        Add functions.php
+            $raindrops_show_theme_option = true;
+            header image value change from no to header.png
+            footer image value change from no to footer.png
+
+CURRENT VERSION CHANGES
+
+        Theme Customizer menu change.
+        Raindrops options can change from this page.
+		Add Theme Editor Help
+		Language Japanese Translation Update.
+		Edit post help Update
+        Add widget pinup entries
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.237
+   Fixed keyboard accessibility.
+		Fixed when using the skip link at the keyboard, an error in the tabbing order
+	Modified New functionality.
+		Add Metabox
+			custom CSS editor scoped current page or post.
+			Custom Header Image selectable for each page or post.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.233
+    Fixed fixed Warning Error at raindrops_skip_links()
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.232
+	Modified
+        Added functions raindrops_skip_links
+            If widget set then add skip link for all default widget.
+
+		$raindrops_use_wbr_for_title value change from true to false.
+
+	Added
+		Added filter function raindrops_remove_wrong_p_before()
+		Added filter function raindrops_remove_wrong_p()
+
+Note: About Raindrops Accessible Mode.
+
+	What is changed when Accessibility mode yes
+
+	Add body element CSS class raindrops-accessible-mode more link text
+	Raindrops add html below
+
+		<span class="more-link-post-unique">' . esc_html__( '&nbsp;Post ID&nbsp;', 'Raindrops' ) . get_the_ID() . '</span>'
+
+	next prev links
+
+		<span class="raindrops_unique_identifier">[Next Page ($paged + 1 |$paged -1) ]</span>
+
+	wp nav menu
+
+		<span class="raindrops_unique_identifier">[Link to %1$s]</span>
+
+	edit post link
+
+		<span class="raindrops_unique_identifier">[Post $post->ID]</span>
+
+	Custom Header Image
+
+		remove link to home element
+
+	entry title
+
+		<span class="raindrops_unique_identifier">[Article $post->ID]</span>
+
+	conditional work at responsive layout
+		jQuery('body').addClass('raindrops-accessible-mode');
+
+For the same URL, for different URL link label of the same, to realize without forcing a complicated process for the user, the link label different, the above changes, if it is set to yes Accessibility Setting This is done automatically.
+
+This feature, so you may want to display the results may differ from those entered by the user, is this setting in order to function on the basis of the consent of the user.
+
+If, in the case where you have to enable this feature, and it is to be able from accessibility links in the footer, visitors, to enable for each page at any time.
+
+Even if you do not have to enable the Accessibility Settig, keyboard accessibility by the tab key, you have been taken into account in order to be able to operate.
+
+	TAB KEY
+	If you add the sidebar widget, the Raindrops, you, since automatically generates Skip Link for the default widget is added, by using the tab, without having to scroll to move the Widget instantly .
+
+	Widget you want to support is as follows.
+		WP_Widget_Categories , WP_Widget_Archives , WP_Widget_Calendar , WP_Widget_Pages ,
+		WP_Widget_Recent_Comments , WP_Widget_RSS , WP_Widget_Text , WP_Widget_Tag_Cloud ,
+		WP_Nav_Menu_Widget , WP_Widget_Search
+
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.230
+	Modified
+            WP_Widget_Tag_Cloud inline style rule change
+                from font-size pt to font-size %
+                add filter function raindrops_widget_tag_cloud_args()
+
+            Keyboard Access
+                add ver $raindrops_enable_keyboard
+                    default true
+                    enable keyboard access at default setting
+            Add entry content linked image show outline when focus
+        Fixed
+            Skip link not showing when focus
+        Added Language file
+            Special Thanks for Translation files provided
+            @ kml1960 http://kml1960.pl pl_PL.po pl_PL.mo
+----------------------------------------------
+Changelog -----------------------------------
+version:1.228
+	Modified
+		$raindrops_accessibility_link is not support Statick Front Page
+			Custom template file, because it is not yet supported accessibility
+
+		Replace Screenshot.png
+
+		It was possible to select whether to use the WBR element to the post title
+			For Example: IF No Need wbr elements
+			Set Child Themes functions.php
+
+			$raindrops_use_wbr_for_title = false;
+
+			default: true;
+
+ 		Add $raindrops_base_font_size
+            default $raindrops_base_font_size is 13 (pixel value)
+            You can set above ver functions.php first line (<?php before) or Child Themes functions.php
+
+	Fixed
+		Primary Menu display improperly when Accessibility Mode
+			sub-menu What (level2) overlap, so there was trouble in the display,
+
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.226
+	Fixed
+		Mobile Retina Browser ( chrome ) display improperly.
+			Modification of the right margin does not need
+----------------------------------------------
+Changelog -----------------------------------
+version:1.225
+	Modified
+		Add child directory for child theme boots
+----------------------------------------------
+Changelog -----------------------------------
+version:1.224
+	Fixed
+		Display improperly full-width.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.223
+	Modified
+		Responsive CSS settings move from style.css to responsiveness.css.
+	Add directory childs for For child themes to be released.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.222
+	Modified
+		@media responsive style move to external media.css
+		This change was made because there is a setting that is responsive, interfere with the freedom of customization in child theme
+----------------------------------------------
+Changelog -----------------------------------
+version:1.221
+----------------------------------------------
+Changelog -----------------------------------
+version:1.220
+	Fixed
+		raindrops_status_bar() $post->ID non object error
+			is_page() conditional tag
+		blank_front.php
+			category list, tag list cannot customize
+		Customizer add validate callback
+			Raindrops 1.219 zend_mm_heap corrupted at child theme
+				remove validate callback
+	Modified footer.php
+		printf change from %s to %[num]$s
+	Add variable
+		NOW TEST  recommend 10 -16 (px)
+		$raindrops_base_font_size
+		You can now be made to change the font size by changing the value of $raindrops_base_font_size
+			add function raindrops_base_font_size()
+				functions.php
+			add add_filter( 'raindrops_base_font_size', 'raindrops_base_font_size' );
+				lib/hooks.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.219
+	Modified
+		Customizer add validate callback
+			Change default value from hard coded to $raindrops_base_setting_args related
+    Fixed
+		function raindrops_upload_image_parser()
+			Add preg_match $regs not set check
+		function raindrops_poster()
+			Add value check so that they will not that the sequence is applied to the parameters of esc_attr ()
+----------------------------------------------
+Changelog -----------------------------------
+version:1.217
+	Modified Raindrops Statusbar User Interface
+		Change from Statusbar shows Scroll Y to Statusbar shows mouse position browser bottom.
+	Modified Raindrops Page shows with Accessibility
+		Even if the accessibility setting is disabled in the Rain Drops theme,
+		in the theme options page and added a link to be displayed by enabling accessibility temporarily
+		This change will be unset by a $ raindrops_accessibility_link = false
+		In this change, the default value of the accessibility setting has been changed to no.
+ -----------------------------------
+Changelog -----------------------------------
+version:1.216
+	Fixed
+		Fixed post_class() wrong setting at raindrops_tile()
+Changelog -----------------------------------
+version:1.215
+	Modified Featured image size change from 600 x 200 to fullsize
+		if you no need change , Please change functions.php line703 $raindrops_featured_image_full_size = false;
+	Added
+		The Events Calendar plugin style modify.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.214
+removed
+	Removed remove_theme_mods();
+		lib/option-panel.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.213
+Modified
+	modify theme peformance
+----------------------------------------------
+Changelog -----------------------------------
+version:1.212
+
+Fixed
+	Raindrops Status bar works improperly at 750px 950px 974px static page width.
+Modified
+	Add Print style
+
+	Optimising Images
+		Luigi Rosa
+			Thank you for contribute
+				modified:   images/bg.png
+				modified:   images/dummy.png
+				modified:   images/footer.png
+				modified:   images/footerbck.png
+				modified:   images/h2.png
+				modified:   images/h2b.png
+				modified:   images/h2c.png
+				modified:   images/header.png
+				modified:   images/info.png
+				modified:   images/ja-em.png
+				modified:   images/link.png
+				modified:   images/next.png
+				modified:   images/number.png
+				modified:   images/options/arrows-vs.png
+				modified:   images/options/icons32-vs.png
+				modified:   images/please_upload.png
+				modified:   images/post-format-aside.png
+				modified:   images/post-format-audio.png
+				modified:   images/post-format-chat.png
+				modified:   images/post-format-gallery.png
+				modified:   images/post-format-image.png
+				modified:   images/post-format-link.png
+				modified:   images/post-format-quote.png
+				modified:   images/post-format-status.png
+				modified:   images/post-format-video.png
+				modified:   images/previous.png
+				modified:   images/raindrops-chat-author-0.png
+				modified:   images/raindrops-chat-author-1.png
+				modified:   images/raindrops-chat-author-2.png
+				modified:   images/raindrops-chat-author-3.png
+				modified:   images/raindrops-chat-author-4.png
+				modified:   images/raindrops-chat-author-5.png
+				modified:   images/raindrops-nav-menu-expand.png
+				modified:   images/raindrops-nav-menu-shrunk.png
+				modified:   images/require.png
+				modified:   images/retina/info.png
+				modified:   images/retina/link.png
+				modified:   images/retina/next.png
+				modified:   images/retina/post-format-aside.png
+				modified:   images/retina/post-format-audio.png
+				modified:   images/retina/post-format-chat.png
+				modified:   images/retina/post-format-gallery.png
+				modified:   images/retina/post-format-image.png
+				modified:   images/retina/post-format-link.png
+				modified:   images/retina/post-format-quote.png
+				modified:   images/retina/post-format-status.png
+				modified:   images/retina/post-format-video.png
+				modified:   images/retina/previous.png
+				modified:   images/retina/raindrops-chat-author-0.png
+				modified:   images/retina/raindrops-chat-author-1.png
+				modified:   images/retina/raindrops-chat-author-2.png
+				modified:   images/retina/raindrops-chat-author-3.png
+				modified:   images/retina/raindrops-chat-author-4.png
+				modified:   images/retina/raindrops-chat-author-5.png
+				modified:   images/retina/require.png
+				modified:   images/retina/rss.png
+				modified:   images/retina/stop.png
+				modified:   images/rss.png
+				modified:   images/screen-shot-dark.png
+				modified:   images/screen-shot-light.png
+				modified:   images/screen-shot-minimal.png
+				modified:   images/screen-shot-w3standard.png
+				modified:   images/sidebar.png
+				modified:   images/sticky.png
+				modified:   images/stop.png
+				modified:   images/topbck.png
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.211
+
+Added
+	Raindrops Status bar at browser bottom ( It shows when scroll-y 200px )
+		for sub navigation.
+Fixed
+	Fixed shows scrollbar-x when 600px > Browser width.
+Modified
+	Code cleaning
+----------------------------------------------
+Changelog -----------------------------------
+version:1.210
+
+Fixed
+	Fixed	blank-front.php template
+		Notwork Main column shows 2column when page width fluid (responsive) and browser width > 1280px;
+
+Modified
+	Customize.php Label change from 'Display Header Text' to 'Move Tagline from header image to top right'
+	accessibility  style change raindrops-accessible-mode .hfeed a:focus style
+----------------------------------------------
+Changelog -----------------------------------
+version:1.208
+
+Fixed
+	Fixed out-of-the-box
+	 Save data without user action.
+
+Modified
+	blank-front.php template
+		Main column shows 2column when page width fluid (responsive) and browser width > 1280px;
+
+	Change Raindrops Default setting
+		Accessibility Setting default value from no to yes.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.206
+
+modified
+		 Modified Static Page Template blank-front.php
+			It is now be able to view the featured image in the list of each of the specified list of recent post,
+			list that specifies the tag, the category. and can also specify the excerpt length
+
+			Live Preview below
+			http://www.tenman.info/wp3/previewraindrops/blank-front-template/
+----------------------------------------------
+Changelog -----------------------------------
+version:1.205
+
+modified
+		 Support Admin Color Scheme theme option page
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.204
+
+moved
+
+	Removed from header.php( html5 header template part file ) blow
+
+		http://html5shiv.googlecode.com/svn/trunk/html5.js
+
+		Raindrops html5 stop support for OLD Browser( IE8,IE7 )
+
+		IE old browser shows allways xhtml document type.
+
+		Note: This change is SERVER_SIDE settings,
+		I recommend that the browser is set
+		when the cache of less than IE9 as not performed
+added
+
+	function raindrops_prepend_loop()
+
+		You can add loop before content with
+		action hook raindrops_prepend_loop or template part file(
+		hook-prepend-loop.php )
+
+	function raindrops_append_loop()
+
+		You can add loop before content with
+		action hook raindrops_append_loop or template part file(
+		hook-append-loop.php )
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.203
+	Modify
+		Modify html list element basic style remove for plugin compatibility
+	Fixed
+		Fixed class raindrops_unique_identifier_walker_nav_menu
+				has error ( empty object notice )
+
+		Fixed raindrops bug with prettyPhoto
+
+			@see https://wordpress.org/support/topic/raindrops-bug-with-prettyphoto?replies=8
+
+			Thank you @0soYoung
+
+		Fixed Gist embed script display improperly.
+
+		Fixed Creyon syntax highlighter improperly.
+			http://wordpress.org/plugins/crayon-syntax-highlighter/
+
+		Fixed Raindrops CSS table class works improperly.
+
+		table element example ( indivisual styles for each post )
+
+    <table class="auto left">
+        <col class="left-column">
+        <col class="right-column">
+        <tbody>
+            <tr>
+                <th colspan="2">Example table element</th>
+            </tr>
+             <tr>
+                <td class="center"><img src="http://www.tenman.info/images/pen.jpg" width="100" alt="test image" /></td>
+                <td class="left">text align left use CLASS left</td>
+            </tr>
+            <tr>
+                <td class="right">text align right use CLASS right</td>
+                <td class="left">text align left use CLASS left</td>
+            </tr>
+            <tr>
+                <td class="center">text align center use CLASS center</td>
+                <td class="center">text align center use CLASS center</td>
+            </tr>
+          <tr>
+                <td class="left">text align center use CLASS center</td>
+                <td class="right">text align right use CLASS right</td>
+            </tr>
+        </tbody>
+    </table>
+
+	CSS
+		create a customfield
+			name:css
+			value:
+			/* columns width.( need table css class auto )*/
+			.left-column{
+			width:100px;
+			}
+			.right-column{
+			width:auto;
+			background:#eee;
+			}
+			/* cell color and background */
+			td:first-child{
+			background:#ccc;
+			color:#000;
+			border:1px dotted #999;
+			}
+			td:last-child{
+			background:#eee;
+			color:#000;
+			border:1px solid #aaa;
+			}
+			th{
+			background:#aaa;
+			color:#fff;
+			font-size:138.5%;
+			}
+			/* width of table */
+			table{
+			width:100%;
+			margin:3em auto;
+			}
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.202
+	Fixed
+		Header image not shows when wp-content dir rename.
+	Added
+		function raindrops_custom_field_meta_helper()
+		file preparation.php
+			 blank template for NO FTP ( Theme Editor ) users
+----------------------------------------------
+Changelog -----------------------------------
+version:1.201
+modified
+	Arbitrary Header/Footer Scripts:	Stop default
+
+		Deactivate default functionality, add to header embed script from custom field.
+			functions.php
+				define( 'RAINDROPS_CUSTOM_FIELD_SCRIPT' , false );
+					Anyone can not use custom field name 'javascript'.
+
+	Arbitrary Header CSS:	Same as the conventional
+
+			functions.php
+				define( 'RAINDROPS_CUSTOM_FIELD_SCRIPT' , true );
+					Need editor role.
+	Arbitrary Header Elements:	It is available, but limit has been added
+
+		Use the custom field name meta, there was no limit to the element
+		that can be inserted, but it was decided to limit.
+		Can be inserted element,
+		it was decided to limit base, link, meta element.
+				Need editor role. only singular page, post.
+
+			Purpose of Arbitrary.
+				Add OGP(Open Graph Protocol) handmade
+					<meta property="og:title" content="test">
+					<meta property="og:type" content="article">
+					<meta property="og:description" content="test">
+					<meta property="og:url" content="test">
+					<meta property="og:image" content="test">
+					<meta property="og:site_name" content="test">
+					<meta property="og:email" content="test@test.com">
+
+				When post content has relative links,define base URL and target.
+					<base href="http://www.tenman.info/images/" target="_blank">
+	Added
+		Template widget-sticky.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.200
+	Modify IMPORTANT CHANGES
+		out-of-the-box support
+			Raindrops not save default settings to the database without explicit user action
+			You can check as follows: Raindrops theme is whether you are using a database table
+
+			Raindrops options page title after message.
+				Now, Raindrops Not Using Database Table
+				or
+				Saved Database table name: Saved Table Name
+
+		Note: For child theme developers
+			About Child Theme UNINSTALL.
+
+			add_action( 'switch_theme', 'child_theme_uninstall' );
+
+			function child_theme_uninstall(){
+
+				delete_option( "child_theme_settings" );
+				// Do not foget remove raindrops theme settings.
+				delete_option("raindrops_theme_settings");
+			}
+
+If you do not perform this setting, it was uninstalled the child theme, If you then install the Raindrops, will be read as the theme settings to change the child theme. In this case, it may be different from the default display, it is to be displayed, such as w3standard.
+
+	Fixed wp_nav_menu() display impropely when accessibility settions 'no'
+			hover action not work
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.163
+	Add
+		raindrops_comments_link()
+			separate from raindrops_posted_on()
+		filter hook raindrops_portfolio_nav
+	Modify
+		sidebar-default.php WAI-AREA role value change from complementary to navigation
+----------------------------------------------
+Changelog -----------------------------------
+version:1.162
+	Modify
+		Link text: The Continue Reading link, when theme option accessibility settings true
+		Keyboard navigation support at primary menu
+		Comment form add add aria-required="true" when theme option Document type settings html5
+		Add ARIA Roles:role="complementary",role="contentinfo", role="main"
+		CSS class screen-reader-text change left to crip
+----------------------------------------------
+Changelog -----------------------------------
+version:1.161
+	Modify
+		raindrops_year_list()
+		raindrops_month_list()
+		raindrops_fallback_title()
+		raindrops_nav_menu_primary()
+	Add Class raindrops_unique_identifier_walker_nav_menu extends Walker_Nav_Menu
+----------------------------------------------
+Changelog -----------------------------------
+version:1.159
+	Fixed Can not detect browser page width 750px 950px 974px.
+	Modify Update file languages / raindrops.pot
+	Modify Hide Featured image when password post.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.158
+	Fixed
+		Fixed raindrops.js not work at Firefox26.0
+
+			functions.php line:1500
+				Change from:
+				wp_register_script( 'raindrops', $raindrops_js, array( 'jquery' ), $raindrops_current_data_version, true );
+				to:
+				wp_register_script( 'raindrops', $raindrops_js, array( 'jquery', 'jquery-migrate' ), $raindrops_current_data_version, false );
+
+       Fixed Untranslated string $raindrops_comment_string
+				contribute: lrosa
+					Thank you.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.156
+modified
+	Add CSS class detect IE11 and modified CSS
+	modified raindrops_nav_menu_primary()
+	modified ja.po , ja.mo
+	Fixed
+		Fixed Not display theme infomation help
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.155
+	Modify
+		CSS class color-5,color-4,color-3,color-2,color-1,color1,color2,color3,color4,color5.
+		Child a elements color set automaticaly.
+	Modify
+		Remove entry title permalink from singular post and page
+	Fixed
+		Not display Raindrops help.
+		filter change from contextual_help to load-post.php,load-post-new.php.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.154
+	Fixed functions.php line: 3172
+        Typo Change from return 'test' . $header_image->height;
+        			to   return $header_image->height;
+----------------------------------------------
+Changelog -----------------------------------
+version:1.153
+	Modyfy
+		Remove tag fixed-width ,flexible-width
+		Change screenshot.png size from 600x450 to 880x660
+	Fix
+		Fixed raindrops_tile() navigation link improperly.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.152
+	Modyfy
+		Add filter hooks
+			raindrops_load_text_domain
+		Add function
+			raindrops_add_more()
+		Modyfy function
+			raindrops_color_base_clone()
+
+		Add raindrops-config-example.php
+			When If you need more customize
+			Rename from raindrops-config-example.php
+					to raindrops-config.php
+			and set your value.
+
+		Add Sidebar and contents equal height support.
+			( without list-of-post.php )
+
+		Add function add args
+			raindrops_recent_posts()
+			raindrops_category_posts()
+
+		Add tags
+			fixed-layout,
+			fluid-layout,
+			responsive-layout,
+			accessibility-ready
+
+	Note: How to enable accessibility settings
+
+		1. Open Raindrops theme settings page.
+			( Dashboard / Appearance / Raindrops theme settings )
+		2. Accessibility Settings edit value set yes. and save.
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.149
+	Modify
+		Add Raindrops setting option var
+			$raindrops_show_theme_option
+				default true
+				false then theme option page hide.
+		Add filter hook raindrops_base_font_size
+			Raindrops base font size is 13px;
+			Set base font size when CSS body font size.
+				for example change from 13px to 16px
+
+				add_filter( 'raindrops_base_font_size', 'my_test' );
+
+				function my_test( $content ){
+					return 16;
+				}
+		Add action hook raindrops_remove_theme_mods
+			For child themes
+----------------------------------------------
+Changelog -----------------------------------
+version:1.148
+	Fixed
+		Fixed Warning: Missing argument 2 for add_action()
+			lib/option-panel.php
+			Change from add_action ( 'raindrops_SubMenu_GUI_pre' )
+					to do_action ( 'raindrops_SubMenu_GUI_pre' )
+			Typo.
+		Fixed Not shows placemarks width Basic Google Maps Placemarks
+			style rules issue.
+			Change from .hfeed div to .hfeed > div
+	Modify
+		function raindrops_loop_class()
+	Add filter
+		add_filter( 'esc_html', 'remove_wbr' ,999);
+			Remove wbr element when Plugins used esc_html for title
+	Add function
+		function raindrops_list_of_posts()
+			For static page template list-of-post.php
+		function raindrops_tile()
+			For front-portfolio.php
+	Add file
+		Static page template list-of-post.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.147
+	Add file
+		images/headers/index.php
+		images/index.php
+		images/options/index.php
+		languages/css/index.php
+		languages/index.php
+		lib/csscolor/index.php
+		lib/index.php
+		page-templates/index.php
+	Add deny direct access code each templates
+		if ( ! defined( 'ABSPATH' ) ) { exit; }
+	Add action hook
+		raindrops_customize_register
+		raindrops_customize_register
+	Add filter hook
+		raindrops_chat_filter
+----------------------------------------------
+Changelog -----------------------------------
+version:1.146
+	Fixed
+		Fixed broken function
+			raindrops_link_unique()
+				functions.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.145
+	Coding style change
+		Fine correction , needs minimam
+	Fixed
+		Fixed html comment error from &lt;! -- to &lt;!--
+----------------------------------------------
+Changelog -----------------------------------
+version:1.144
+	Coding style change
+		indent from space to tab
+	Fixed
+		Post data sanitize
+			lib/option-panel.php
+				raindrops_upload_image()
+----------------------------------------------
+Changelog -----------------------------------
+version:1.143
+	Coding style change
+		syntax change
+			from and to &&
+			from or to ||
+		use Yoda Conditions
+		Remove Trailing Spaces
+----------------------------------------------
+Changelog -----------------------------------
+version:1.142
+	Fixed function name improperly, not prefixed
+		Change
+		from custom_remove_aria_required1()
+		to raindrops_custom_remove_aria_required1
+		Change
+		from custom_remove_aria_required1()
+		to raindrops_custom_remove_aria_required1
+----------------------------------------------
+Changelog -----------------------------------
+version:1.141
+	Remove currently not using functions , vars and PHP5.4 strict errors
+
+		Remove function raindrops_get_month()
+		Remove function &raindrops_raiseError()
+			lib/csscolor/csscolor.php
+		Remove ver $count
+			lib/option-panel.php
+
+	Replace function
+
+		from move_uploaded_file()
+		to wp_handle_upload()
+
+	Add filter function raindrops_theme_upload_filename()
+----------------------------------------------
+Changelog -----------------------------------
+version:1.140
+	Fixed Header image not shown
+----------------------------------------------
+Changelog -----------------------------------
+version:1.139
+	Add action hooks all templates
+		do_action( 'raindrops_pre_'.basename( __FILE__) );
+		do_action( 'raindrops_after_'.basename( __FILE__) );
+
+	Add action hooks all template part files
+		do_action( 'raindrops_pre_part_'. basename( __FILE__, '.php' ). '_'. basename( $template ) );
+		do_action( 'raindrops_after_part_'. basename( __FILE__, '.php' ). '_'. basename( $template ) );
+	Add filter hooks functions.php
+		raindrops_theme_url
+		raindrops_author_url
+
+	Add function raindrops_detect_header_image_size( $xy = 'width' )
+		functions.php
+	Add new dynamic CSS class raindrops-pub-new,raindrops-mod-new
+		raindrops_post_class() functions.php
+		description: raindrops-pub-new and raindrops-mod-new
+			From the present, it is contributed
+			within three days or
+			the above-mentioned class is
+			automatically added to the updated contribution.
+
+		3day change 7day
+
+			add_filter( 'raindrops_new_period', 'my_new_period' );
+			function my_new_period( $day ) {
+
+				return 7;
+			}
+----------------------------------------------
+Changelog -----------------------------------
+version:1.138
+Added
+	Add Action hooks functions.php
+		do_action( 'raindrops_include_after' );
+		do_action( 'raindrops_last' );
+
+Fixed
+	Previus review issue
+		Deprecated: Function split() is deprecated
+		Change from  split()
+		to preg_split( '[x,*]', $size );
+	Fixed When RAINDROPS_USE_AUTO_COLOR == false
+		raindrops_edit_help() has error.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.137
+Fixed
+	Fixed custom-doc display improperly.
+		when functions.php $raindrops_page_width value set
+		then page width display improperly and header image hide.----------------------------------------------
+Changelog -----------------------------------
+version:1.136
+Add
+	Add new function raindrops_comment_class()
+	Add new filter function raindrops_filter_header_text_color
+----------------------------------------------
+Changelog -----------------------------------
+version:1.135
+Fixed
+	Fixed layout broken when add style rule font-size to body element
+Removed
+	backward-compatibility.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.134
+Modified
+    add filter
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.133
+Modified
+    add filter
+        raindrops_light_dark_bg
+        raindrops_light_light_bg
+        raindrops_light_color
+        raindrops_default_dark_bg
+        raindrops_default_light_bg
+        raindrops_default_color
+        raindrops_dark_dark_bg
+        raindrops_dark_light_bg
+        raindrops_dark_color
+
+        for wp_nav_menu(),body background, change brightness or darkness
+----------------------------------------------
+Changelog -----------------------------------
+version:1.132
+Modified
+    font style rule move from style.css to fonts.css
+        ( without media query font settings )
+
+    Note:h1,h2,h3 font-weight change from bold to normal
+        ( setting rule contain fonts.css )
+    Image file uploader add wp_verify_nonce check
+        lib/option-panel.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.131
+Added
+    Add new action hooks
+        do_action( 'raindrops_'. basename(__FILE__) );
+        date.php , page.php , image.php , search.php ,
+        front-page.php , front-portfolio.php ,
+        full-width.php and page-featured.php
+
+    for example
+
+        Raindrops monthly archives is table listed
+        If you need normal loop list on Child Theme.
+
+        <code>
+
+        Add to Child Themes functions.php
+
+        add_action( 'raindrops_date.php', 'raindrops_fallback_template' );
+        function raindrops_fallback_template(){
+
+            get_template_part( 'index' );
+            exit;
+        }
+        </code>
+        Completely, operation in which the date.php template of the parent theme
+        did not exist is easily realizable.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.130
+Fixed
+    Fixed visual issue entry title before featured image size.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.129
+Added
+    Add page template page-featured.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.128
+Fixed
+    Fixed Wrong function name from month_list to raindrops_month_list
+        filter name change from month_list_post_count to raindrops_month_list_post_count
+    Fixed loop.php class attribute value improperly ( not spaced )Modified
+    seach result search form submit button position.
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.127
+
+Fixed
+    Fixed CSS Parse Error ( W3C CSS validator )
+Modified
+    Post format Status shows avatar when small screen.
+Removed
+    Function the_excerpt() removed from all templates without brank-front.php
+Added
+    The addition of the alternate function of the_excerpt()
+
+        functions.php line 454-503
+
+    /**
+     * the_content( ) or the_excerpt
+     *
+     * the_excerpt use where index,archive,other not single pages.
+     * If RAINDROPS_USE_LIST_EXCERPT value false and use the_content .
+     *
+     * add ver 1.127
+     * When use excerpt please set $raindrops_where_excerpts
+     */
+        if ( ! defined( 'RAINDROPS_USE_LIST_EXCERPT' ) ) {
+
+            define( "RAINDROPS_USE_LIST_EXCERPT", false );
+        }
+
+        // values 'is_search', 'is_archive', 'is_category' ,'is_tax', 'is_tag' any conditional function name
+
+        if( ! isset( $raindrops_where_excerpts ) ) {
+
+            $raindrops_where_excerpts = array( 'is_search' );
+        }
+    /**
+     *
+     *
+     *
+     * @since 1.127
+     */
+        if ( ! function_exists( 'raindrops_detect_excerpt_condition' ) ) {
+
+            function raindrops_detect_excerpt_condition( ){
+
+                global $raindrops_where_excerpts;
+
+                if( RAINDROPS_USE_LIST_EXCERPT !== true ) {
+
+                    return false;
+                }
+
+                if( ! empty( $raindrops_where_excerpts ) ) {
+
+                    foreach( $raindrops_where_excerpts as $excerpt ) {
+
+                        if( $excerpt() == true ){
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
+        }
+
+        By this setup, I think that change became possible simply more freely.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.126
+
+fixed
+    Fixed default sidebar search form shows list before WordPress 3.5.2
+        if smaller than WordPress 3.6 then not showing search form.
+    Fixed searchform.php html5 html structure not correct.
+        WAI ARIA role="search" move from input attribute to form attribute.
+modified
+    Modified Post format status
+        Change show posted on link at front page.
+            Care for microformats
+        get_avatar image modified for microformats at front page.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.124
+
+fixed
+    Fixed monthly archive list element id broken.
+
+    Avatar image not contain alt attribute.
+        author.php
+modified
+    Add wpautop when showing 'Biographical Info' at author.php
+    function raindrops_entry_title()
+        modified title element changeable
+
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.123
+
+    Fixed
+        author.php
+            Table layout display improperly.
+        entry-blog.php
+            html add div close tag.
+    modified
+        author.php
+            add microformats
+        date.php
+            add microformats
+        comment form
+            remove area required when html5
+                Markup validation Service error
+                    Attribute aria-required not allowed on element textarea at this point.
+        lib/option-panel.php
+            raindrops_color_selector() add $scheme check.
+
+    Add filter
+
+        This filter can change Monthly Archive entry list count.
+
+        for example
+
+        add_filter( 'month_list_post_count', 'my_month_list_post_count' );
+
+        function my_month_list_post_count( $count ) {
+
+            return 10;
+        }
+----------------------------------------------
+Changelog -----------------------------------
+version:1.121
+    Add browser detection select var $raindrops_browser_detection
+        use server side browser detection or javascript browser ditection
+        default change server side( PHP ) to javascript browser detection for cached Raindrops theme.
+
+    Add style rules for
+        .entry-content input[type="email"],
+        .entry-content input[type="text"],
+        .entry-content input[type=url],
+        .entry-content input[type=tel],
+        .entry-content input[type=number],
+        .entry-content input[type=color],
+----------------------------------------------
+Changelog -----------------------------------
+version:1.120
+
+    Fixed confuse template settings
+        Deleted header-html5.php template
+        Modified header.php template.
+            change xhtml to html5
+        Added header-xhtml template for document type xhtml 1.0
+
+    Fixed
+        body_class language class display improperly.
+    Modified
+        Add function raindrops_non_breaking_title
+            Entry title none breaking text breakable
+----------------------------------------------
+
+Changelog -----------------------------------
+version:1.119
+    modified
+        accessibility issues
+    Fixed
+        firefox browser image size improperly when table contain images
+        below element patturn overflow image
+
+        <table><tr><td><img /></td></tr></table>
+----------------------------------------------
+Changelog -----------------------------------
+version:1.118
+    Remove accesskey and tabindex
+
+    delete How to use NVDA reader. ver 1.116 from README.txt
+
+----------------------------------------------
+
+Changelog -----------------------------------
+version:1.117
+    Remove tag accessibility-ready
+
+The following theme tags are not allowed:
+- accessibility-ready
+See http://wordpress.org/themes/about/ for a complete list of approved theme tags.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.116
+    modified
+        html meta element from charset attribute to http-equiv
+
+        page-templates/front-portfolio.php
+            Change,Display only has featured image post.
+            Add Pagenation.
+        searchform
+            Add label <label class="screen-reader-text" for="s">Search for:</label>
+        style.css
+            Try accessibility add accessibility-ready tag
+
+    add
+        function raindrops_link_unique( )
+        function raindrops_doc_type_settings_validate( )
+        function raindrops_accessibility_settings_validate( )
+        images/raindrops-nav-menu-expand.png
+        images/raindrops-nav-menu-shrunk.png
+        Add searchform default sidebar.
+
+        theme option
+            Accessibility Settings
+            Document Type Settings
+
+Note:
+    This version trying theme accessibility.
+
+    How to activate Accessibility mode.
+        Open Raindrops option page.
+        Accessibility Settings value set to yes.( default no ).
+
+    accessibility checking tool
+        Functional Accessibility Evaluator 1.1
+        http://fae.cita.uiuc.edu/
+[var 1.118 deleted ]
+    How to use NVDA reader.
+        english version
+        http://www.nvaccess.org/
+        japanese version
+        http://sourceforge.jp/projects/nvdajp/
+
+        1. nvda start
+        2. Show WordPress blog with Raindrops.
+        3. accesskey alt + s (chrome win) alt + shift + s (firefox) then searchform active.
+        4. enter tab key Please press the tab key several times.
+        5. focus entry then nvda read a content
+
+                enter then move to single.php ( nvda ) or
+                press tab key then move to current entry title ( for not nvda )                 and more press tab key move to next content ( back to shift + tab )
+[/ var 1.118 deleted ]
+----------------------------------------------
+Changelog -----------------------------------
+version:1.115
+    modified
+        function raindrops_install_navigation()
+            Theme data automatic change is supported at the time of site change.        header-front.php
+            Support Responsive
+        front-portfolio.php
+            The posts contain featured image shows 9
+        searchform.php
+            Add esc_url()
+        csscolor.css.php
+            Add gradient for IE10 at nav_menu
+    fixed
+        broser detect regex fail IE10
+----------------------------------------------
+Changelog -----------------------------------
+version:1.113
+    fixed Post Format posted in Display improperly on single.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.112
+    fixed Post Format Status Display improperly on single.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.111
+Added
+    Retina display support
+        Add file
+        new file:   images/please_upload.png
+        new file:   images/post-format-aside.png
+        new file:   images/post-format-audio.png
+        new file:   images/post-format-chat.png
+        new file:   images/post-format-gallery.png
+        new file:   images/post-format-image.png
+        new file:   images/post-format-link.png
+        new file:   images/post-format-quote.png
+        new file:   images/post-format-status.png
+        new file:   images/post-format-video.png
+        new file:   images/raindrops-chat-author-0.png
+        new file:   images/raindrops-chat-author-1.png
+        new file:   images/raindrops-chat-author-2.png
+        new file:   images/raindrops-chat-author-3.png
+        new file:   images/raindrops-chat-author-4.png
+        new file:   images/raindrops-chat-author-5.png
+        new file:   images/retina/info.png
+        new file:   images/retina/link.png
+        new file:   images/retina/next.png
+        new file:   images/retina/post-format-aside.png
+        new file:   images/retina/post-format-audio.png
+        new file:   images/retina/post-format-chat.png
+        new file:   images/retina/post-format-gallery.png
+        new file:   images/retina/post-format-image.png
+        new file:   images/retina/post-format-link.png
+        new file:   images/retina/post-format-quote.png
+        new file:   images/retina/post-format-status.png
+        new file:   images/retina/post-format-video.png
+        new file:   images/retina/previous.png
+        new file:   images/retina/raindrops-chat-author-0.png
+        new file:   images/retina/raindrops-chat-author-1.png
+        new file:   images/retina/raindrops-chat-author-2.png
+        new file:   images/retina/raindrops-chat-author-3.png
+        new file:   images/retina/raindrops-chat-author-4.png
+        new file:   images/retina/raindrops-chat-author-5.png
+        new file:   images/retina/require.png
+        new file:   images/retina/rss.png
+        new file:   images/retina/stop.png
+        new file:   images/wp3.jpg
+
+    Add support Post Format
+        'aside', 'chat', 'link', 'image', 'quote', 'video'
+    Add raindrops_post_class()
+    Add raindrops_chat_filter()
+    Add raindrops_chat_author_id()
+
+Removed
+        removed posted on, posted in, on Stiky Post
+
+Note: The display of the contents at the time of applying Post Format
+
+    When entry title is blank
+        Show Post format image link to single.php
+    When entry content is blank
+        posted on is hide and shows only comment link
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.110
+modified
+    posted on and posted in
+        correct word space. lang en_US
+----------------------------------------------
+Changelog -----------------------------------
+version:1.109
+modified
+    Correction of template coding
+    gettext change from __() to esc_html__()
+    Translation check using WP_LANG 'ja'
+    Remove file backward-compatibility.php
+----------------------------------------------
+Changelog -----------------------------------
+version:1.108
+fixed
+    Fixed Invalid argument supplied error.
+    function raindrops_loop_title()
+        add $page_title_c  = "";
+modified
+    Post Format Status Add  publish day link
+    Widget category archive ,monthly archive
+        background color change when color type dark.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.107
+fixed
+    Fixed full size editor width display improperly when page width fluid.
+    Fixed Nested grid display improperly front-page.php + sticky widget area + text widget
+     example:
+        <div class="yui-gb">
+            <div class="yui-u first">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            </div>
+            <div class="yui-u">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            </div>
+            <div class="yui-u">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+----------------------------------------------
+Changelog -----------------------------------
+version:1.106
+fixed
+    Fixed Post format Status display improperly on index.php
+        style.css style rule chanage.
+modified
+    member functions prefixed.
+        option-panel.php class raindrops_menu_create
+    functions more readable.
+        functions.php
+added
+    add_theme_support( 'custom-header') add $args below
+        'admin-preview-callback' => 'raindrops_admin_header_image'
+        'admin-head-callback' => 'raindrops_admin_header_style'
+----------------------------------------------
+Changelog -----------------------------------
+version:1.104
+
+Warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'raindrops_theme_support_setup' not found or invalid function name
+
+fixed
+    Fixed delete below code from functions.php line 176
+        add_action( 'after_setup_theme', 'raindrops_theme_support_setup' );
+
+It is thankful to xaotikdesigns who pointed out this bug.
+----------------------------------------------
+
+Changelog -----------------------------------
+version:1.103
+
+added
+    function raindrops_postmeta_cap()
+        User level 0-3 user cannot use custom field keyname 'css','meta','javascript'.
+modified
+    footer.php
+        Change from get_bloginfo('name') to $raindrops_current_theme_name
+        Change from 'http://www.tenman.info/wp3/raindrops' to $raindrops_current_data_theme_uri
+
+    functions.php
+        Add
+            $raindrops_current_data
+            $raindrops_current_data_theme_uri
+            $raindrops_current_data_author_uri
+            $raindrops_current_data_version
+            $raindrops_current_theme_name
+        Move files
+            hooks.php to functions.php
+
+            register_nav_menus()
+            add_theme_support()
+        Change hook
+            add_raindrops_stylesheet use wp_enqueue_scripts hook
+    csscolor.php,PEAR.php
+
+    Class name is changed
+        From CSS_Color to raindrops_CSS_Color
+            member functions prefixed
+        From PEAR to raindrops_PEAR
+            member functions prefixed
+Removed
+    PEAR.php
+         Merged lib/csscolor/csscolor.php
+
+----------------------------------------------
+version:1.102
+modified
+    Add IE version check $raindrops_fluid_minimum_width
+----------------------------------------------
+Changelog -----------------------------------
+version:1.101
+added
+    add_filter('widget_text','raindrops_ie_height_expand_issue');
+fixed
+    Fixed function raindrops_ie_height_expand_issue()
+        regex change
+            support <img attr... /> and <img attr... >
+    Tags title display twice when post format status.
+
+modified
+    style.css
+----------------------------------------------
+Changelog -----------------------------------
+version:1.100
+added
+    Sidebar widget title add element span
+        Handling of a title text is made easy on CSS work.
+    Add home link for Custom Header Image
+        If you not need link then
+        header-html5.php
+            change from raindrops_header_image( 'home_url' )
+                    to  raindrops_header_image( 'elements' ) //not link
+fixed
+    Fixed IE8 + color type 'light' display improperly.
+        A horizontal scroll bar stops operating.
+            lib/csscolor.css.php
+                comment out below body rule.
+                filter: progid:DXImageTransform.Microsoft.gradient();
+modified
+    CSS Property 'word-wrap' value break-word
+        From several users, the style a new line for is started in the middle of a word had interrogative voice.
+        In a tentative way, I remove this rule.
+        If there are any opinions, please give http://www.tenman.info/wp3/raindrops/ a comment.
+----------------------------------------------
+Changelog -----------------------------------
+version:1.009
+Fixed
+    Fixed IE + color type 'light' display improperly.
+        Thanks @Gonta
+    Fixed Can not remove custom header image.
+    Fixed Less than 640px width browser style issue.
+        Posted in display improperly where without home.
+    Fixed Extra Sidebar space issue when hide extra sidebar on loop pages( ex: index.php )
+Modified
+    From Comma separated values to only space where Posted in tags list and categoris list
+    Static Page support featured image.
+
+Add
+    Recent Raindrops support responsive blog for modern browsers.
+    Raindrops not support responsive for IE browser.
+    Raindrops can display fluid layout for IE.
+    Add to conditional $raindrops_fluid_minimum_width value.
+
+        functions.php line:191
+
+        if( $is_IE ){
+            $raindrops_fluid_minimum_width = '640';
+        }
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.008
+Fixed
+    Fixed NOTICE: wp-content/themes/raindrops/functions.php:3033 - Undefined variable: uri
+    Fixed NOTICE: wp-content/themes/raindrops/functions.php:3946 - Undefined variable: calendar_output
+----------------------------------------------
+Changelog -----------------------------------
+version:1.007
+Fixed
+    Fixed no use getimagesize() another page width 750px,950px,974px        Change get_custom_header()
+----------------------------------------------
+Changelog -----------------------------------
+version:1.006
+Fixed
+    Fixed WARNING: wp-content/themes/raindrops/functions.php:3065 - Division by zero
+    Fixed NOTICE: wp-content/themes/raindrops/functions.php:3064 - getimagesize(): Read error!
+        Change function from getimagesize() to get_custom_header().
+    Fixed NOTICE: wp-content/themes/raindrops/functions.php:4238 - Undefined variable: is_IE
+        add global $is_IE
+    Fixed Use of variable in translation function in lib/option-panel.php, lines 755, 760, 793, 880. Translation function calls must NOT contain PHP variables.
+        Remove Translation.
+    Fixed While using the fluid width setting, the layout aligns itself to the left hand side in viewport widths greater than 1280px. Would be nice if it center aligns itself. [tip: using `margin: 0 auto;` instead of `margin: 0 2%;` for `#doc3` could fix this.]
+        Add media query
+
+        @media screen and (min-width : 1280px){
+            #doc3{
+                margin:0 auto;
+            }
+        }
+Modified
+        hooks.php Add if ( ! function_exists( 'raindrops_theme_setup' ) )
+            Customize easy For Child Theme
+----------------------------------------------
+Changelog -----------------------------------
+version:1.005
+Fixed
+    Fixed function raindrops_small_device_helper has bug
+        header image display improperly
+        when uploading files ‘Organize my uploads into month- and year-based folders’ checked
+
+    Fixed front-portfolio.php sticky post Wrong Coding.
+
+    Fixed reset-fonts-grids.css
+            white bar at the bottom of the page.
+                Thanks Paintballer
+
+
+----------------------------------------------
+Changelog -----------------------------------
+version:1.004
+modified
+    Theme options panel design change
+Fixed
+    Fixed Post format gallery has error when set post format gallery and no gallery item.
+    Fixed Post format status display improperly when window width less than 640px
+----------------------------------------------
+Changelog -----------------------------------
+version:1.003
+modified
+    Modified raindrops_loop_class()
+    Modified html5 figure elements add
+    Modified extra sidebar position css
+----------------------------------------------
+Changelog -----------------------------------
+version:1.001
+fixed
+    Fixed Custom Header Image works improperly when 'Organize my uploads into month- and year-based folders'.
+Add
+    Add function raindrops_featured_image().
+    Add RAINDROPS_USE_FEATURED_IMAGE_LIGHT_BOX
+        The featured image light box  not shown by default.
+    New Template file for front page.
+        page-templates/front-portfolio.php
++----------------------------------------------
+Changelog -----------------------------------
+version:1.000
+fixed
+    Fixed header element end tag vanish when raindrops_show_menu_primary hide.
+modified
+    style.css
++----------------------------------------------
+Changelog -----------------------------------
+version:0.999
+
+modified
+    Document type change from xhtml1.0 to html5
+    if you need xhtml1.0
+        functions.php $raindrops_document_type = 'html5' change value from 'html5' to 'xhtml'.
+    Remove inline style( when page width 'fluid' ).
+    Change default page width from 'doc2' to 'fluid'.
+    Support Responsive layout when 'fluid'
+    Change $raindrops_fluid_minimum_width( functions.php line:181 ) value from 450 to 320
+added
+    New template file   header-html5.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.998
+
+added
+    Page template page-templates/header-front.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.997
+
+added
+    Page template page-templates/front-page.php
+    Page template page-templates/full-width.php
+fixed
+    Fixed nav menu children position when doc3 fluid layout.
+modified
+    modify Raindrops new h1-h6 font size
+    language file modify
+----------------------------------------------
+Changelog -----------------------------------
+version:0.995
+fixed Child theme languages/css/WPLANG.css not work
+----------------------------------------------
+Changelog -----------------------------------
+fixed
+version:0.994
+    Fixed Raindrops has Warning Error
+     typo functions.php line:4112
+     function name change
+        from obandes_mobile_meta to raindrops_mobile_meta
+----------------------------------------------
+Changelog -----------------------------------
+version:0.993
+
+added
+    The addition of new functionality.
+     Recent versins Raindrops
+        Custom field name css is addition single post and page style rules.
+     New versins Raindrops
+        The style described by the custom field css expresses each style
+        for each style correctly also a category and an archive page.
+
+        You only specify a class and an element and can create style rule.
+        Raindrops adds the CSS specificity.
+
+    Added mobile meta tag when using fluid page width.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.991
+
+fixed
+    Fixed miss coding
+        from    $page_title_c = get_the_date(get_option($raindrops_date_format));
+        to      $page_title_c = get_the_date( $raindrops_date_format );
+
+
+Added
+    Post formats support status and gallery.
+modified
+    Add post formats style rules.
+    Embed iframe elements style rules change where text widget.
+    remove height:auto;
+----------------------------------------------
+Changelog -----------------------------------
+version:0.990
+
+fixed
+    for example
+    [raindrops color_type="minimal" col="1"]
+    write with post or page (textarea)
+
+    Fixed Above short code like Raindrops notation works improperly.
+    Attribute color_type not work
+
+    Fixed Correction of a translation character string
+     ( japanese )
+Added
+    Add Customizer Menu
+    class Raindrops_Customize_Navigation_Control extends WP_Customize_Control
+
+----------------------------------------------
+
+Changelog -----------------------------------
+version:0.989
+fixed
+    Fixed Wrong theme_textdomain where __() , _e().
+modified
+    function change from load_textdomain() to load_theme_textdomain()
+----------------------------------------------
+Changelog -----------------------------------
+version:0.988
+fixed
+    Fixed Wrong theme_textdomain where __() , _e().
+modified
+    function change from load_textdomain() to load_theme_textdomain()
+----------------------------------------------
+Changelog -----------------------------------
+version:0987
+
+fixed
+    Fixed duplicate wp_list_pages menu
+        This problem was pointed out Faelandaea ,I appreciate.
+modified
+    Support  post-formats
+        you can use has_post_format( )
+----------------------------------------------
+
+Changelog -----------------------------------
+version:0985
+
+fixed
+    Theme Customizer works improperly.
+
+    Fixed Not Work.
+            Background Repeat,
+            Background Position,
+            Background Attachment
+----------------------------------------------
+Changelog -----------------------------------
+version:0.984
+
+added
+    raindrops_monthly_archive_prev_next_navigation()
+        Add next prev month navigation where  monthly archive( date.php)
+    raindrops_customize_controls_print_styles()
+        Add  color type screen shot where theme customizer.
+    $raindrops_add_class
+        Add Sticky post display controll.
+
+        If Blog pages show at most is 10 and sticky post next page then shows the sticky post.
+        Change Sticky post display once.
+
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.983
+    This version changes for CSS
+
+modified
+    color type w3standard CSS modify
+        Remove CSS3 , CSS2.1 valid
+fixed
+    Fixed Custom header image CSS bug
+Note:
+    When color type w3standard
+        Remove CSS light box.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.982
+    0.981 contain Fixed is not appropriate
+fixed
+    Fixed Stupid 0.981 Fixed Not clesed element div.hfeed
+        It returned.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.981
+    This version changes for HTML bug fix
+fixed
+    Fixed Not clesed element div.hfeed
+        footer.php
+    Fixed raindrops_add_body_class output class 'array' when multisite.
+        functions.php
+    Fixed underfined val $hrml, change from $hrml to $html.
+        functions.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.980
+    This version changes for Structure which can do customization simply.
+    Note:
+    functions.php line:20
+     $raindrops_actions_hook_message = false;
+        WP_DEBUG need true.
+        and When value change true then show action_hook point and message.
+        You can customize the Raindrops very Easy.
+    blank_front.php
+        for front page template.
+         You not need  PHP skills , WordPress template functions knowledge.
+         Only y or '' settings, Please try.
+added
+    New functions
+        raindrops_prepend_doc()
+        function raindrops_after_nav_menu()
+        raindrops_prepend_entry_content()
+        raindrops_append_entry_content
+        raindrops_prepend_extra_sidebar( )
+        raindrops_append_extra_sidebar()
+        raindrops_prepend_default_sidebar()
+        raindrops_append_default_sidebar()
+        raindrops_prepend_footer()
+        raindrops_append_footer()
+        raindrops_append_doc()
+        function insert_message_action_hook_position()
+        function raindrops_action_hook_messages()
+        raindrops_entry_title()
+        raindrops_entry_content()
+        raindrops_next_prev_links()
+        raindrops_sidebar_menus()
+        raindrops_recent_posts( )
+        raindrops_category_posts()
+        raindrops_tag_posts()
+        raindrops_sidebar_menus()
+----------------------------------------------
+Changelog -----------------------------------
+version:0.979
+fixed
+    Fixed Waring Error Raindrops option Upload image
+        When upload image success and image max size check.
+        Add file existance check.
+            option-panel.php
+Add
+    function raindrops_custom_link_color()
+    function raindrops_enqueue_comment_reply()
+        Add function exists check.
+    Support WordPress random-uploaded-image
+----------------------------------------------
+Changelog -----------------------------------
+version:0.977
+    This version changes Bug fixed for Child theme
+fixed
+    raindrops_fallback_title()
+        When child theme fallback image uri missing.
+    raindrops_small_device_helper()
+        When child theme script error.
+    raindrops_design_output()
+        When child theme image uri missing.
+    theme options page textarea remove for CSS edit
+        please readme.txt
+----------------------------------------------
+Changelog -----------------------------------
+version:0.975
+modified
+    typo
+    var name change
+        from $raindrops_fluid_minimam_width to $raindrops_fluid_minimum_width
+        from $raindrops_fluid_maximam_width to $raindrops_fluid_maximum_width
+
+    get_current_theme(),wp_get_theme() changes global var $raindrops_current_theme_name
+    get_theme_data() changes global var $raindrops_theme_data
+
+fixed
+        When Browser width > $raindrops_fluid_maximum_width
+            Change  from display page left side to display center
+                using javascript see functions.php line 3010.
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.974
+fixed
+    Fixed Script Error
+        Warning: Illegal offset type in /home/alianza1/public_html/wp-content/themes/raindrops/functions.php on line 906
+        functions.php
+
+    Fixed Child theme display improperly.
+        Custom header image, #hd background image,#ft background image
+        csscolor.css.php
+        functions.php
+
+----------------------------------------------
+
+Changelog -----------------------------------
+version:0.973
+    This version changes for Bugfix
+        MultiSite header image display improperly.
+fixed
+    function raindrops_header_image()
+    function raindrops_small_device_helper()
+        functions.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.971
+    This version changes for WordPress 3.4 support.
+added
+    function raindrops_custom_link_color()
+    function raindrops_hyperlink_color_validate()
+    function raindrops_small_device_helper()
+        functions.php
+            for header-image size controll and primary navigation menu when fluid layout right side childrens children list show left
+    function raindrops_customize_register()
+        functions.php
+            for WordPress 3.4
+modified
+    add global var $raindrops_wp_version, $raindrops_current_theme_name
+
+    Inline style remove
+            footer.php
+            header.php
+            raindrops_header_image()
+            raindrops_site_title()
+    modify etc
+        lib/alias_functions.php
+        lib/csscolor.css.php
+        lib/hooks.php
+        lib/option-panel.php
+        style.css
+        css3.css
+        fallback.css
+
+        single.php
+            Add CSS lightbox for post thumbnail shows not croped view ( Not support IE )
+
+    Theme options page add links
+        Add Theme customizer link ,
+        Custom Header link,
+        Custom Background link,
+        Widget link,
+        Menus link ,
+        Theme Editor link
+
+        Reset All Settings
+            Add remove_theme_mods();
+New file
+    backward-compatibility.php
+    Move from functions.php to this for WordPress ver3.3 old functions
+----------------------------------------------
+Changelog -----------------------------------
+version:0.964
+
+modified
+    Change theme options page context help.
+        lib/option-panel.php
+        functions.php
+fixed
+    Fixed sub sup elements display improperly.
+        style.css
+----------------------------------------------
+Changelog -----------------------------------
+version:0.963
+
+fixed
+    Fixed WordPress publish time format displays improperly
+        raindrops_posted_on()
+            functions.php
+
+modified
+    Add columns class
+            css3.css
+    var $raindrops_fluid_minimam_width value change
+        from 480 to 481
+            functions.php
+    define RAINDROPS_HEADER_BACKGROUND_COLOR,RAINDROPS_HEADER_BACKGROUND_IMAGE
+            functions.php
+    Add if(function_exists(' wp_get_theme')) check
+        The transient measure to upgrade
+        switch get_current_theme() to wp_get_theme()
+            functions.php
+            lib/option-panel.php
+    Add raindrops_add_body_class()
+        user id class move from index.php to functions.php
+
+    Add add_filter( 'raindrops_is_fixed' , '__return_false' );
+    and add_filter( 'raindrops_embed_meta_css', '__return_false' );
+        modify add_raindrops_stylesheet()
+        functions.php
+    modify stylesheet.css
+            sidebar option elements style
+    Add add_action( 'after_setup_theme', 'raindrops_theme_setup' )
+    and function raindrops_theme_setup()
+            hooks.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.962
+fixed
+    Fixed Wrong coding
+        from    add_filter('raindrops_is_fixed' ,__return_false());
+        to      add_filter( 'raindrops_is_fixed' , '__return_false' );
+            functions.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.961
+fixed
+    Fixed Undefined index: raindrops_style_type
+modified
+    loop.php
+        from    the_content();
+        to      the_content( __( 'Continue&nbsp;reading&nbsp;<span class="meta-nav">&rarr;</span>', 'Raindrops' ) );
+----------------------------------------------
+Changelog -----------------------------------
+version:0.960
+fixed
+    Fixed wrong attribute name.
+        from    <div style="entry-content">
+        to      <div class="entry-content">
+        blank_front.php, page.php
+    Fixed heading display improperly
+        Example
+        <h2>title</h2> , <h2><a href="#">title</a></h2>
+        Not same text size
+        Style rule change.
+            style.css
+modified
+    Add style rule class 'columns' where css3.css
+    Add wp_deregister_style('style')
+        where function fallback_user_interface_view()
+            functions.php
+    Style rule clean up
+        style.css
+----------------------------------------------
+Changelog -----------------------------------
+version:0.959
+fixed
+    Fixed html comment out not closed
+made
+    blank_front.php
+        for custom front page create easy
+----------------------------------------------
+Changelog -----------------------------------
+version:0.958
+
+moved
+
+added
+    Added var $raindrops_fluid_maximam_width
+        Limit a page width when display fluid layout
+    Added functions
+        raindrops_fallback_human_interface()
+        small_screen_check()
+        fallback_user_interface_view()
+            Raindrops fluid layout view is 480px - 1280px support
+            View supply for more thin width browser
+    Note:functions.php
+    $raindrops_fallback_human_interface_show = true when if you want display this view
+fixed
+    Fixed Fluid layout minimam width display inproperly
+modified
+    CSS style rule modified
+made
+    fallback.css
+----------------------------------------------
+Changelog -----------------------------------
+version:0.957
+
+moved
+
+added
+
+fixed
+    Fixed IE8 menu display inproperly.
+        Not show level3 when level2 hover
+         #access ul ul :active >a
+          Comment out filter: progid:DXImageTransform.Microsoft.gradient
+modified
+
+made
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.956
+
+moved
+    add_image_size( 'single-post-thumbnail'...)
+        from hook.php to functions.php
+    from    hard coded wp_enqueue_script( 'comment-reply' )
+    to      add_action( 'wp_enqueue_scripts', 'raindrops_enqueue_comment_reply' )
+
+added
+    enqueue_comment_reply() filter function
+    add_filter('wp_title','raindrops_filter_title',10,3)
+
+fixed
+    Fixed Use of undefined constant
+        RAINDROPS_SINGLE_POST_THUMBNAIL_WIDTH
+        RAINDROPS_SINGLE_POST_THUMBNAIL_HEIGHT
+    Fixed Auto embed (oembed) media display impropaly
+modified
+    footer.php
+        add class clear
+    Change site title function
+        from raindrops_wp_title() to wp_title()
+        and add raindrops_filter_title()
+made
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.954
+fixed
+    Fix Display inproperly where single.php and page.php lost a column.
+     raindrops_show_one_column() return value impropely when loops after.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.953
+added
+    functions.php
+        Add var $raindrops_document_type.
+
+fixed
+    sidebar-extra.php
+        Fix $wp_query->posts is empty when search result none and $wp_query->post->ID is error.
+        Fix const RAINDROPS_USE_LIST_EXCERPT not works.
+
+modified
+    All template files
+        template function from get_header('xhtml1') to get_header( $raindrops_document_type )
+        template function from get_footer() to get_footer( $raindrops_document_type )
+    loop.php
+        use get_template_part('part','gallery')
+        use  get_template_part('part','blog')
+----------------------------------------------
+Changelog -----------------------------------
+version:0.952
+fixed
+    Footer.php HTML code change.
+        if is_active_sidebar return false then no echo widget ul elements of HTML.
+    csscolor.css.php
+            Using improperly function
+            from get_template_part() to locate_template()
+            get_template_part() must not call sub directory template part file.
+    comments.php
+            Conflict id attribute value, nav-above and nav-below comments paging navigation and article navigation.
+            Change comments #nav-above to #nav-above-comments and #nav-below to #nav-below-comments.
+modified
+    images: all images must have their license explicitly declared
+        Theme images list create and add readme.txt
+    arrows-vs.png, icons32-vs.png
+        Design change
+----------------------------------------------
+Changelog -----------------------------------
+version:0.950
+fixed
+    Coding missing
+        Delete var $raindrops_document_type.
+        Add $raindrops_included_files = get_included_files();
+            functions.php
+    Fix display improperly when child theme where theme options page    Fix admin-option.css impropely when child theme.
+added
+    Add function_exists check where function raindrops_delete_post_link why child theme happiness
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.948
+
+moved
+    Remove file license.txt
+        A license is expressed by URL.
+added
+     function raindrops_delete_post_link();
+        Added with each edit_post_link where template files.
+            Note:
+            This function default no echo.
+            Need RAINDROPS_SHOW_DELETE_POST_LINK set true where functions.php
+     Add apply filters
+        raindrops_custom_width, raindrops_is_fluid, raindrops_is_fixed, raindrops_posted_in, raindrops_posted_on, raindrops_warehouse, raindrops_gradient_single, raindrops_gradient, raindrops_comment_form, raindrops_prev_next_post
+
+fixed
+    Impropaly comment change all template.
+         Change from @package WordPress, @subpackage Raindrops
+                to  @package Raindrops
+    function raindrops_content_width_clone
+        Fixed return improperly value.(when fruid layout doc3)
+    Template part file  loop.php
+        Thumnail image display impropaly when image not exists
+            Add image exists check.
+
+modified
+    lib/csscolor.css.php
+        add style rules
+    lib/csscolor/PEAR.php, lib/csscolor/csscolor.php, README.txt
+        Add license
+made
+    lib/hooks.php
+        Sepalate add_filter and add_actions from functions.php
+            For child theme customize easy
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.947
+
+moved
+    function raindrops_admin_print_styles
+        moved to class raindrops_menu_create member function
+added
+    function raindrops_admin_in_toolbar
+        Add Theme options link where Admin bar
+fixed
+    const RAINDROPS_USE_AUTO_COLOR
+    Theme options page display improperly when the value set false
+made
+    New file    admin-options.css
+    New file    images/options/arrows-vs.png
+    New file    images/options/icons32-vs.png
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.946
+
+added
+    function raindrops_admin_print_styles
+fixed
+    function raindrops_install_navigation
+        get_option value return false when install.
+modified
+    Raindrops options page CSS change.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.945
+
+fixed
+    style.css
+        The style rule which indicates a managed bar unsuitable
+    lib/csscolor.css.php
+        Comment display improperly where color type dark
+            The style rule change
+----------------------------------------------
+Changelog -----------------------------------
+version:0.943
+fixed
+    function raindrops_add_body_class() where functions.php
+        $color_type value impropaly
+    function raindrops_gradient_clone() where  /lib/alias_functions.php
+        Display link color impropaly
+    function raindrops_admin_header_style() where functions.php
+        Display class color1-color5 color-1-color-5  color impropaly
+        Add return value raindrops_admin_header_style()
+    function raindrops_color_base() where /lib/csscolor.css.php
+        Display class color1-color5 color-1-color-5 chile hyperlink color impropaly
+
+modified
+    raindrops_add_body_class
+        Add class browser language e.g. accept-lang-ja
+----------------------------------------------
+Changelog -----------------------------------
+version:0.942
+fixed
+    remove var $raindrops_content_check
+----------------------------------------------
+Changelog -----------------------------------
+version:0.941
+fixed
+    CSS rule display impropaly where Site Title background.
+    csscolor.css.php and style.css
+modified
+    language file ja.po ja.mo modified
+    CSS rules specification check and modify
+----------------------------------------------
+Changelog -----------------------------------
+version:0.940
+moved
+    single.php
+        remove conditional code by category
+        It is blog,gallery and default, it will be include from template part files.
+added
+    Add function raindrops_show_one_column() where functions.php
+    Add function raindrops_color_type_custom() where functions.php
+modified
+    CSS rule modify where lib/csscolor.css.php and style.css
+    page.php and single.php
+        By page edit and post edit,
+        the Color Type and the number of columns can be set to contribution.
+        see:README.txt
+made
+    Template part file
+        part-blog.php
+        part-gallery.php
+        part.php
+----------------------------------------------
+Changelog -----------------------------------
+version:0.939
+modified
+   Files header comment modify
+fixed
+   Loose include path where functions.php works improperly
+   Apply_filters not work remove from functions.php,lib/csscolor.css.php
+   Add apply_filters where function raindrops_warehouse_clone
+   Get id value from $post->ID to the_ID() where loop.php, search.php
+   Conditionals to find the front page from is_home() to is_front_page() where sidebar-default.php,sidebar.php
+   function_exists check remove from add_custom_image_header where functions.php
+   header image display improperly (image height)
+----------------------------------------------
+Changelog -----------------------------------
+version:0.938
+
+fixed
+    header image display improperly (image height)
+    Color type minimal display header image improperly.(canot show image)
+    A fatal error occurs when RAINDROPS_USE_AUTO_COLOR == false
+    Raindrops option panel raindrops color scheme display improperly when RAINDROPS_USE_AUTO_COLOR == false
+----------------------------------------------
+Changelog -----------------------------------
+version:0.936
+fixed
+    Child theme display improperly
+    when file not exists header image
+    when file not exists footer image
+modified
+    when file not exists reset-fonts-grids.css
+    when file not exists grids.css
+    when file not exists fonts.css
+    when file not exists languages/css/[language].css'
+    when file not exists raindrops.js
+    when file not exists lib/alias_functions.php
+    when file not exists images directory
+
+----------------------------------------------
+Changelog -----------------------------------
+version:0.935
+fixed
+    Child theme display improperly
+    when file not exists reset-fonts-grids.css
+    when file not exists grids.css
+    when file not exists fonts.css
+    when file not exists languages/css/[language].css'
+    when file not exists raindrops.js
+    when file not exists lib/alias_functions.php
+    when file not exists images directory
+
+---------------------------------------------
+Changelog -----------------------------------
+version:0.933
+moved
+    Required
+    Shortcodes should be made into a Plugin, rather than embedded into the Theme
+    Theme has required issues, but can be addressed in the next Theme revision
+    remove file lib/shortcodes.php
+---------------------------------------------
+Changelog -----------------------------------
+version:0.932
+moved
+    remove stylesheet description
+
+/** If you needs original settings
+ * 1. Only needs CSS rule customize
+ *  Create a file WPLANG css e.g. en_US.css and add custom CSS rule
+ * 2. functions.php templates.php and etc customize
+ *  1.  Copy all of files Theme Raindrops and Rename from Raindrops to Your child theme name
+ *  2.  Add new line 'Template:raindrops' where Raindrops stylesheet header (the first few lines of the stylesheet)
+ *  3.  Add new line e.g. 'Template Version:0.931' (0.931 is version of parent Raindrops )where Raindrops stylesheet header (the first few lines of the stylesheet)
+ */
+---------------------------------------------
+Changelog -----------------------------------
+version:0.931
+moved
+    fixed
+        Impropely comment is changed All files
+        It changes so that the child theme which copied and renamed all the files may also operate.
+    Add for child theme issue
+        file lib/alias_functions.php
+            modified
+                this function is changed alias function
+                    raindrops_content_width
+                    raindrops_warehouse
+                    raindrops_gradient_single
+                footer.php
+                    Child theme name show properly
+    modified
+        template customize easier
+            Add
+                function
+                    raindrops_header_image
+                    raindrops_site_description
+                    raindrops_site_title
+                    raindrops_wp_title
+----------------------------------------------
+Changelog -----------------------------------
+version:0.930
+moved
+    fixed
+        Raindrops option panel
+         fragment identifier change from #wphead to #wpwrap
+    made
+        file add    lib/option-panel.php
+         Move Raindrops options functions from functions.php to option-panel.php
+        file add    lib/shortcode.php
+         Add shortcodes script.
+    #modified
+        functions.php
+            Cleaning PHP codes.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.928
+moved
+    Remove editor-menu.js
+    Remove Tiny Mce Visual Editor Menu
+----------------------------------------------
+Changelog -----------------------------------
+version:0.925
+fixed
+    Function raindrops_fallback_title makes display dirty where Media Library page attached to title.
+     Do not add fallback html when is_admin().
+----------------------------------------------
+Changelog -----------------------------------
+version:0.924
+fixed
+    h1 Site Title style COLOR bug fix
+     Cannot readable color when get_theme_mod() return 'blank',''.
+added
+    Tiny Mce Visual Editor Menu Add
+    function raindrops_fallback_title
+made
+    editor_menu.js
+    fallback value add when entry title is blank.
+----------------------------------------------
+
+Changelog -----------------------------------
+version:0.921
+modified
+    It changes so that a Admin Header Image can be displayed normally.
+----------------------------------------------
+
+Changelog -----------------------------------
+version:0.919
+
+moved
+    comment out PHP code page.php   'parent child links' micro navigation.
+fixed
+    Issue   : Embed header style display like this input[type=\"reset\"].
+    Fix     : Change it is displayed like this input[type="reset"]
+add
+    Add comment link where posted on area.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.918
+
+fixed
+    Textarea is not correct when select color type 'Raindrops' where Raindrops options page.
+----------------------------------------------
+
+Changelog -----------------------------------
+version:0.917
+
+fixed
+    Layout is broken where menu mouseover the hyperlink when IE9 standard mode.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.916
+
+fixed
+    variables add prefix
+    `$fluid_or_fixed` to $raindrops_fluid_or_fixed,
+    `$page_width` to $raindrops_page_width,
+    `$fluid_minimam_width` to $raindrops_fluid_minimam_width,
+modified
+    Raindrops options change menu oder.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.914
+modified
+    functions.php
+        Raindrops setting page user interface
+        description change
+
+Changelog -----------------------------------
+version:0.913
+fixed
+    functions.php
+        update error fix
+
+        This update error occurred by e.g. phpfog
+
+        Change csscolor/ require conditional
+        and is_admin() == true to is_user_logged_in()
+
+Changelog -----------------------------------
+version:0.911
+modified
+    functions.php
+    text change.
+    Base Color for Automatic Color Arrangement
+    link text change
+    MultiSite User must Click here !!
+    readme.txt
+    delete Install description
+    add
+    MultiSite user must click the link when setting change where  with update result message.
+    Japanese translation bug fix
+----------------------------------------------
+Changelog -----------------------------------
+version:0.910
+fixed
+    functions.php
+    languages/ja.po
+    languages/ja.mo
+    Japanese translation bug fix
+----------------------------------------------
+Changelog -----------------------------------
+version:0.909
+
+modified
+    functions.php
+    Admin panel image upload form i18n modify
+----------------------------------------------
+Changelog -----------------------------------
+version:0.908
+
+added
+    footer.php
+        add footer inline style
+    functions.php
+        add reset button
+        header,footer background image uploader
+    header.php
+        add header inline style
+fixed
+    functions.php
+    Missing Raindrops domain for translatable strings fix
+    style.css
+        right sidebar to lose UL LI style fix
+
+modified
+    style.css
+    Add space between to image and post content - image attached.
+    csscolor.css.php
+    div.comment-body *,div.comment-author,div.comment-author-meta,
+    remove background from dark color type
+    functions.php
+    default header image and footer image set.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.906
+added
+    Add current Automatic Color can edit option
+    AdminPanel ColorType select a Raindrops and click submit button.    Appear Textarea and you can edit stylesheet.
+
+    functions.php
+            Setup_raindrops() change action only install once
+
+            Admin panel conditional view change when color type Raindrops
+            Admin panel textarea add for stylesheet
+modified
+        Class gradient view issue anchortext contrast modifed
+        functions.php
+            $g .= '.gradient'.$i.' a{';
+            $g .= 'color:'.raindrops_colors($i-1,'color').';';
+            $g .= "}\n";
+----------------------------------------------
+Changelog -----------------------------------
+version:0.905
+fixed
+    functions.php
+        Child theme issue
+        Const HEADER_IMAGE change value.
+            template directory/images/headers/ to stylesheet directory/images/headers/
+        Var name change.
+            $raindrops_base_setting
+            register_default_headers default url , thumnail_url change.
+
+        It can freely layout and design on Child theme.
+modified
+    index.php
+        Browser view issue
+        Class topsidebar do not show html block when sidebar is not active.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.904
+fixed
+    bug
+    page.php line:24
+        change ver name $ancestor to $raindrops_ancestor
+added
+    function
+    functions.php line:2797
+        raindrops_import_post_meta()
+----------------------------------------------
+Changelog -----------------------------------
+version:0.903
+modified
+    style.css line:110
+        add style
+        Category blog when listed article issue image after headding is not float
+----------------------------------------------
+Changelog -----------------------------------
+version:0.902
+
+fixed
+    bug functions.php line:740
+        $array = raindrops_register_styles();
+        to
+        $array = raindrops_register_styles($input);
+----------------------------------------------
+Changelog -----------------------------------
+version:0.901
+modified
+     functions.php
+        function raindrops_style_type_validate code modified why Child theme customize easier.
+     csscolor.css.php
+        function name change e.g. raindrops_dark to raindrops_indv_css_dark
+        Add raindrops_register_styles themename allways.
+             Child theme developer can create function raindrops_indv_css_ChildThemeName,
+             It will be create 'color type' and can select Theme options panel.
+
+            function raindrops_indv_css_ChildThemeName is return style string.
+            this return value are embed html document style.
+----------------------------------------------
+Changelog -----------------------------------
+version:0.900
+
+moved
+    const RAINDROPS_COLOR_SCHEME remove.
+
+added
+    Raindrops Option panel Color Scheme add
+    Raindrops Option panel auto gradient visible where 'RAINDROPS' background gradient.
+    csscolor.css.php add function raindrops_register_styles.
+fixed
+    Child theme issue fix
+        Child style.css can not read ploblem.
+    Option page link name fix
+        Raindrops Option to ChildTheme Option change.
+modified
+    css3.css form button size modified.
+    Child theme StyleSheet(yui-grid,reset,more) Customizing easier.
+        e.g. function add_raindrops_stylesheet(){} can define on childtheme.
+
+    If Child theme have not header embed style (csscolor.css.php function dark(),function light()...) when required function w3standard() where functions.php.
+
+made
+    Color Scheme add 'animation color','Japan','USA','WWW'
+
+----------------------------------------------
+#Changelog -----------------------------------
+#version:
+#
+#moved
+#
+#added
+#
+#fixed
+#
+#modified
+#
+#made
+#
+#----------------------------------------------

@@ -1,0 +1,93 @@
+<?php itx_css_import('ui/dark-hive/jquery.ui.theme.css'); ?>
+
+/*
+Colors of albizia
+type: lil-bit
+*/
+
+body{color: #fff;background: #000;}
+hr {color: #333;border-color: #222;}
+pre{background-color: #333;}
+a {color: #dbb;}
+blockquote {background-color: #222;border-color: #333;color: #fff;}
+code {color: #3366cc;}
+
+/*menu*/
+#top-menu ul.sf-menu{background-color: transparent;border:none;}
+#top-menu a{border:none;}
+
+.sf-menu a {border:none;background: none;}
+.sf-menu li li a{border-top:1px solid #555;}
+.sf-menu a, .sf-menu a:visited {color:#fff;}
+.sf-menu li li {background:#333;}
+.sf-menu li li li {background:#222;}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active,
+.sf-menu .current-menu-item {background:#0972A5;}
+
+/*content*/
+
+#content .pagetitle{border:1px solid #ccc;}
+.post .thumb .itx-thumb, .post .thumb .itx-featured{border: 1px solid #ccc;}
+.post .entry {color: #fff;}
+.post .entry a:hover,.singlepost a:hover {color: #ff9933;}
+.linkpages ,.linkpages a {color:#aaf;}
+.linkpages a:hover {color: #cfc;}
+.linepost{border-bottom: 1px solid #ccc;}
+.singlepost .entry a {color: #6bf;}
+
+.singlepost .tags,.singlepost .categories,.singlepost .categories a,.singlepost .tags a{color: #6555ff;}
+.singlepost .categories a:hover , .singlepost .tags a:hover {color: #fff;}
+.footmeta{border-top:1px dotted #aaa;}
+
+.nextprevious a:hover{color:#f00;}
+#extrastuff a {color:#ccc;}
+#extrastuff a:hover {color:#fff;}
+#comments .wp-pagenavi a, #navi .wp-pagenavi a{background-color: #444;}
+#comments .wp-pagenavi a:hover, #navi .wp-pagenavi a:hover{color: #f22;}
+#comments .wp-pagenavi span.current, #navi .wp-pagenavi span.current{background-color: #00498f;}
+
+/*comments*/
+#comments p a {color: #6598b8;}
+#comments p a:hover {color: #fff;}
+.commentlist li, .trackback li {background-color: #151515;border-color:#999;}
+.commentlist li.alt {background-color: #000;}
+.commentlist li.bypostauthor{background-color: #112;border: 1px solid #779;}
+.commentlist a {color: #6ff;}
+.commentlist a:hover {color: #fff;}
+#comments cite {color: #ddd;}
+#comments .comment-meta a {color: #aaa;}
+.commentlist p {color: #fff;}
+
+#respond label{color:#999;}
+#respond .required {color: #F53;font-weight: bold;}
+textarea#comment {background-color: #eee;color: #000;}
+#comments #submit {border: 2px solid #558;background-color: #eef;}
+#comments #submit:hover {background-color: #12a;color:#fff;}
+
+/* Sidebars */
+.sidebar a{color:#26B3F7;}
+#on,.sidebar a:hover{color: #f22;}
+.sidebar .widget li{border-bottom: 1px solid #ccc;}
+.widget li{background: url(<?php bloginfo('template_url');?>/images/butblue3.png) 0px 7px no-repeat;}
+.widget li:hover,#on{background: url(<?php bloginfo('template_url');?>/images/butblue1.png) 0px 7px no-repeat;}
+.widget .tabheader li:hover{background: url(<?php bloginfo('template_url');?>/css/ui/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) 50% 50% repeat-x;}
+
+/*footer*/
+#footwrap{background: #000 url(<?php bloginfo('template_url');?>/images/footbg.gif) repeat-x}
+#footwrap2{background: url(<?php bloginfo('template_url');?>./images/footerbg.gif) repeat-x bottom}
+#footer{color: #999;}
+#footer h3{color: #dfdfdf;border-color: #444;}
+#footer a{color:#eee;}
+#footerfoot {color:#aaa;}
+#footerfoot a{color: #ccc;}
+#footerfoot a:hover{color: #fff;}
+.highlight{color: #bbb;}
+.wp-caption{border-color: #ddd;background-color: #f3f3f3;}
+.wp-caption p.wp-caption-text{color: #111;}
+
+/*calendar*/
+#wp-calendar caption {border: 1px solid #ccc;background-color: #222;}
+#wp-calendar th{background-color: #666;color:#111;}
+#wp-calendar tbody td{border: 1px solid #666;}
+#wp-calendar tbody a{background-color: #000;border: 1px solid #888; }

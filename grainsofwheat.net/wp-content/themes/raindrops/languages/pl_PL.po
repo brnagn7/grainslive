@@ -1,0 +1,1786 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: raindrops v0.987\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 16:18+0900\n"
+"PO-Revision-Date: 2014-09-10 17:00+0100\n"
+"Last-Translator: Kornel <kml1960@tlen.pl>\n"
+"Language-Team: raindrops-i18n <webmaster@tenman.info>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 &&(n"
+"%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: e:/apache2.2/htdocs/\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Target-Locale: pl_PL\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SearchPath-0: raindrops\n"
+
+#: raindrops/404.php:25
+msgid "Error 404 - Not Found"
+msgstr "Error 404 - Nie znaleziono"
+
+#: raindrops/404.php:30
+msgid ""
+"Apologies, but no results were found for the requested Archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"Przepraszamy, lecz nie znaleziono wyników we wskazanym archiwum. Być może "
+"wyszukiwanie pomoże znaleźć powiązane posty."
+
+#: raindrops/author.php:46
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Archiwum Autora: %s"
+
+#: raindrops/author.php:54
+msgid "Author Avatar Image"
+msgstr "Obraz awatara autora"
+
+#: raindrops/author.php:60
+msgid "Profile"
+msgstr "Profil"
+
+#: raindrops/author.php:68 raindrops/functions.php:1516
+msgid "Website"
+msgstr "Strona Internetowa"
+
+#: raindrops/author.php:84
+msgid "registered"
+msgstr "zarejestrowany"
+
+#: raindrops/author.php:95
+msgid "Recent post"
+msgstr "Najnowsze posty"
+
+#: raindrops/author.php:123
+msgid "Categories :"
+msgstr "Kategorie:"
+
+#: raindrops/author.php:129
+msgid "Tag :"
+msgstr "Tag :"
+
+#: raindrops/author.php:139
+msgid "Format :"
+msgstr "Format :"
+
+#: raindrops/author.php:147
+msgid "No posts by this author."
+msgstr "Nie ma postów tego autora"
+
+#: raindrops/blank_front.php:31
+msgid "Recent posts"
+msgstr "Ostatnie posty"
+
+#: raindrops/blank_front.php:45 raindrops/functions.php:4585
+#: raindrops/functions.php:4651
+msgid "Categories"
+msgstr "Kategorie"
+
+#: raindrops/blank_front.php:61 raindrops/functions.php:4699
+msgid "Tags"
+msgstr "Tagi"
+
+#: raindrops/blank_front.php:352
+msgid "Continue&nbsp;reading"
+msgstr "Kontynuuj&nbsp;czytanie"
+
+#: raindrops/comments.php:25
+msgid "This post is password protected."
+msgstr "Ten post jest zabezpieczony hasłem."
+
+#: raindrops/comments.php:26
+msgid "Enter the password to view any comments."
+msgstr "Wpisz hasło aby zobaczyć komentarze."
+
+#: raindrops/comments.php:35
+#, php-format
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] "Jedna odpowiedź na %2$s"
+msgstr[1] "%1$s odpowiedzi na %2$s"
+msgstr[2] "%1$s odpowiedzi na %2$s"
+
+#: raindrops/comments.php:46 raindrops/comments.php:59
+msgid "Older Comments"
+msgstr "Starsze komentarze"
+
+#: raindrops/comments.php:49
+msgid "Newer Comments"
+msgstr "Nowsze komentarze"
+
+#: raindrops/comments.php:62
+msgid "Newer Comments "
+msgstr "Nowsze komentarze"
+
+#: raindrops/comments.php:74
+msgid "Comments are closed."
+msgstr "Komentarze są zamknięte."
+
+#: raindrops/date.php:93
+msgid "Sunday"
+msgstr "Niedziela"
+
+#: raindrops/date.php:94
+msgid "Monday"
+msgstr "Poniedziałek"
+
+#: raindrops/date.php:95
+msgid "Tuesday"
+msgstr "Wtorek"
+
+#: raindrops/date.php:96
+msgid "Wednesday"
+msgstr "Środa"
+
+#: raindrops/date.php:97
+msgid "Thursday"
+msgstr "Czwartek"
+
+#: raindrops/date.php:98
+msgid "Friday"
+msgstr "Piątek"
+
+#: raindrops/date.php:99
+msgid "Saturday"
+msgstr "Sobota"
+
+#: raindrops/date.php:116 raindrops/functions.php:2425
+msgid "Yearly Archives"
+msgstr "Wcześniejsze archiwa"
+
+#: raindrops/date.php:122 raindrops/functions.php:2413
+msgid "Monthly Archives"
+msgstr "Archiwum miesiąca"
+
+#: raindrops/date.php:127 raindrops/functions.php:2408
+msgid "Daily Archives"
+msgstr "Archiwum dnia"
+
+#: raindrops/footer.php:39
+msgid "and"
+msgstr "&"
+
+#: raindrops/footer.php:47
+msgid "Entries RSS"
+msgstr "Wpisy RSS"
+
+#: raindrops/footer.php:49
+msgid "Comments RSS"
+msgstr "Komentarze RSS"
+
+#: raindrops/footer.php:54 raindrops/footer.php:57
+msgid "Raindrops Theme"
+msgstr "Motyw Raindrops"
+
+#: raindrops/functions.php:179
+msgid "Raindrops Help"
+msgstr "Raindrops - Pomoc"
+
+#: raindrops/functions.php:180
+msgid "About Base Color related Class"
+msgstr "O bazie kolorów powiązanych z Class"
+
+#: raindrops/functions.php:192
+msgid "Raindrops Theme Help"
+msgstr "Pomoc motywu Raindrops"
+
+#: raindrops/functions.php:193
+msgid "About Raindrops Theme"
+msgstr "O motywie Raindrops"
+
+#: raindrops/functions.php:207
+msgid "Now RAINDROPS_USE_AUTO_COLOR value false and Cannot show this help"
+msgstr ""
+"Wartość RAINDROPS_USE_AUTO_COLOR jest teraz ustawiona na niewłaściwy i nie "
+"można dlatego pokazać pomocy"
+
+#: raindrops/functions.php:258
+msgid "Primary Navigation"
+msgstr "Podstawowa nawigacja"
+
+#: raindrops/functions.php:677 raindrops/functions.php:4188
+msgid "Default Sidebar"
+msgstr "Główny panel boczny"
+
+#: raindrops/functions.php:687 raindrops/functions.php:4186
+msgid "Extra Sidebar"
+msgstr "Dodatkowy panel boczny"
+
+#: raindrops/functions.php:696
+msgid "Sticky Widget"
+msgstr "Stały Widget"
+
+#: raindrops/functions.php:705
+msgid "Footer Widget"
+msgstr "Widget w stopce"
+
+#: raindrops/functions.php:714
+msgid "Post Format Status Sidebar"
+msgstr "Status formatu postu panel boczny"
+
+#: raindrops/functions.php:810
+#, php-format
+msgid "If you add  %s when you must create function %s for data validation"
+msgstr "Jeśli dodasz  %s kiedy tworzysz funkcje %s dla walidacji danych"
+
+#: raindrops/functions.php:952
+msgid "Avatar"
+msgstr "Awatar "
+
+#: raindrops/functions.php:955
+msgid "says:"
+msgstr "mówi:"
+
+#: raindrops/functions.php:961
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s w %2$s"
+
+#: raindrops/functions.php:963 raindrops/functions.php:1004
+msgid " Edit "
+msgstr "Edytuj"
+
+#: raindrops/functions.php:973
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz oczekuje na moderacje."
+
+#: raindrops/functions.php:987
+msgid "Reply"
+msgstr "Odpowiedź"
+
+#: raindrops/functions.php:1001
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: raindrops/functions.php:1036 raindrops/functions.php:1039
+#: raindrops/functions.php:1050 raindrops/functions.php:1053
+msgid "This entry was posted in"
+msgstr "Ten wpis był dodany w kategorii"
+
+#: raindrops/functions.php:1036 raindrops/functions.php:1050
+msgid "and tagged"
+msgstr "i oznaczony"
+
+#: raindrops/functions.php:1036
+msgid "Bookmark the"
+msgstr "Zakładki"
+
+#: raindrops/functions.php:1089 raindrops/functions.php:5907
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Komentarz"
+msgstr[1] "Komentarze"
+msgstr[2] "Komentarzy"
+
+#: raindrops/functions.php:1093
+msgid "Comment "
+msgstr "Komentarz"
+
+#: raindrops/functions.php:1102
+#, php-format
+msgid "%1$s %5$s %2$s %6$s %3$s %4$s"
+msgstr "%1$s %5$s %2$s %6$s %3$s %4$s"
+
+#: raindrops/functions.php:1102 raindrops/functions.php:2338
+#, php-format
+msgid "View all posts by %s"
+msgstr "Pokaż wszystkie posty od %s"
+
+#: raindrops/functions.php:1102
+msgid "Posted on"
+msgstr "Wysłany dnia:"
+
+#: raindrops/functions.php:1102
+msgid "by"
+msgstr "przez"
+
+#: raindrops/functions.php:1201
+msgid "Theme URI"
+msgstr "URI motywu"
+
+#: raindrops/functions.php:1203
+msgid "Author"
+msgstr "Autor"
+
+#: raindrops/functions.php:1205
+msgid "Support"
+msgstr "Support"
+
+#: raindrops/functions.php:1205
+msgid "http://wordpress.org/support/theme/raindrops"
+msgstr "http://wordpress.org/support/theme/raindrops"
+
+#: raindrops/functions.php:1205
+msgid "http://ja.forums.wordpress.org/ lang:Japanese"
+msgstr "http://ja.forums.wordpress.org/ lang:Japanese"
+
+#: raindrops/functions.php:1207
+msgid "Version"
+msgstr "Wersja"
+
+#: raindrops/functions.php:1209
+msgid "Change log text"
+msgstr "Log zmian - tekst"
+
+#: raindrops/functions.php:1209
+msgid "Changelog , display new window"
+msgstr "Log zmian - otwieranie w nowym oknie"
+
+#: raindrops/functions.php:1211
+msgid "Readme text"
+msgstr "Przeczytaj - tekst"
+
+#: raindrops/functions.php:1211
+msgid "Readme , display new window"
+msgstr "Przeczytaj - otwierane w nowym oknie"
+
+#: raindrops/functions.php:1239
+msgid "Tips"
+msgstr "Porady"
+
+#: raindrops/functions.php:1240
+msgid ""
+"If Raindrops Options panel is opened, and the reference color is set, this "
+"arrangement of color is changed at once."
+msgstr ""
+"Jeśli panel opcji Raindrops jest otwarty i kolor referencji jest ustalony to "
+"ta zmiana  koloru zadziała natychmiast."
+
+#: raindrops/functions.php:1241
+msgid "Dinamic Color Class"
+msgstr "Dynamiczna Clasa koloru"
+
+#: raindrops/functions.php:1254 raindrops/functions.php:1273
+msgid "code example:please HTML editor mode"
+msgstr "przykład kodu:proszę przejdź do trybu edytora HTML"
+
+#: raindrops/functions.php:1260
+msgid "Dinamic Gradient Class"
+msgstr "Clasa dynamicznego gradientu"
+
+#: raindrops/functions.php:1276
+msgid "About Featured Image"
+msgstr "O polecanym obrazie"
+
+#: raindrops/functions.php:1277
+msgid ""
+"image width and height aspect ratio is 3:1. another aspect ratio will be "
+"trimming center"
+msgstr ""
+"szerokość i wysokość obrazu jest w skali 3:1. Inna skala będzie precyzowana "
+"do centrum."
+
+#: raindrops/functions.php:1516
+msgid "Option"
+msgstr "Opcja"
+
+#: raindrops/functions.php:1660
+#, php-format
+msgid "Sorry Your PHP version is %s Please use PHP version 5 || later."
+msgstr ""
+"Przepraszamy ale wersja Twojego PHP jest %s Proszę użyj wersji PHP 5 || lub "
+"późniejszej."
+
+#: raindrops/functions.php:1663
+#, php-format
+msgid ""
+"Thank you for adopting the %1$s theme. It is necessary to set it to this "
+"theme. Please move to a set screen clicking this "
+msgstr ""
+"Dziękujemy za zaadoptowanie %1$s theme. Koniczne jest dostosowanie tego "
+"motywu. Proszę przejdź do ekranu ustawień klikając tutaj"
+
+#: raindrops/functions.php:1663
+msgid "Raindrops settings view"
+msgstr "Przegląd ustawień Raindrops"
+
+#: raindrops/functions.php:2183
+#, php-format
+msgid "%s Articles archived"
+msgstr "%s artykułów zarchiwizowanych "
+
+#: raindrops/functions.php:2389
+msgid "Search Results"
+msgstr "Rezultaty wyszukiwania"
+
+#: raindrops/functions.php:2394
+msgid "Tag Archives"
+msgstr "Archiwa Tagów"
+
+#: raindrops/functions.php:2399
+msgid "Category Archives"
+msgstr "Archiwum kategorii"
+
+#: raindrops/functions.php:2430
+msgid "Author Archives"
+msgstr "Archiwum autora"
+
+#: raindrops/functions.php:2441 raindrops/functions.php:2447
+#: raindrops/functions.php:2453 raindrops/functions.php:2459
+#: raindrops/functions.php:2465 raindrops/functions.php:2471
+#: raindrops/functions.php:2477 raindrops/functions.php:2483
+#: raindrops/functions.php:2489
+msgid "Post Format"
+msgstr "Format postu"
+
+#: raindrops/functions.php:2494
+msgid "Blog Archives"
+msgstr "Archiwum bloga"
+
+#: raindrops/functions.php:3103
+msgid "Current theme is fluid settings"
+msgstr "Aktualny motyw jest w płynnych ustawieniach "
+
+#: raindrops/functions.php:3103
+msgid "image size will be shrink to fit page"
+msgstr "rozmiar obrazu zostanie zmniejszony tak by pasował do strony"
+
+#: raindrops/functions.php:3104
+msgid "Theme Settings"
+msgstr "Ustawienia motywu "
+
+#: raindrops/functions.php:3530
+#, php-format
+msgid " Page %s"
+msgstr "Strona %s"
+
+#: raindrops/functions.php:3630 raindrops/functions.php:5806
+#: raindrops/image.php:119 raindrops/image.php:230 raindrops/loop.php:104
+msgid "Trash"
+msgstr "Śmietnik"
+
+#: raindrops/functions.php:4171
+msgid "Raindrops theme settings"
+msgstr "Ustawienia motywu Raindrops "
+
+#: raindrops/functions.php:4172
+msgid "Another Settings link"
+msgstr "Link do innych ustawień"
+
+#: raindrops/functions.php:4181
+msgid "Custom Header"
+msgstr "Podstawowy Header"
+
+#: raindrops/functions.php:4181
+msgid "Widget"
+msgstr "Widget"
+
+#: raindrops/functions.php:4181
+msgid "Nav Menus"
+msgstr "Nav menu "
+
+#: raindrops/functions.php:4181
+msgid "Raindrops Settings"
+msgstr "Ustawienia Raindrops"
+
+#: raindrops/functions.php:4181
+msgid "Theme"
+msgstr "Motyw"
+
+#: raindrops/functions.php:4181
+msgid "Dashbord"
+msgstr "Panel sterowania"
+
+#: raindrops/functions.php:4182
+msgid "Base color"
+msgstr "Podstawowy kolor"
+
+#: raindrops/functions.php:4184
+msgid "Color Type"
+msgstr "Typ koloru"
+
+#: raindrops/functions.php:4185
+msgid "Page width"
+msgstr "Szerokość strony"
+
+#: raindrops/functions.php:4189
+msgid "Menu Primary"
+msgstr "Podstawowe menu "
+
+#: raindrops/functions.php:4190
+msgid "Font Color"
+msgstr "Kolor czcionki "
+
+#: raindrops/functions.php:4191
+msgid "Link Color"
+msgstr "Kolor linku"
+
+#: raindrops/functions.php:4271
+#, php-format
+msgid ""
+"add_action(  '%1$s', 'your_function'  ) or add template part file the name "
+"'%2$s'."
+msgstr ""
+"add_action(  '%1$s', 'your_function'  ) or add template part file the name "
+"'%2$s'."
+
+#: raindrops/functions.php:4473
+msgid "Featured Image"
+msgstr "Polecane obrazy"
+
+#: raindrops/functions.php:4518 raindrops/functions.php:6030
+msgid "Continue&nbsp;reading "
+msgstr "Czytaj&nbsp;dalej!! "
+
+#: raindrops/functions.php:4518 raindrops/functions.php:6030
+msgid "&nbsp;Post ID&nbsp;"
+msgstr "&nbsp;Post ID&nbsp;"
+
+#: raindrops/functions.php:4550
+msgid " Older posts"
+msgstr "Starsze posty"
+
+#: raindrops/functions.php:4550
+msgid "Newer posts"
+msgstr "Nowsze posty"
+
+#: raindrops/functions.php:4580
+msgid "Archives"
+msgstr "Archiwa"
+
+#: raindrops/functions.php:4616
+msgid "Recent Post"
+msgstr "Poprzedni post"
+
+#: raindrops/functions.php:4755
+#, php-format
+msgid "Prev Month(  %sth  )"
+msgstr "Poprzedni miesiąc(  %sth  )"
+
+#: raindrops/functions.php:4761
+#, php-format
+msgid "Next Month(  %sth  )"
+msgstr "Następny miesiąc(  %sth  )"
+
+#: raindrops/functions.php:4840
+msgid "New window"
+msgstr "Nowe okno"
+
+#: raindrops/functions.php:5110
+msgid "Go to Attachment page"
+msgstr "Przejdź do dodatkowej strony"
+
+#: raindrops/functions.php:5770
+msgid "Empty content"
+msgstr "Wyczyść zawartość"
+
+#: raindrops/functions.php:5808 raindrops/functions.php:5910
+#: raindrops/image.php:117 raindrops/image.php:228 raindrops/loop.php:102
+msgid "Edit"
+msgstr "Edycja "
+
+#: raindrops/functions.php:5825
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Starsze wpisy"
+
+#: raindrops/functions.php:5830
+msgid "Newer Entries &raquo;"
+msgstr "Nowsze wpisy &raquo;"
+
+#: raindrops/functions.php:5926 raindrops/functions.php:5930
+#: raindrops/functions.php:5940 raindrops/functions.php:5975
+msgid "Page"
+msgstr "Strona"
+
+#: raindrops/functions.php:5951
+msgid "Now Page"
+msgstr "Obecna strona"
+
+#: raindrops/functions.php:5963 raindrops/functions.php:5994
+msgid "Portfolio Home"
+msgstr "Strona zdjęć"
+
+#: raindrops/functions.php:6001
+msgid "Home"
+msgstr "Home"
+
+#: raindrops/header.php:26
+msgid "Skip to content"
+msgstr "Przejdź do zawartości"
+
+#: raindrops/image.php:55 raindrops/image.php:164
+msgid "Entry : "
+msgstr "Wpis :"
+
+#: raindrops/image.php:128 raindrops/image.php:240
+msgid "Sorry, no attachments matched your criteria."
+msgstr "Przepraszam ale nie ma dodatków o podanych kryteriach."
+
+#: raindrops/part-blog.php:72
+msgid "Category:"
+msgstr "Kategoria:"
+
+#: raindrops/part-blog.php:79
+msgid "Tags:"
+msgstr "Tagi:"
+
+#: raindrops/part-blog.php:86
+msgid "Author:"
+msgstr "Autor:"
+
+#: raindrops/part-blog.php:97 raindrops/part-gallery.php:97
+msgid "Leave a comment"
+msgstr "Napisz komentarz "
+
+#: raindrops/part-blog.php:98 raindrops/part-gallery.php:97
+msgid "1 Comment"
+msgstr "1 komentarz"
+
+#: raindrops/part-blog.php:99 raindrops/part-gallery.php:97
+msgid "% Comments"
+msgstr "% komentarzy"
+
+#: raindrops/part-gallery.php:74
+#, php-format
+msgid "This gallery contains %1$s photographs in all as "
+msgstr "Ta galeria zawiera %1$s obrazów"
+
+#: raindrops/part-gallery.php:74
+msgid "photograph etc."
+msgstr "obrazy itd."
+
+#: raindrops/part-gallery.php:90
+msgid "View posts in the Gallery category"
+msgstr "Pokaż posty w kategorii galerii "
+
+#: raindrops/part-gallery.php:91
+msgid "Gallery"
+msgstr "Galeria"
+
+#: raindrops/part-gallery.php:92
+msgid "Link to Category"
+msgstr "Link do kategorii"
+
+#: raindrops/search.php:86
+msgid ""
+"Nothing was found though it was regrettable. Please change the key word if "
+"it is good, and retrieve it."
+msgstr "Nic nie znaleziono. Proszę zmień swoje słowa kluczowe lub je napraw."
+
+#: raindrops/searchform.php:18
+msgid "must not contain html tags"
+msgstr "nie może zawierać html tags"
+
+#: raindrops/searchform.php:18 raindrops/searchform.php:19
+#: raindrops/searchform.php:29
+msgid "Search"
+msgstr "Wyszukiwanie"
+
+#: raindrops/sidebar.php:18
+msgid "Pages"
+msgstr "Strony"
+
+#: raindrops/sidebar.php:37
+msgid "Meta"
+msgstr "Meta"
+
+#: raindrops/single.php:92
+msgid "Sticky Post Shows Only WEB Site Home."
+msgstr "Stała zawartość pokazywana jest tylko na stronie domowej"
+
+#: raindrops/lib/option-panel.php:20
+msgid "Color Scheme"
+msgstr "Schemat kolorów"
+
+#: raindrops/lib/option-panel.php:22
+msgid "Please choose the naming convention for the color list"
+msgstr "Proszę wybierz konwencje nazw dla Twojej listy kolorów"
+
+#: raindrops/lib/option-panel.php:29
+msgid "Base Color for Automatic Color Arrangement"
+msgstr "Kolor bazowy dla Automatycznego wyboru kolorów "
+
+#: raindrops/lib/option-panel.php:31
+msgid ""
+"Please specify your favorite color. and an automatic arrangement of color is "
+"designed."
+msgstr ""
+"Proszę wybierz Twój ulubiony kolor i automatyczne ustawienia sterowania "
+"kolorami."
+
+#: raindrops/lib/option-panel.php:41
+msgid ""
+"The mood like dark atmosphere and the bright note, etc. is decided. and The "
+"editor is displayed when themename is selected, and a present style can be "
+"edited in detail."
+msgstr ""
+"Przykładowo moduł Ciemna Atmosfera, jasne notatki itd są wybrane. Edytor "
+"jest pokazywany kiedy nazwa motywu zostaje wybrana - wtedy można dopracować "
+"szczegóły."
+
+#: raindrops/lib/option-panel.php:50
+msgid "Header background image"
+msgstr "Obraz tła nagłówka"
+
+#: raindrops/lib/option-panel.php:52
+msgid ""
+"The header image can be set by two methods.\n"
+"One is a method of up-loading the image from the below up-loading form. "
+"Another is a method of filling in the filename from this textfield from "
+"Raindrops/images something image."
+msgstr ""
+"Obraz tła nagłówka może być wybrany dwoma metodami. Pierwsza metoda to "
+"ściągniecie obrazka przez użycie formularza poniżej. Drugą metodą jest "
+"wpisanie nazwy pliku w polu tekstowym ( pliki powinny znajdować się w "
+"katalogu Raindrops/images )."
+
+#: raindrops/lib/option-panel.php:62
+msgid "Footer background image"
+msgstr "Obraz tła stopki"
+
+#: raindrops/lib/option-panel.php:64
+msgid ""
+"The footer image can be set by two methods.\n"
+"One is a method of up-loading the image from the below up-loading form. "
+"Another is a method of filling in the filename from this textfield from "
+"Raindrops/images something image."
+msgstr ""
+"Obraz tła stopki może być wybrany dwoma metodami. Pierwsza metoda to \n"
+"ściągniecie obrazka przy użyciu formularza poniżej. Drugą metodą jest \n"
+"wpisanie nazwy pliku w polu tekstowym ( pliki powinny znajdować się w \n"
+"Raindrops/images )."
+
+#: raindrops/lib/option-panel.php:72
+msgid "Widget Title Background Image"
+msgstr "Obraz tła tytułu Widget"
+
+#: raindrops/lib/option-panel.php:74
+msgid ""
+"The header image can be chosen from among three kinds [h2.png,h2b.png,h2c."
+"png]."
+msgstr ""
+"Obraz nagłówka może być wybrany z trzech typów [h2.png,h2b.png,h2c.png]."
+
+#: raindrops/lib/option-panel.php:81
+msgid "Widget Title Background Image Position"
+msgstr "Pozycja tła obrazu tytułu Widget"
+
+#: raindrops/lib/option-panel.php:83
+msgid ""
+"The name of the picture file used for the h2 headding is set. Please set the "
+"integral value from 0 to 7. "
+msgstr ""
+"Nazwa pliku obrazu używanego dla nagłówka h2 została wybrana. Proszę wybierz "
+"integralną wartość od 0 do 7"
+
+#: raindrops/lib/option-panel.php:90
+msgid "Page Width"
+msgstr "Szerokość strony"
+
+#: raindrops/lib/option-panel.php:92
+msgid "Please choose width on the page."
+msgstr "Proszę wybierz szerokość na stronie."
+
+#: raindrops/lib/option-panel.php:93
+msgid "Please choose from four kinds of inside of"
+msgstr "Proszę wybierz z czterech rodzajów znajdujących się w"
+
+#: raindrops/lib/option-panel.php:94
+msgid "750px centerd 950px centerd fluid 974px."
+msgstr "750px centrowany 950px centrowany płynny 974px."
+
+#: raindrops/lib/option-panel.php:101
+msgid "Column Width and Position"
+msgstr "Szerokość i pozycja kolumn"
+
+#: raindrops/lib/option-panel.php:103
+msgid ""
+"Please specify the position and the width of Default Sidebar. Six kinds of "
+"sidebars of left 160px left 180px left 300px right 180px right 240px right "
+"300px can be specified."
+msgstr ""
+"Proszę wybierz pozycję i szerokość standardowego panelu bocznego. Sześć "
+"rozwiązań panelu może być wybrana: lewy 160px lewy 180px lewy 300px prawy "
+"180px prawy 240px prawy 300px."
+
+#: raindrops/lib/option-panel.php:110
+msgid "Text color in content "
+msgstr "Kolor tekstu w zawartości"
+
+#: raindrops/lib/option-panel.php:112
+msgid "If you need to set contents Special font color."
+msgstr "Jeśli musisz wybrać specjalny kolor tekstu zawartości."
+
+#: raindrops/lib/option-panel.php:119
+msgid "Text color in footer "
+msgstr "Kolor tekstu w stopce"
+
+#: raindrops/lib/option-panel.php:121
+msgid "If you need to set footer Special font color."
+msgstr "Jeśli musisz wybrać specjalny kolor testu w stopce."
+
+#: raindrops/lib/option-panel.php:130
+msgid ""
+"Please specify show when you want to use three row layout. Please set Ratio "
+"to text when extra sidebar is displayed when you specify show"
+msgstr ""
+"Proszę wyszczególnij kiedy chcesz użyć trzy częściowego layoutu. Proszę "
+"wpisz ratio tekstu kiedy dodatkowy panel boczny jest pokazywany i kiedy "
+"konkretnie jest pokazywany."
+
+#: raindrops/lib/option-panel.php:137
+msgid "Extra Sidebar Width"
+msgstr "Szerokość dodatkowego panelu bocznego"
+
+#: raindrops/lib/option-panel.php:139
+msgid "When display extra sidebar is set to show"
+msgstr "Określenie kiedy dodatkowy panel boczny jest pokazywany"
+
+#: raindrops/lib/option-panel.php:140
+msgid "it is necessary to specify it."
+msgstr "to określenie jest wymagane."
+
+#: raindrops/lib/option-panel.php:141
+msgid "It can decide to divide the width of which place of extra sidebar"
+msgstr ""
+"To może określić podział szerokości miejsca dodatkowego panelu bocznego"
+
+#: raindrops/lib/option-panel.php:142
+msgid "and to give it. Please select it from among 25% 33% 50% 66% 75%. "
+msgstr "i przydzielić je. Proszę wybierz z 25% 33% 50% 66% 75%."
+
+#: raindrops/lib/option-panel.php:151
+msgid ""
+"Display or not Menu Primary. default value is show. set hide when not "
+"display menu primary"
+msgstr ""
+"Pokaż lub nie podstawowe menu. Normalne ustawienie jest pokaż. Wybierz ukryj "
+"kiedy nie chcesz aby to menu nie ma być pokazane."
+
+#: raindrops/lib/option-panel.php:158
+msgid "Link color"
+msgstr "Kolor linku"
+
+#: raindrops/lib/option-panel.php:160
+msgid "Hyper link color"
+msgstr "Kolor hyper linku"
+
+#: raindrops/lib/option-panel.php:167
+msgid "Accessibility Settings"
+msgstr "Ustawienia dostępu"
+
+#: raindrops/lib/option-panel.php:169
+msgid "Accessibility Settings is create a unique link text. set to yes or no."
+msgstr ""
+"Ma być stworzony unikalny link tekstowy dla ustawień dostępu. Wybierz tak "
+"lub nie."
+
+#: raindrops/lib/option-panel.php:177
+msgid "Document Type Settings"
+msgstr "Ustawienia typu dokumentu"
+
+#: raindrops/lib/option-panel.php:179
+msgid "Default Document type html5. Set to xhtml or html5."
+msgstr "Podstawowy typ dokumentu to html5. Wybierz xhtml lub html5."
+
+#: raindrops/lib/option-panel.php:610
+msgid "Post Errors 14"
+msgstr "Post Errors 14"
+
+#: raindrops/lib/option-panel.php:615
+msgid "Post Errors 18"
+msgstr "Post Errors 18"
+
+#: raindrops/lib/option-panel.php:635
+msgid " Theme Settings"
+msgstr "Ustawienia motywu"
+
+#: raindrops/lib/option-panel.php:636
+msgid "Saved Database table name:"
+msgstr "Zapisz nazwę tabeli bazy danych jako:"
+
+#: raindrops/lib/option-panel.php:685 raindrops/lib/option-panel.php:713
+#, php-format
+msgid "updated %1$s successfully."
+msgstr "uaktualnienie %1$s zakończone powodzeniem."
+
+#: raindrops/lib/option-panel.php:691
+msgid " MultiSite User must Click here !!"
+msgstr "Użytkownicy MultiSite są proszeni o kliknięcie tutaj!!"
+
+#: raindrops/lib/option-panel.php:716
+#, php-format
+msgid "updated %s fail."
+msgstr "uaktualnienia %s zakończane błędem."
+
+#: raindrops/lib/option-panel.php:794
+msgid "WordPress Native Theme Options"
+msgstr "Opcje tematu podstawowego WordPress"
+
+#: raindrops/lib/option-panel.php:798
+msgid "Theme customizer"
+msgstr "Dostosowanie motywu"
+
+#: raindrops/lib/option-panel.php:802
+msgid "Custom Background"
+msgstr "Dostosowane tła"
+
+#: raindrops/lib/option-panel.php:804
+msgid "Menus"
+msgstr "Menus"
+
+#: raindrops/lib/option-panel.php:805
+msgid "Theme Editor"
+msgstr "Edytor motywu"
+
+#: raindrops/lib/option-panel.php:810
+msgid "Raindrops Extend Theme Options"
+msgstr "Zaawansowane opcje motywu Raindrops"
+
+#: raindrops/lib/option-panel.php:830
+msgid "go to Color Type"
+msgstr "Przejdź do typu koloru"
+
+#: raindrops/lib/option-panel.php:833
+msgid "Go to upload form"
+msgstr "Przejdź do formularza pobierania"
+
+#: raindrops/lib/option-panel.php:836
+msgid "Go to Base Color"
+msgstr "Przejdź do podstawowego koloru"
+
+#: raindrops/lib/option-panel.php:881 raindrops/lib/option-panel.php:884
+msgid "Value"
+msgstr "Wartość"
+
+#: raindrops/lib/option-panel.php:884
+msgid "Color"
+msgstr "Kolor"
+
+#: raindrops/lib/option-panel.php:1030
+msgid "Save"
+msgstr "Zapisz"
+
+#: raindrops/lib/option-panel.php:1042
+msgid "Please reload this page ex. windows F5"
+msgstr "Proszę przeładuj tą stronę np. Windows F5"
+
+#: raindrops/lib/option-panel.php:1067
+msgid "Now constant RAINDROPS_USE_AUTO_COLOR is false"
+msgstr "Teraz stały RAINDROPS_USE_AUTO_COLOR jest wyłączony "
+
+#: raindrops/lib/option-panel.php:1156
+msgid "Image Upload"
+msgstr "Wgrywanie obrazu"
+
+#: raindrops/lib/option-panel.php:1158
+msgid "Upload"
+msgstr "Wgrywanie"
+
+#: raindrops/lib/option-panel.php:1161
+msgid "Purpose:"
+msgstr "Cel:"
+
+#: raindrops/lib/option-panel.php:1164
+msgid "Header Image"
+msgstr "Obraz nagłówka"
+
+#: raindrops/lib/option-panel.php:1168
+msgid "Footer Image"
+msgstr "Obraz stopki"
+
+#: raindrops/lib/option-panel.php:1170
+msgid "Style:"
+msgstr "Styl:"
+
+#: raindrops/lib/option-panel.php:1172
+msgid "no-repeat"
+msgstr "bez-powtórzeń"
+
+#: raindrops/lib/option-panel.php:1175
+msgid "repeat-x"
+msgstr "powtórz-x"
+
+#: raindrops/lib/option-panel.php:1176
+msgid "position:"
+msgstr "pozycja:"
+
+#: raindrops/lib/option-panel.php:1177
+msgid "top:"
+msgstr "góra:"
+
+#: raindrops/lib/option-panel.php:1178 raindrops/lib/option-panel.php:1181
+#: raindrops/lib/option-panel.php:1184
+msgid "px"
+msgstr "px"
+
+#: raindrops/lib/option-panel.php:1179
+msgid "left:"
+msgstr "lewo:"
+
+#: raindrops/lib/option-panel.php:1182
+msgid "box height:"
+msgstr "wysokość boksu"
+
+#: raindrops/lib/option-panel.php:1191
+msgid "Go to current header image"
+msgstr "Przejdź do obecnego obrazu nagłówka"
+
+#: raindrops/lib/option-panel.php:1194
+msgid "Go to current footer image"
+msgstr "Przejdź do obecnego obrazu stopki"
+
+#: raindrops/lib/option-panel.php:1220
+msgid "Cannot be trusted data"
+msgstr "Dane nie są godne zaufania"
+
+#: raindrops/lib/option-panel.php:1225
+msgid "Can not Upload Security issue"
+msgstr "Nie można pobrać z powodu zabezpieczeń "
+
+#: raindrops/lib/option-panel.php:1236
+msgid "purpose no data"
+msgstr "cel no data"
+
+#: raindrops/lib/option-panel.php:1246
+msgid "style no data"
+msgstr "styl no data"
+
+#: raindrops/lib/option-panel.php:1256
+msgid "position top no data"
+msgstr "pozycja top no data"
+
+#: raindrops/lib/option-panel.php:1266
+msgid "position no data"
+msgstr "pozycja no data"
+
+#: raindrops/lib/option-panel.php:1276
+msgid "box height no data"
+msgstr "wysokość boksu no data"
+
+#: raindrops/lib/option-panel.php:1288
+#, php-format
+msgid "%s is not permitted filetype."
+msgstr "%s nie jest dozwolonym typem pliku."
+
+#: raindrops/lib/option-panel.php:1294
+#, php-format
+msgid "%s function is not exists"
+msgstr "%s - funkcja nie istnieje"
+
+#: raindrops/lib/option-panel.php:1359
+#, php-format
+msgid "%d px * %d width too big. limit %d px"
+msgstr "%d px * %d - szerokość jest zbyt duża. Limit to %d px"
+
+#: raindrops/lib/option-panel.php:1379
+msgid "It failed in up-loading."
+msgstr "Znaleziono błąd w pobieraniu."
+
+#: raindrops/lib/option-panel.php:1396
+msgid "none"
+msgstr "none"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "toki"
+msgstr "toki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tutuji"
+msgstr "tutuji"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sakura"
+msgstr "sakura"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "bara"
+msgstr "bara"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "karakurenai"
+msgstr "karakurenai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sango"
+msgstr "sango"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "koubai"
+msgstr "koubai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "momo"
+msgstr "momo"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "beni"
+msgstr "beni"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "beniaka"
+msgstr "beniaka"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "enji"
+msgstr "enji"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "suou"
+msgstr "suou"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "akane"
+msgstr "akane"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "aka"
+msgstr "aka"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "syu"
+msgstr "syu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "benikaba"
+msgstr "benikaba"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "benihi"
+msgstr "benihi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "entan"
+msgstr "entan"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "beniebitya"
+msgstr "beniebitya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tobi"
+msgstr "tobi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "azuki"
+msgstr "azuki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "bengara"
+msgstr "bengara"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ebitya"
+msgstr "ebitya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kinaka"
+msgstr "kinaka"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "akatya"
+msgstr "akatya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "akasabi"
+msgstr "akasabi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ouni"
+msgstr "ouni"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sekitou"
+msgstr "sekitou"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kaki"
+msgstr "kaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "nikkei"
+msgstr "nikkei"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kaba"
+msgstr "kaba"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "renga"
+msgstr "renga"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sabi"
+msgstr "sabi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "hiwada"
+msgstr "hiwada"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kuri"
+msgstr "kuri"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kiaka"
+msgstr "kiaka"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "taisya"
+msgstr "taisya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "rakuda"
+msgstr "rakuda"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kitye"
+msgstr "kitye"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "hadairo"
+msgstr "hadairo"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "daidai"
+msgstr "daidai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "haitya"
+msgstr "haitya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tya"
+msgstr "tya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kogetya"
+msgstr "kogetya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kouji"
+msgstr "kouji"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "anzu"
+msgstr "anzu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "mikan"
+msgstr "mikan"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kassyoku"
+msgstr "kassyoku"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tutiiro"
+msgstr "tutiiro"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "komugi"
+msgstr "komugi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kohaku"
+msgstr "kohaku"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kintya"
+msgstr "kintya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tamago"
+msgstr "tamago"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "yamabuki"
+msgstr "yamabuki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "oudo"
+msgstr "oudo"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kutiba"
+msgstr "kutiba"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "himawari"
+msgstr "himawari"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ukon"
+msgstr "ukon"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "suna"
+msgstr "suna"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "karasi"
+msgstr "karasi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ki"
+msgstr "ki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tanpopo"
+msgstr "tanpopo"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "uguisutya"
+msgstr "uguisutya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tyuki"
+msgstr "tyuki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kariyasu"
+msgstr "kariyasu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kihada"
+msgstr "kihada"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "miru"
+msgstr "miru"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "biwa"
+msgstr "biwa"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "uguisu"
+msgstr "uguisu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "mattya"
+msgstr "mattya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kimidori"
+msgstr "kimidori"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "koke"
+msgstr "koke"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "wakakusa"
+msgstr "wakakusa"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "moegi"
+msgstr "moegi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kusa"
+msgstr "kusa"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "wakaba"
+msgstr "wakaba"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "matuba"
+msgstr "matuba"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "byakuroku"
+msgstr "byakuroku"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "midori"
+msgstr "midori"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tokiwa"
+msgstr "tokiwa"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "rokusyou"
+msgstr "rokusyou"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "titosemidori"
+msgstr "titosemidori"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "fukamidori"
+msgstr "fukamidori"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "wakatake"
+msgstr "wakatake"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "seiji"
+msgstr "seiji"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "aotake"
+msgstr "aotake"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tetu"
+msgstr "tetu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "aomidori"
+msgstr "aomidori"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sabiasagi"
+msgstr "sabiasagi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "mizuasagi"
+msgstr "mizuasagi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sinbasi"
+msgstr "sinbasi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "asagi"
+msgstr "asagi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "byakugun"
+msgstr "byakugun"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "nando"
+msgstr "nando"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kamenozoki"
+msgstr "kamenozoki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "mizu"
+msgstr "mizu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ainezu"
+msgstr "ainezu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sora"
+msgstr "sora"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ao"
+msgstr "ao"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ai"
+msgstr "ai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "koiai"
+msgstr "koiai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "wasurenagusa"
+msgstr "wasurenagusa"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tuyukusa"
+msgstr "tuyukusa"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "hanada"
+msgstr "hanada"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "konjou"
+msgstr "konjou"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ruri"
+msgstr "ruri"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "rurikon"
+msgstr "rurikon"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kon"
+msgstr "kon"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kakitubata"
+msgstr "kakitubata"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kati"
+msgstr "kati"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "gunjou"
+msgstr "gunjou"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tetukon"
+msgstr "tetukon"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "fujinando"
+msgstr "fujinando"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kikyou"
+msgstr "kikyou"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "konai"
+msgstr "konai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "fuji"
+msgstr "fuji"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "fujimurasaki"
+msgstr "fujimurasaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "aomurasaki"
+msgstr "aomurasaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sumire"
+msgstr "sumire"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "hatoba"
+msgstr "hatoba"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "syoubu"
+msgstr "syoubu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "edomurasaki"
+msgstr "edomurasaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "murasaki"
+msgstr "murasaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kodaimurasaki"
+msgstr "kodaimurasaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "nasukon"
+msgstr "nasukon"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sikon"
+msgstr "sikon"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ayame"
+msgstr "ayame"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "botan"
+msgstr "botan"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "akamurasaki"
+msgstr "akamurasaki"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "siro"
+msgstr "siro"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "gofun"
+msgstr "gofun"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kinari"
+msgstr "kinari"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "zouge"
+msgstr "zouge"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "ginnezu"
+msgstr "ginnezu"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tyanezumi"
+msgstr "tyanezumi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "nezumi"
+msgstr "nezumi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "rikyunezumi"
+msgstr "rikyunezumi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "namari"
+msgstr "namari"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "hai"
+msgstr "hai"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "susutake"
+msgstr "susutake"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kurotya"
+msgstr "kurotya"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "sumi"
+msgstr "sumi"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "kuro"
+msgstr "kuro"
+
+#: raindrops/lib/option-panel.php:1396
+msgid "tetukuro"
+msgstr "tetukuro"
+
+msgid "permalink"
+msgstr "Link permanentny"
+
+# @ Raindrops
+msgid "More Galleries"
+msgstr "Więcej galerii"
+
+# @ Raindrops
+msgid "<span>Newer posts <span class=\"meta-nav\">&rarr;</span></span>"
+msgstr "<span>Nowsze posty <span class=\"meta-nav\">&rarr;</span></span>"
+
+# @ Raindrops
+msgid ""
+"Please choose width on the page.\n"
+"    Please choose from four kinds of inside of 750px centerd 950px centerd "
+"fluid 974px."
+msgstr ""
+"Proszę wybierz szerokość strony.\n"
+"    Proszę wybierz jedną z czterech opcji 750px wycentrowany  950px "
+"wycentrowany  płynny 974px."
+
+# @ Raindrops
+msgid ""
+"When display extra sidebar is set to show, it is necessary to specify it. It "
+"can decide to divide the width of which place of extra sidebar and to give "
+"it. Please select it from among 25% 33% 50% 66% 75%. "
+msgstr ""
+"Kiedy wybrane jest pokazywanie dodatkowego panelu bocznego, konieczne jest "
+"określenie jego parametrów . Należy podjąć decyzję o przydzieleniu "
+"odpowiedniej szerokośćdodatkowego panelu bocznego. Proszę wybrać jedną z "
+"dostępnych alternatyw 25% 33% 50% 66% 75%. "
+
+# @ Raindrops
+msgid "Continue&nbsp;reading&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr "Kontynuuj&nbsp;czytanie&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+
+# @ Raindrops
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Starsze komentarze"
+
+# @ Raindrops
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nowsze komentarze <span class=\"meta-nav\">&rarr;</span>"
+
+# @ Raindrops
+msgid "Entries <span>(RSS)</span>"
+msgstr "Wpisy <span>(RSS)</span>"
+
+# @ Raindrops
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">says:</span>"
+
+# @ Raindrops
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Ten wpis był wstawiony w %1$s i oznaczony %2$s. Dodaj do zakładek <a href="
+"\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+# @ Raindrops
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Ten wpis był wstawiony w %1$s. Dodaj do zakładek <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+# @ Raindrops
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+"Dodaj do zakładek <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+
+# @ Raindrops
+msgid ""
+"<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</"
+"span> %3$s %4$s"
+msgstr ""
+"<span class=\"%1$s\">Opublikowany na </span> %2$s <span class=\"meta-sep"
+"\">by</span> %3$s %4$s"
+
+# @ Raindrops
+msgid "Settings with Live preview "
+msgstr "Ustawienia z podglądem na żywo"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "pozycja:"
+
+#, fuzzy
+#~ msgid "raindrops infomation"
+#~ msgstr "Ustawienia Raindrops"
+
+#, fuzzy
+#~ msgid "Page %s"
+#~ msgstr "Strona %s"
+
+#, fuzzy
+#~ msgid "Category Blog Widget"
+#~ msgstr "Widget w stopce"
+
+#, fuzzy
+#~ msgid "This entry has no title"
+#~ msgstr "Ten wpis był dodany w kategorii"
+
+#, fuzzy
+#~ msgid "Bookmark the "
+#~ msgstr "Zakładki"
+
+#, fuzzy
+#~ msgid "This entry was posted in "
+#~ msgstr "Ten wpis był dodany w kategorii"
+
+#, fuzzy
+#~ msgid "Text Color "
+#~ msgstr "Kolor czcionki "
+
+#, fuzzy
+#~ msgid "Comments <span>(RSS)</span>"
+#~ msgstr "Komentarze RSS"
+
+#, fuzzy
+#~ msgid "(Edit)"
+#~ msgstr "Edycja "
