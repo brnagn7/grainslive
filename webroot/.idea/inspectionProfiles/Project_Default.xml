@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 <component name="InspectionProjectProfileManager">
   <profile version="1.0" is_locked="false">
     <option name="myName" value="Project Default" />
     <option name="myLocal" value="false" />
     <inspection_tool class="JSLint" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
+=======
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="JSLint" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+>>>>>>> b913481a1355e16ebf308bdec5aad813727154e4
 </component>

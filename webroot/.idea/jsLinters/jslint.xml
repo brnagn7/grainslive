@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JSLintConfiguration">
@@ -8,3 +9,15 @@
   </component>
 </project>
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSLintConfiguration">
+    <option indent="2" />
+    <option maxerr="50" />
+    <option nomen="true" />
+    <option vars="true" />
+  </component>
+</project>
+
+>>>>>>> b913481a1355e16ebf308bdec5aad813727154e4

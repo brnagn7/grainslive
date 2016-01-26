@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $page_title = "Home – Grains of wheat";
 include('inc/header.html');
@@ -5,6 +6,12 @@ include('inc/header.html');
     <!-- Page Content -->
     <div class="container">
 
+=======
+
+<?php include('inc/header.html'); ?>
+    <!-- Page Content -->
+    <div class="container">
+>>>>>>> b913481a1355e16ebf308bdec5aad813727154e4
         <!-- Tab content -->
         <div class="row">
             <div class="col-lg-12">
@@ -99,8 +106,14 @@ include('inc/header.html');
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <hr>
 <!-- Footer -->
 <?php
 include('inc/footer.html');
 ?>
+=======
+        <!-- /.row -->
+<hr>
+<?php include("inc/footer.html"); ?>
+>>>>>>> b913481a1355e16ebf308bdec5aad813727154e4

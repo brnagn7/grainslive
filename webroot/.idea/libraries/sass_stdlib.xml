@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <component name="libraryTable">
   <library name="sass-stdlib">
     <CLASSES />
@@ -5,4 +6,13 @@
       <root url="file://$APPLICATION_HOME_DIR$/plugins/sass/lib/stubs/sass_functions.scss" />
     </SOURCES>
   </library>
+=======
+<component name="libraryTable">
+  <library name="sass-stdlib">
+    <CLASSES />
+    <SOURCES>
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/sass/lib/stubs/sass_functions.scss" />
+    </SOURCES>
+  </library>
+>>>>>>> b913481a1355e16ebf308bdec5aad813727154e4
 </component>
