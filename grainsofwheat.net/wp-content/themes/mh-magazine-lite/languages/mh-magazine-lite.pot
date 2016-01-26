@@ -1,0 +1,678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MH Magazine lite v1.6.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-12-21 22:22+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ mh
+#: content.php:6 includes/mh-widgets.php:99 loop.php:14
+msgid "0 Comments"
+msgstr ""
+
+# @ mh
+#: content.php:6 includes/mh-widgets.php:99 loop.php:14
+msgid "1 Comment"
+msgstr ""
+
+# @ mh
+#: content.php:6 includes/mh-widgets.php:99 loop.php:14
+msgid "% Comments"
+msgstr ""
+
+# @ mh
+#: comments.php:17 functions.php:496 functions.php:503
+msgid "&laquo;"
+msgstr ""
+
+# @ mh
+#: comments.php:17 functions.php:496 functions.php:503
+msgid "&raquo;"
+msgstr ""
+
+# @ mh
+#: comments.php:36
+msgid "Leave a comment"
+msgstr ""
+
+# @ mh
+#: comments.php:37
+msgid "Your email address will not be published."
+msgstr ""
+
+# @ mh
+#: comments.php:9 comments.php:39
+msgid "Comment"
+msgstr ""
+
+# @ mh
+#: functions.php:66
+msgid "Main Navigation"
+msgstr ""
+
+# @ mh
+#: functions.php:98
+msgid "Sidebar"
+msgstr ""
+
+# @ mh
+#: functions.php:99
+msgid "Home 1"
+msgstr ""
+
+# @ mh
+#: functions.php:99 functions.php:100 functions.php:101 functions.php:102
+#: functions.php:103
+msgid "Widget area on homepage"
+msgstr ""
+
+# @ mh
+#: functions.php:100
+msgid "Home 2"
+msgstr ""
+
+# @ mh
+#: functions.php:101
+msgid "Home 3"
+msgstr ""
+
+# @ mh
+#: functions.php:102
+msgid "Home 4"
+msgstr ""
+
+# @ mh
+#: functions.php:103
+msgid "Home 5"
+msgstr ""
+
+# @ mh
+#: functions.php:106
+msgid "Footer 1"
+msgstr ""
+
+# @ mh
+#: functions.php:107
+msgid "Footer 2"
+msgstr ""
+
+# @ mh
+#: functions.php:108
+msgid "Footer 3"
+msgstr ""
+
+# @ mh
+#: functions.php:109
+msgid "Footer 4"
+msgstr ""
+
+# @ mh
+#: functions.php:457
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+# @ mh
+#: functions.php:461
+msgid "(Edit)"
+msgstr ""
+
+# @ mh
+#: functions.php:464
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+# @ mh
+#: functions.php:481
+msgid "Name "
+msgstr ""
+
+# @ mh
+#: functions.php:482
+msgid "Email "
+msgstr ""
+
+# @ mh
+#: functions.php:483
+msgid "Website"
+msgstr ""
+
+# @ mh
+#: content-none.php:12
+msgid "Search"
+msgstr ""
+
+# @ mh
+#: functions.php:187
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+# @ mh
+#: content.php:6
+msgid " in "
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:167
+msgid "MH Facebook Likebox"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:45 includes/mh-widgets.php:122
+#: includes/mh-widgets.php:204
+msgid "Title:"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:208
+msgid "Facebook Page URL:"
+msgstr ""
+
+# @ mh
+#: comments.php:10
+msgid " on "
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:44
+msgid "General Options"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:47 includes/mh-options.php:85
+msgid "Custom CSS"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:78 includes/mh-options.php:112
+msgid "Left"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:78 includes/mh-options.php:113
+msgid "Right"
+msgstr ""
+
+# @ mh
+#: content.php:6
+msgid " by "
+msgstr ""
+
+# @ mh
+#: comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:73
+msgid "Scale background image to full size"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:87
+msgid "Subheading (will be displayed below post title)"
+msgstr ""
+
+# @ mh
+#: functions.php:297
+msgid "About "
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:200
+msgid "Connect with us on Facebook"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:46
+msgid "Posts/Pages Options"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:80
+msgid "Disable author box on posts/archives"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:83
+msgid "Enable related articles on posts"
+msgstr ""
+
+# @ mh
+#: searchform.php:3
+msgid "To search, type and hit enter"
+msgstr ""
+
+# @ mh
+#: comments.php:9
+msgid "Comments"
+msgstr ""
+
+# @ mh
+#: comments.php:23
+msgid "Trackbacks & Pingbacks"
+msgstr ""
+
+# @ mh
+#: content-none.php:5
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+# @ mh
+#: content-none.php:9
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:221
+msgid "Show Faces"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:225
+msgid "Show Stream"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:229
+msgid "Show Header"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:233
+msgid "Show Border"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:74
+msgid "Disable prettyPhoto lightbox"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:81
+msgid "Enable comments on pages"
+msgstr ""
+
+# @ mh
+#: functions.php:222
+msgid "Page not found (404)"
+msgstr ""
+
+# @ mh
+#: functions.php:336
+msgid "&larr; Previous image"
+msgstr ""
+
+# @ mh
+#: functions.php:343
+msgid "Next image &rarr;"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:82
+msgid "Enable post / attachment navigation"
+msgstr ""
+
+# @ mh
+#: functions.php:98
+msgid "Widget area (sidebar left/right) on single posts, pages and archives"
+msgstr ""
+
+# @ mh
+#: functions.php:104
+msgid "Posts 1"
+msgstr ""
+
+# @ mh
+#: functions.php:104
+msgid "Widget area above single post content"
+msgstr ""
+
+# @ mh
+#: functions.php:105
+msgid "Posts 2"
+msgstr ""
+
+# @ mh
+#: functions.php:105
+msgid "Widget area below single post content"
+msgstr ""
+
+# @ mh
+#: functions.php:106 functions.php:107 functions.php:108 functions.php:109
+msgid "Widget area in footer"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:45
+msgid "Layout Options"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:78
+msgid "Position of default sidebar"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:75
+msgid "Custom excerpt length in characters"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:76
+msgid "Custom excerpt more text"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:212
+msgid "Width:"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:216
+msgid "Height:"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:126 includes/mh-widgets.php:294
+msgid "Select a Category:"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:128 includes/mh-widgets.php:296
+msgid "All"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:141 includes/mh-widgets.php:309
+msgid "Filter Posts by Tags (e.g. lifestyle):"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:145 includes/mh-widgets.php:313
+msgid "Show:"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:146 includes/mh-widgets.php:150
+#: includes/mh-widgets.php:314 includes/mh-widgets.php:318
+msgid "Posts"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:149 includes/mh-widgets.php:317
+msgid "Skip:"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:154 includes/mh-widgets.php:322
+msgid "Ignore Sticky Posts"
+msgstr ""
+
+# @ mh
+#: functions.php:329
+msgid "&larr; Back to article"
+msgstr ""
+
+# @ mh
+#: functions.php:338
+msgid "&larr; Previous article"
+msgstr ""
+
+# @ mh
+#: functions.php:345
+msgid "Next article &rarr;"
+msgstr ""
+
+# @ mh
+#: functions.php:370
+msgid "Related Articles"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:18
+msgid "MH Affiliate Widget"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:53
+msgid "Banner size:"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:77
+msgid "Post Options"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:17
+msgid ""
+"MH Affiliate Widget to earn money by promoting WordPress themes by MH Themes."
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:62
+msgid ""
+"With this widget you can earn money by promoting WordPress themes by MH "
+"Themes. If you do not have a Creative Market Username yet, please visit our"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:62
+msgid "infopage for affiliates"
+msgstr ""
+
+# @ mh
+#: content-none.php:16
+msgid "Recent Articles"
+msgstr ""
+
+# @ mh
+#: content.php:6
+msgid "Posted on "
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:70
+msgid "Custom Posts Widget to display posts based on categories or tags."
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:71
+msgid "MH Custom Posts (Lite)"
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:157 includes/mh-widgets.php:325
+msgid ""
+"This is the Lite Version of this widget with only basic features. If you "
+"need more features and options, you can upgrade to the premium version of "
+"this theme."
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:166
+msgid "Widget to display a Facebook likebox in your sidebar."
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:242
+msgid "Slider widget for use on homepage template."
+msgstr ""
+
+# @ mh
+#: includes/mh-widgets.php:243
+msgid "MH Slider Widget (Lite)"
+msgstr ""
+
+# @ mh
+#: functions.php:208
+#, php-format
+msgctxt "post author"
+msgid "Articles by %s"
+msgstr ""
+
+# @ mh
+#: functions.php:216
+msgid "Archives"
+msgstr ""
+
+# @ mh
+#: functions.php:224
+#, php-format
+msgid "Search Results for %s"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:7
+msgid "Welcome to MH Magazine lite"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:7
+msgid "Theme Info"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:16
+#, php-format
+msgid "Welcome to %1s %2s"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:20
+msgid "Important Links:"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:21
+msgid "Theme Info Page"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:22
+msgid "Support Center"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:23
+msgid "Rate this theme"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:24
+msgid "Facebook"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:25
+msgid "Twitter"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:26
+msgid "YouTube"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:31
+#, php-format
+msgid "Getting Started with %s"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:35
+msgid "Theme Documentation"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:36
+#, php-format
+msgid ""
+"Need any help to setup and configure %s? Please have a look at the "
+"instructions on the Theme Info Page or read the Documentations and Tutorials "
+"in our Support Center."
+msgstr ""
+
+# @ mh
+#: admin/admin.php:38
+msgid "Visit Documentation"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:42 includes/mh-options.php:39
+msgid "Theme Options"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:43
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize "
+"Theme\" to open the Customizer now."
+msgstr ""
+
+# @ mh
+#: admin/admin.php:45
+msgid "Customize Theme"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:49 includes/mh-options.php:48
+msgid "Upgrade to Premium"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:50
+msgid ""
+"Need more features and options? Check out the Premium Version of this theme "
+"which comes with additional features and advanced customization options for "
+"your website."
+msgstr ""
+
+# @ mh
+#: admin/admin.php:52 includes/mh-options.php:89
+msgid "Learn more about the Premium Version"
+msgstr ""
+
+# @ mh
+#: admin/admin.php:63
+#, php-format
+msgid ""
+"%1s is proudly brought to you by %2s. If you like this WordPress theme, %3s."
+msgstr ""
+
+# @ mh
+#: admin/admin.php:66
+msgid "rate it"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:87
+msgid "Need more features and options?"
+msgstr ""
+
+# @ mh
+#: includes/mh-options.php:88
+msgid ""
+"Check out the Premium Version of this theme which comes with additional "
+"features and advanced customization options for your website."
+msgstr ""

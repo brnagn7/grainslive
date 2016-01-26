@@ -1,0 +1,68 @@
+==================
+1.0.86 - 2014/11
+==================
+- Added Display Author Picture in category options
+- Added Display More Link in category options
+- Added Display Tags in category options
+- Changed the location of tags/categories in post, moved to the top
+- Change the grid to masonry
+
+==================
+1.0.81 - 2014/05
+==================
+- Fixed bugs in CSS roles
+- More details (data and views) now is part of the image area
+- Gradient effects for a lot of areas now is automatic, the footer is only part that require start and end color
+- Fixed bug in page.php
+
+
+==================
+1.0.80 - 2014/04
+==================
+- New background style (fixed/cover)
+- Removed border in footer widgets
+- New author configuration section in customize menu
+- Changed the size of icons in category front page to align text and icon
+- Static page improvements and now has the same visual of a blog post
+- Removed external references of JQuery and using WP JQuery version
+- Improved effects (fade in/out) via JQuery
+
+
+
+==================
+1.0.77 - 2014/03
+==================
+- Removed blank lines at the begin of functions.php, cause a crash in WP panel
+
+==================
+1.0.75 - 2014/03
+==================
+- Replaced standart icons by Genericons (web font)
+- Fixed bugs in post list when user visit site by smartphones/tables
+- Improved items in post list with details about data and comments
+- Improved visual of tags and categorys in post display
+- Removed icons and changed to use genericons
+- Theme Info now has a textarea to put HTML code
+
+
+==================
+1.0.73 - 2014/01
+==================
+- Fixed problems in page template
+- Added author box at end of post
+
+==================
+1.0.72 - 2013/12
+==================
+- Fixed bugs on JS
+
+==================
+1.0.7 - 2013/11
+==================
+- Improvement on CSS
+
+==================
+1.0.1 - 2013/10
+==================
+- Initial release
+

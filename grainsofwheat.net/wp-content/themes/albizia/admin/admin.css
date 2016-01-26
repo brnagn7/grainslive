@@ -1,0 +1,42 @@
+#itx-layout .inwidg{overflow: hidden; background: #ccc; border: 1px solid #000;}
+#itx-layout .inwidg div {font-size: 1.3em;line-height:1.3em;width:15.8%; margin:0.5%;float:left;background: #eee;}
+#itx-theme-options h4{padding: 10px 0 5px 0;margin: 0;}
+#itx-theme-options h5{text-align: center; font-size: 1em;}
+#itx-theme-options td{vertical-align: top;}
+#itx-theme-options .postbox{width: 200px;}
+#itx-theme-options .postbox h3, #itx-theme-options .postbox p{margin: 0;padding: 4px 20px;}
+#itx-theme-options .radiopad{margin-left:33px;}
+#itx-theme-options .form-table span{width: 1.4em;display:block;float:left;}
+#itx-theme-options #sidel{width: 100%;}
+#itx-theme-options #sider{width: 210px;}
+#itx-theme-options .button-primary {margin:20px 20px 20px 17em;}
+#itx-theme-options .button-secondary {float:right;margin:20px;}
+#itx-bg div{float:left;width: 50%;}
+#itx-bg #thebody{margin-top:100px;}
+#itx-theme-options #headerwrap{min-height: 102px;width: 1100px;border:1px dotted #ccc;}
+#itx-theme-options #header{min-height: 80px;width: 1000px;margin:auto;border:1px dotted #ccc;}
+#itx-header>div, #itx-bg>div{font-size: 0.9em;}
+#itx-header #headerwrap{font-size: 10px;}
+#itx-header .outerwrap{background-color: #000;}
+
+.ui-tabs .ui-tabs-hide {display: none;}
+#itx-tabbed-options.ui-tabs-vertical { width: 55.5em;border: none;background: none; }
+#itx-tabbed-options.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 10em; }
+#itx-tabbed-options.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+#itx-tabbed-options.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+#itx-tabbed-options.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+#itx-tabbed-options.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 42.5em;background-color: #fff;border: 1px solid #ddd;min-height: 20em;}
+
+#itopp,#ibottomp {width:60%;margin:auto;}
+.col {margin: 10px;}
+.col table.lay{background:#333; text-align: center; width: 250px;margin:20px;}
+.col td{padding: 0; }
+.col p{padding: 10px 1px; margin: 0;font-size: 0.8em;}
+.col .header{background: #fbb; height: 20px;}
+.col .body div{height: 110px;background: #cfc;margin:1px;}
+.col .body .full{height: 192px}
+.col div.inner{height: 40px;}
+.col .sidebar{width:50px;background: #ccf;height: 192px;float:left;margin:1px;}
+.col .two {width:104px;}
+.col .one{width:52px;}
+.col .footer{background: #ccc; height: 40px;}
