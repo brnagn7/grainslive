@@ -1,0 +1,19 @@
+2016-01-22 08:01:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'spyderops.categories' doesn't exist
+Stack Trace:
+#0 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'categories', Array, Object(Cake\Database\Schema\Table))
+#1 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('categories', Array)
+#2 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\CachedCollection->describe('categories')
+#3 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/ORM/Table.php(499): Cake\ORM\Table->schema()
+#4 /Library/WebServer/Documents/grains/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(194): Cake\ORM\Table->primaryKey()
+#5 /Library/WebServer/Documents/grains/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Library/WebServer/Documents/grains/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Categories')
+#7 [internal function]: Bake\Shell\Task\ModelTask->main('Categories')
+#8 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Console/Shell.php(455): call_user_func_array(Array, Array)
+#9 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Console/Shell.php(449): Cake\Console\Shell->runCommand(Array, false)
+#10 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(212): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(179): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /Library/WebServer/Documents/grains/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /Library/WebServer/Documents/grains/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
