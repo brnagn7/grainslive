@@ -74,7 +74,7 @@
     <div id="users" class="tab-pane fade">
       <h3>Managing Users</h3>
       <p>A user's personal group should not be shared with other user's, unless you want to let other user's access his/her files. To do so you would create perhaps a separate group just for that purpose. The point is that you don't want to discourage the use of groups, rather you want to setup a more restrictive default group for user's to share files with. Bear in mind, I have not discussed the use of the <code>umask</code> command, more on this later.</p>
-      <table class="table table-striped, table-bordered">
+    <table class="table table-striped, table-bordered">
     <thead><tr class="danger"><th width="50%">Task Required</th><th width="50">Commands and Details</th></tr>
     </thead>
     <tr><td>You want to add a user account for <strong>Morphius</strong> giving him his own home directory and <code>bash</code> as his command shell. You have decided to give him an initial password and allow him to change it upon his first login.
@@ -122,6 +122,31 @@
     <div id="files" class="tab-pane fade">
       <h3>File Management</h3>
       <p>File management is the process of basic document control. The ability to find create, delete, restrict file access.</p>
+      <table class="table table-striped, table-bordered">
+      <thead><tr class="danger"><th width="50%">Task Required</th><th width="50">Commands and Details</th></tr>
+      </thead>
+      <tr><td>You want to use the 'cut' command to remove the middle column.
+      </td>
+      <td><pre>
+          $ cut -f 3 < column.txt
+          The Linux Bible
+          The Command line
+          XP Professional
+          Ubuntu Server
+          Server 2003
+          </pre>
+          The file column.txt:
+          <pre>
+          Category    Title             Price
+          Linux       The Linux Bible   $34.00
+          Linux       The Command line  $23.99
+          Windows     XP Professional   $12.99
+          Linux       Ubuntu Server     $56.00
+          Windows     Server 2003       $54.88
+          </pre>
+      </td>
+      </tr>
+  </table>
     </div>
     <div id="mounts" class="tab-pane fade">
       <h3>Mounting File Systems</h3>
