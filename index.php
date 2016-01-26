@@ -1,6 +1,6 @@
 <?php
 $page_title = "Home – Grains of wheat";
-include('inc/header.php');
+include('inc/header.html');
 ?>
     <!-- Page Content -->
     <div class="container">
@@ -21,7 +21,7 @@ include('inc/header.php');
 <div class="panel-body">
 <p>System Admin Skills</p>
 <p>"In the beginning, the file was without form, and void; and emptiness was upon the face of the bits. And the Fingers of the Author moved upon the face of the keyboard. And the Author said, Let there be words, and there were words." - <a href="http://www.tldp.org/LDP/sag/html/intro.html">LSAG</a></p>
-<a class="btn btn-success navbar-btn" data-method="get" href="localsdm.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -35,7 +35,7 @@ include('inc/header.php');
 <div class="panel-body">
 <p>Deny Unauthorized Access</p>
 <p>So you're a Linux System Administrator! But what about the local user's? Hackers seek to gain access to the root account typically via a local user account by escalating privileges. Better learn how to tighten that thing up! - <a href="http://www.linuxsecurity.com/docs/SecurityAdminGuide/SecurityAdminGuide-4.html">LSAG</a></p>
-<a class="btn btn-success navbar-btn" data-method="get" href="localsdm.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -51,7 +51,7 @@ include('inc/header.php');
 <p>Shell scripts have saved me hours of work, its a great asset to have shell scripting skills so please go ahead and knock the shebang out of it by upskilling with bash.
 </p>
 <p>Over time there will be other automation techniques and I will upload what I have learned in <code>python</code> and <code>c programming</code>.</p>
-<a class="btn btn-success navbar-btn" data-method="get" href="localsdm.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -67,7 +67,7 @@ include('inc/header.php');
 <p>Keeping things updated</p>
 <p>How to use package management for updates and patches.
 </p>
-<a class="btn btn-success navbar-btn" data-method="get" href="localsdm.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -81,7 +81,7 @@ include('inc/header.php');
 <div class="panel-body">
 <p>Hacking Skills</p>
 <p>Learning how to control and configure your system using only the command line.</p>
-<a class="btn btn-success navbar-btn" data-method="get" href="localsdm.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -95,12 +95,12 @@ include('inc/header.php');
 <div class="panel-body">
 <p>Disks</p>
 <p>Encrypting disks, formatting and file system checks.</p>
-<a class="btn btn-success navbar-btn" data-method="get" href="localsdm.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
 </div>
 </div>
 </div>
 <hr>
 <!-- Footer -->
 <?php
-include('inc/footer.php');
+include('inc/footer.html');
 ?>
