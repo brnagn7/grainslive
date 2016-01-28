@@ -24,7 +24,6 @@
     <div id="home" class="tab-pane fade in active">
       <h3>Local System Administration</h3>
       <p>This section is the main entry point for <strong>System Administration</strong> where you will find a nice collection of tasks that are essential for any Administrator. I have here only that which scratches the surface, there are so many usefull websites online today that it really is very easy to pick up and learn Linux in no time.</p>
-<<<<<<< HEAD
                         <p>
                             It is inevitable that equipment will fail, and files get delted all the time, it's your job to make sure your user's files can be restored if anything bad happens. There is a danger when removing files though, so be careful. Suppose you are cleaning out the system and prior to that you had switched to the root account. You have just a few more things to do, let's say you change to a user's home directory and you type this by mistake.
                             <br />
@@ -32,8 +31,6 @@
                             <p>
                                 So in this section we will look at <strong>Backups</strong> and see just how easy they are.
                             </p>
-=======
->>>>>>> b913481a1355e16ebf308bdec5aad813727154e4
     </div>
     <div id="backups" class="tab-pane fade">
 <h3>Creating Backups</h3>
@@ -77,11 +74,8 @@
     <div id="users" class="tab-pane fade">
       <h3>Managing Users</h3>
       <p>A user's personal group should not be shared with other user's, unless you want to let other user's access his/her files. To do so you would create perhaps a separate group just for that purpose. The point is that you don't want to discourage the use of groups, rather you want to setup a more restrictive default group for user's to share files with. Bear in mind, I have not discussed the use of the <code>umask</code> command, more on this later.</p>
-<<<<<<< HEAD
     <table class="table table-striped, table-bordered">
-=======
       <table class="table table-striped, table-bordered">
->>>>>>> b913481a1355e16ebf308bdec5aad813727154e4
     <thead><tr class="danger"><th width="50%">Task Required</th><th width="50">Commands and Details</th></tr>
     </thead>
     <tr><td>You want to add a user account for <strong>Morphius</strong> giving him his own home directory and <code>bash</code> as his command shell. You have decided to give him an initial password and allow him to change it upon his first login.
@@ -129,28 +123,26 @@
     <div id="files" class="tab-pane fade">
       <h3>File Management</h3>
       <p>File management is the process of basic document control. The ability to find create, delete, restrict file access.</p>
-<<<<<<< HEAD
       <table class="table table-striped, table-bordered">
       <thead><tr class="danger"><th width="50%">Task Required</th><th width="50">Commands and Details</th></tr>
       </thead>
-      <tr><td>You want to use the 'cut' command to remove the middle column.
+      <tr><td>You want to use the linux command line to remove the middle column of text from a file. Well there are a few ways, one of which is given below.
       </td>
       <td><pre>
-          $ cut -f 3 < column.txt
+          $ awk '{print $2,$3,$4}' < column.txt
           The Linux Bible
           The Command line
-          XP Professional
-          Ubuntu Server
-          Server 2003
+          The XP Professional
+          The Ubuntu Server
+          The Server 2003
           </pre>
           The file column.txt:
           <pre>
-          Category    Title             Price
-          Linux       The Linux Bible   $34.00
-          Linux       The Command line  $23.99
-          Windows     XP Professional   $12.99
-          Linux       Ubuntu Server     $56.00
-          Windows     Server 2003       $54.88
+          Linux       The Linux Bible       $34.00
+          Linux       The Command line      $23.99
+          Windows     The XP Professional   $12.99
+          Linux       The Ubuntu Server     $56.00
+          Windows     The Server 2003       $54.88
           </pre>
       </td>
       </tr>
