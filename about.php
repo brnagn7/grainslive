@@ -1,4 +1,3 @@
-<?php include 'inc/header.html'; ?>
 <?php require 'inc/header.html'; ?>
     <!-- Page Content -->
     <div class="container">

@@ -100,9 +100,6 @@ include('inc/header.html');
 </div>
 <hr>
 <!-- Footer -->
-<?php
-include('inc/footer.html');
-?>
-        <!-- /.row -->
+<!-- /.row -->
 <hr>
 <?php include("inc/footer.html"); ?>
