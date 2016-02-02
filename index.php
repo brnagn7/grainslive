@@ -34,7 +34,7 @@ include('inc/header.html');
 <div class="panel-body">
 <p>Deny Unauthorized Access</p>
 <p>So you're a Linux System Administrator! But what about the local user's? Hackers seek to gain access to the root account typically via a local user account by escalating privileges. Better learn how to tighten that thing up! - <a href="http://www.linuxsecurity.com/docs/SecurityAdminGuide/SecurityAdminGuide-4.html">LSAG</a></p>
-<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="security.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -50,7 +50,7 @@ include('inc/header.html');
 <p>Shell scripts have saved me hours of work, its a great asset to have shell scripting skills so please go ahead and knock the shebang out of it by upskilling with bash.
 </p>
 <p>Over time there will be other automation techniques and I will upload what I have learned in <code>python</code> and <code>c programming</code>.</p>
-<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="shell.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -66,7 +66,7 @@ include('inc/header.html');
 <p>Keeping things updated</p>
 <p>How to use package management for updates and patches.
 </p>
-<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="software.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -80,7 +80,7 @@ include('inc/header.html');
 <div class="panel-body">
 <p>Hacking Skills</p>
 <p>Learning how to control and configure your system using only the command line.</p>
-<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="cli.php">Read more...</a>
 </div>
 </div>
 </div>
@@ -94,7 +94,7 @@ include('inc/header.html');
 <div class="panel-body">
 <p>Disks</p>
 <p>Encrypting disks, formatting and file system checks.</p>
-<a class="btn btn-success navbar-btn" data-method="get" href="sysadmin.php">Read more...</a>
+<a class="btn btn-success navbar-btn" data-method="get" href="storage.php">Read more...</a>
 </div>
 </div>
 </div>
